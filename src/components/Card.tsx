@@ -9,18 +9,18 @@ const Card: React.FC<{
   link: string;
   subtitle?: string;
   tags?: string[];
-  thumbnail?: File;
+  featuredImage?: File;
   title: string;
-}> = ({ content, link, subtitle, tags, thumbnail, title }) => {
+}> = ({ content, link, subtitle, tags, featuredImage, title }) => {
   return (
     <div className="rounded overflow-hidden shadow-lg">
       <Link to={link}>
-        {thumbnail && thumbnail?.childImageSharp?.gatsbyImageData && (
+        {featuredImage && featuredImage?.childImageSharp?.gatsbyImageData && (
           <GatsbyImage
             alt={title}
             className="max-h-40"
             imgClassName="w-full object-cover rounded-t"
-            image={thumbnail.childImageSharp.gatsbyImageData}
+            image={featuredImage.childImageSharp.gatsbyImageData}
           />
         )}
 

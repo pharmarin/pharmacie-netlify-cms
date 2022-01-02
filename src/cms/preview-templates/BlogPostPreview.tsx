@@ -1,12 +1,15 @@
 import React from "react";
-import { BlogPostTemplate } from "../../templates/blog-post";
+import { File } from "../../../graphql-types";
+import BlogPostContainer from "../../containers/blog/BlogPost";
 
 const BlogPostPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(["data", "tags"]);
   return (
-    <BlogPostTemplate
+    <BlogPostContainer
+      id={entry.getIn(["data", "id"])}
       content={widgetFor("body")}
-      description={entry.getIn(["data", "description"])}
+      date={entry.getIn(["data", "date"])}
+      featuredImage={entry.getIn(["data", "featuredImage"]) as File}
       tags={tags && tags.toJS()}
       title={entry.getIn(["data", "title"])}
     />
