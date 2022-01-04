@@ -52,10 +52,7 @@ export const BlogPost: React.FC<{
                 <div className="relative p-4 pb-1">
                   <h1 className="text-2xl text-white font-bold">{title}</h1>
                   <p className="text-sm text-green-900">
-                    Posté le{" "}
-                    <time dateTime="{{ post.date|date('Y-m-d H:i:s') }}">
-                      {date}
-                    </time>
+                    Posté le <time dateTime={date}>{date}</time>
                   </p>
                 </div>
               </div>
