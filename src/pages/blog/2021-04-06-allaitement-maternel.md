@@ -6,7 +6,6 @@ date: 2021-04-06T07:32:03+00:00
 url: /allaitement-maternel/
 featuredImage: /img/blog/image-1.jpeg
 categories:
-  - Non classé
 featuredPost: false
 ---
 

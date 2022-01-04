@@ -8,7 +8,6 @@ url: /dispositifs-dadministration-des-aerosols/
 featuredImage: /img/blog/image-8.png
 categories:
   - Formations médicaments
-  - Non classé
 tags:
   - Dispositifs
 featuredPost: false

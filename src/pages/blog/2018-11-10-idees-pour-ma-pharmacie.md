@@ -7,7 +7,6 @@ excerpt: "Listes d'idées de choses à penser pour notre future pharmacie... "
 url: /idees-pour-ma-pharmacie/
 featuredImage: /img/blog/visuel_201.jpg
 categories:
-  - Non classé
 featuredPost: false
 ---
 

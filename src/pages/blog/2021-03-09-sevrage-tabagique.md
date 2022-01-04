@@ -6,7 +6,6 @@ date: 2021-03-09T18:28:16+00:00
 url: /sevrage-tabagique/
 featuredImage: /img/blog/arret-tabac-hypnose-bordeaux.jpg
 categories:
-  - Non classé
 featuredPost: false
 ---
 
