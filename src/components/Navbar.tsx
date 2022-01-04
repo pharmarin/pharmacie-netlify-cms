@@ -1,3 +1,4 @@
+import { PlusIcon } from "@heroicons/react/solid";
 import { Link } from "gatsby";
 import React from "react";
 
@@ -12,7 +13,7 @@ const Navbar = () => {
           to="/"
           rel="home"
         >
-          <i className="fa fa-plus"></i>
+          <PlusIcon className="h-5 w-5 text-white" />
           <span>Pharmacie</span>
         </Link>
       </div>
