@@ -17,7 +17,7 @@ const BlogGridTemplate: React.FC<{ data: BlogGridQuery }> = ({ data }) => {
           >
             <Card
               title={post.frontmatter.title}
-              thumbnail={post.frontmatter.featuredImage as File}
+              featuredImage={post.frontmatter.featuredImage as File}
               link={post.fields.slug}
               tags={post.frontmatter.tags}
             />

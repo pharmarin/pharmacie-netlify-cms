@@ -1,8 +1,8 @@
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { kebabCase } from "lodash";
 import React from "react";
 import { File } from "../../graphql-types";
+import TagList from "../components/TagList";
 
 const Card: React.FC<{
   content?: string;
@@ -32,17 +32,7 @@ const Card: React.FC<{
         </div>
       </Link>
 
-      {tags && (
-        <div className="px-6 py-4">
-          {tags.map((tag) => (
-            <Link key={tag} to={"tags/" + kebabCase(tag)}>
-              <span className="inline-block bg-gray-200 rounded-full mb-1 px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-                #{tag}
-              </span>
-            </Link>
-          ))}
-        </div>
-      )}
+      <TagList className="px-6 py-4" tags={tags} />
     </div>
   );
 };

@@ -1,9 +1,8 @@
-import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { kebabCase } from "lodash";
 import React from "react";
 import { File } from "../../../graphql-types";
 import Content, { HTMLContent } from "../../components/Content";
+import TagList from "../../components/TagList";
 
 export const BlogPost: React.FC<{
   content?: string;
@@ -58,18 +57,7 @@ export const BlogPost: React.FC<{
                 </div>
               </div>
               <PostContent className="article-body w-full" content={content} />
-              {tags && tags.length ? (
-                <div style={{ marginTop: `4rem` }}>
-                  <h4>Tags</h4>
-                  <ul className="taglist">
-                    {tags.map((tag) => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
+              <TagList className="mt-8" tags={tags} />
             </section>
           </div>
         </div>
