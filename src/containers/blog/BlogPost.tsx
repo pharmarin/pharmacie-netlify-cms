@@ -60,7 +60,10 @@ export const BlogPost: React.FC<{
                 </div>
               </div>
               <Categories categories={categories} />
-              <PostContent className="article-body w-full" content={content} />
+              <PostContent
+                className="article-body w-full prose"
+                content={content}
+              />
               <TagList tags={tags} />
             </section>
           </div>
