@@ -16,7 +16,7 @@ const Card: React.FC<{
 }> = ({ categories, content, link, subtitle, tags, featuredImage, title }) => {
   return (
     <div className="rounded overflow-hidden shadow-lg">
-      <Link to={link}>
+      <Link to={link} className="mb-4">
         {featuredImage && featuredImage?.childImageSharp?.gatsbyImageData && (
           <GatsbyImage
             alt={title}
@@ -34,8 +34,8 @@ const Card: React.FC<{
         </div>
       </Link>
 
-      <Categories className="px-6 py-4" categories={categories} />
-      <TagList className="px-6 py-4" tags={tags} />
+      <Categories className="px-6" categories={categories} />
+      <TagList className="px-6" tags={tags} />
     </div>
   );
 };
