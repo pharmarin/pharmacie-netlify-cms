@@ -1,69 +1,27 @@
-import { graphql, Link, PageProps } from "gatsby";
-import { kebabCase } from "lodash";
+import { graphql, PageProps } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
-import { BlogPostByIdQuery } from "../../graphql-types";
-import Content, { HTMLContent } from "../components/Content";
+import { BlogPostByIdQuery, File } from "../../graphql-types";
+import { HTMLContent } from "../components/Content";
 import Layout from "../components/Layout";
-
-export const BlogPostTemplate: React.FC<{
-  content?: string;
-  contentComponent?: typeof HTMLContent;
-  description?: string;
-  tags?: string[];
-  title?: string;
-  helmet?: React.ReactNode;
-}> = ({ content, contentComponent, description, tags, title, helmet }) => {
-  const PostContent = contentComponent || Content;
-
-  return (
-    <section className="section">
-      {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+import BlogPostContainer from "../containers/blog/BlogPost";
 
 const BlogPost: React.FC<PageProps<BlogPostByIdQuery>> = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <BlogPostTemplate
+      <BlogPostContainer
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
+        date={post.frontmatter.date}
+        featuredImage={post.frontmatter.featuredImage as File}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
           </Helmet>
         }
+        id={post.id}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -79,7 +37,12 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM YYYY", locale: "fr-FR")
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(width: 400, quality: 100, layout: CONSTRAINED)
+          }
+        }
         title
         description
         tags
