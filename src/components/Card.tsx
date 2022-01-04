@@ -1,3 +1,4 @@
+import Categories from "components/Categories";
 import TagList from "components/TagList";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -5,13 +6,14 @@ import React from "react";
 import { File } from "../../graphql-types";
 
 const Card: React.FC<{
+  categories?: string[];
   content?: string;
   link: string;
   subtitle?: string;
   tags?: string[];
   featuredImage?: File;
   title: string;
-}> = ({ content, link, subtitle, tags, featuredImage, title }) => {
+}> = ({ categories, content, link, subtitle, tags, featuredImage, title }) => {
   return (
     <div className="rounded overflow-hidden shadow-lg">
       <Link to={link}>
@@ -32,6 +34,7 @@ const Card: React.FC<{
         </div>
       </Link>
 
+      <Categories className="px-6 py-4" categories={categories} />
       <TagList className="px-6 py-4" tags={tags} />
     </div>
   );

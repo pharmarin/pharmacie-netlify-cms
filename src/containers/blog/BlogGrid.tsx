@@ -16,10 +16,11 @@ const BlogGridTemplate: React.FC<{ data: BlogGridQuery }> = ({ data }) => {
             id={"tease-" + post.id}
           >
             <Card
-              title={post.frontmatter.title}
+              categories={post.frontmatter.categories}
               featuredImage={post.frontmatter.featuredImage as File}
               link={post.fields.slug}
               tags={post.frontmatter.tags}
+              title={post.frontmatter.title}
             />
           </article>
         ))}
@@ -44,9 +45,7 @@ export default function BlogGrid() {
                   slug
                 }
                 frontmatter {
-                  tags
-                  title
-                  templateKey
+                  categories
                   date(formatString: "MMMM DD, YYYY")
                   featuredPost
                   featuredImage {
@@ -58,6 +57,9 @@ export default function BlogGrid() {
                       )
                     }
                   }
+                  tags
+                  templateKey
+                  title
                 }
               }
             }

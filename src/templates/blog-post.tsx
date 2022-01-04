@@ -12,6 +12,7 @@ const BlogPost: React.FC<PageProps<BlogPostByIdQuery>> = ({ data }) => {
   return (
     <Layout>
       <BlogPostContainer
+        categories={post.frontmatter.categories}
         content={post.html}
         contentComponent={HTMLContent}
         date={post.frontmatter.date}
@@ -37,6 +38,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        categories
         date(formatString: "DD MMMM YYYY", locale: "fr-FR")
         featuredImage {
           childImageSharp {

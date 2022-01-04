@@ -3751,7 +3751,7 @@ export type SiteMetadataQuery = { site?: { siteMetadata?: { title?: string | nul
 export type BlogGridQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BlogGridQuery = { allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, templateKey?: string | null | undefined, date?: any | null | undefined, featuredPost?: boolean | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+export type BlogGridQuery = { allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, featuredPost?: boolean | null | undefined, tags?: Array<string | null | undefined> | null | undefined, templateKey?: string | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
 
 export type TagsQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3763,7 +3763,7 @@ export type BlogPostByIdQueryVariables = Exact<{
 }>;
 
 
-export type BlogPostByIdQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { date?: any | null | undefined, title?: string | null | undefined, description?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
+export type BlogPostByIdQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, description?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
 
 export type TagPageQueryVariables = Exact<{
   tag?: InputMaybe<Scalars['String']>;

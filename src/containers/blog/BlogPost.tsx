@@ -1,3 +1,4 @@
+import Categories from "components/Categories";
 import Content, { HTMLContent } from "components/Content";
 import TagList from "components/TagList";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -5,6 +6,7 @@ import React from "react";
 import { File } from "../../../graphql-types";
 
 export const BlogPost: React.FC<{
+  categories?: string[];
   content?: string;
   contentComponent?: typeof HTMLContent;
   date?: string;
@@ -14,6 +16,7 @@ export const BlogPost: React.FC<{
   title?: string;
   helmet?: React.ReactNode;
 }> = ({
+  categories,
   content,
   contentComponent,
   date,
@@ -42,8 +45,8 @@ export const BlogPost: React.FC<{
               )}
           </div>
           <div className="w-full">
-            <section className="article-content w-full">
-              <div className="flex flex-col relative sm:-mx-4 mb-8">
+            <section className="article-content w-full space-y-8">
+              <div className="flex flex-col relative sm:-mx-4">
                 <div className="absolute h-full w-full rounded-2xl bg-gray-300 transform -rotate-3"></div>
                 <div className="absolute h-full w-full rounded-2xl bg-gradient-to-br from-green-500 to-teal-400 transform -rotate-1"></div>
                 <div className="relative p-4 pb-1">
@@ -56,8 +59,9 @@ export const BlogPost: React.FC<{
                   </p>
                 </div>
               </div>
+              <Categories categories={categories} />
               <PostContent className="article-body w-full" content={content} />
-              <TagList className="mt-8" tags={tags} />
+              <TagList tags={tags} />
             </section>
           </div>
         </div>
