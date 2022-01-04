@@ -1,10 +1,10 @@
+import { HTMLContent } from "components/Content";
+import Layout from "components/Layout";
+import BlogPostContainer from "containers/blog/BlogPost";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BlogPostByIdQuery, File } from "../../graphql-types";
-import { HTMLContent } from "../components/Content";
-import Layout from "../components/Layout";
-import BlogPostContainer from "../containers/blog/BlogPost";
 
 const BlogPost: React.FC<PageProps<BlogPostByIdQuery>> = ({ data }) => {
   const { markdownRemark: post } = data;

@@ -1,6 +1,6 @@
+import Layout from "components/Layout";
+import BlogGrid from "containers/blog/BlogGrid";
 import * as React from "react";
-import Layout from "../../components/Layout";
-import BlogGrid from "../../containers/blog/BlogGrid";
 
 const BlogIndexPage = () => {
   return (

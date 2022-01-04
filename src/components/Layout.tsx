@@ -1,7 +1,7 @@
 import { withPrefix } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import "../styles/global.css";
+import "styles/global.css";
 import Navbar from "./Navbar";
 import useSiteMetadata from "./SiteMetadata";
 

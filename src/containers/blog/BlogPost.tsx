@@ -1,8 +1,8 @@
+import Content, { HTMLContent } from "components/Content";
+import TagList from "components/TagList";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import { File } from "../../../graphql-types";
-import Content, { HTMLContent } from "../../components/Content";
-import TagList from "../../components/TagList";
 
 export const BlogPost: React.FC<{
   content?: string;

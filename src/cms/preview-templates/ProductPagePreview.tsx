@@ -1,5 +1,5 @@
 import React from "react";
-import { ProductPageTemplate } from "../../templates/product-page";
+import { ProductPageTemplate } from "templates/product-page";
 
 const ProductPagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(["data", "intro", "blurbs"]);

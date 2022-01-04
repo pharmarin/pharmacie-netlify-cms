@@ -1,9 +1,9 @@
+import Layout from "components/Layout";
 import { graphql, Link, PageProps } from "gatsby";
 import { kebabCase } from "lodash";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { TagsQuery } from "../../graphql-types";
-import Layout from "../components/Layout";
 
 const TagsPage: React.FC<PageProps<TagsQuery>> = ({
   data: {

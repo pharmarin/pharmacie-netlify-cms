@@ -1,7 +1,7 @@
+import Card from "components/Card";
 import { graphql, StaticQuery } from "gatsby";
 import React from "react";
 import { BlogGridQuery, File } from "../../../graphql-types";
-import Card from "../../components/Card";
 
 const BlogGridTemplate: React.FC<{ data: BlogGridQuery }> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;

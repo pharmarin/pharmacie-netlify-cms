@@ -1,8 +1,8 @@
+import TagList from "components/TagList";
 import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import { File } from "../../graphql-types";
-import TagList from "../components/TagList";
 
 const Card: React.FC<{
   content?: string;

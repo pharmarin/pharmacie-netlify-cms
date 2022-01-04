@@ -1,6 +1,6 @@
+import BlogPostContainer from "containers/blog/BlogPost";
 import React from "react";
 import { File } from "../../../graphql-types";
-import BlogPostContainer from "../../containers/blog/BlogPost";
 
 const BlogPostPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(["data", "tags"]);
