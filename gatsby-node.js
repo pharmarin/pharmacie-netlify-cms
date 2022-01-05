@@ -67,7 +67,7 @@ exports.createPages = ({ actions, graphql }) => {
 
       edge.node.frontmatter.type &&
         createPage({
-          path: `/${edge.node.frontmatter.type}s${edge.node.fields.slug}`,
+          path: `/${edge.node.fields.slug}`,
           component: path.resolve(
             `src/containers/${edge.node.frontmatter.type}s/Single.tsx`
           ),
@@ -95,7 +95,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   fmImagesToRelative(node); // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
+    const value =
+      node.frontmatter.type + "s" + createFilePath({ node, getNode });
     createNodeField({
       name: `slug`,
       node,
