@@ -1,47 +1,31 @@
+import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { TagSingleQuery } from "../../../graphql-types";
-
+import { File, TagSingleQuery } from "../../../graphql-types";
 const TagSingle: React.FC<{ data: TagSingleQuery; pageContext: any }> = ({
   data,
   pageContext,
 }) => {
   const posts = data.allMarkdownRemark.edges;
-  const postLinks = posts.map((post) => (
-    <li key={post.node.fields.slug}>
-      <Link to={post.node.fields.slug}>
-        <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-      </Link>
-    </li>
-  ));
   const tag = pageContext.taxonomy;
   const title = data.site.siteMetadata.title;
-  const totalCount = data.allMarkdownRemark.totalCount;
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with “${tag}”`;
 
   return (
     <Layout>
-      <section className="section">
-        <Helmet title={`${tag} | ${title}`} />
-        <div className="container content">
-          <div className="columns">
-            <div
-              className="column is-10 is-offset-1"
-              style={{ marginBottom: "6rem" }}
-            >
-              <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-              <ul className="taglist">{postLinks}</ul>
-              <p>
-                <Link to="/tags/">Browse all tags</Link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Helmet title={`${tag} | ${title}`} />
+      <h3>Tag {tag}</h3>
+      <ArchiveGrid
+        posts={posts.map((post) => ({
+          id: post.node.id,
+          categories: post.node.frontmatter.categories,
+          featuredImage: post.node.frontmatter.featuredImage as File,
+          link: post.node.fields.slug,
+          tags: post.node.frontmatter.tags,
+          title: post.node.frontmatter.title,
+        }))}
+      />
     </Layout>
   );
 };
@@ -63,10 +47,18 @@ export const query = graphql`
       totalCount
       edges {
         node {
+          id
           fields {
             slug
           }
           frontmatter {
+            categories
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(width: 400, quality: 100, layout: CONSTRAINED)
+              }
+            }
+            tag
             title
           }
         }

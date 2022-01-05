@@ -14,28 +14,26 @@ const CategoriesIndex: React.FC<PageProps<CategoriesIndexQuery>> = ({
   },
 }) => (
   <Layout>
-    <section className="section">
-      <Helmet title={`Categories | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: "6rem" }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Categories</h1>
-            <ul className="categorylist">
-              {group.map((category) => (
-                <li key={category.fieldValue}>
-                  <Link to={`/categories/${kebabCase(category.fieldValue)}/`}>
-                    {category.fieldValue} ({category.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+    <Helmet title={`Categories | ${title}`} />
+    <div className="container content">
+      <div className="columns">
+        <div
+          className="column is-10 is-offset-1"
+          style={{ marginBottom: "6rem" }}
+        >
+          <h1 className="title is-size-2 is-bold-light">Categories</h1>
+          <ul className="categorylist">
+            {group.map((category) => (
+              <li key={category.fieldValue}>
+                <Link to={`/categories/${kebabCase(category.fieldValue)}/`}>
+                  {category.fieldValue} ({category.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
   </Layout>
 );
 

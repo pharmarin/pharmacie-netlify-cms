@@ -1,49 +1,32 @@
+import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { CategorySingleQuery } from "../../../graphql-types";
+import { CategorySingleQuery, File } from "../../../graphql-types";
 
 const CategorySingle: React.FC<{
   data: CategorySingleQuery;
   pageContext: any;
 }> = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
-  const postLinks = posts.map((post) => (
-    <li key={post.node.fields.slug}>
-      <Link to={post.node.fields.slug}>
-        <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-      </Link>
-    </li>
-  ));
   const category = pageContext.taxonomy;
   const title = data.site.siteMetadata.title;
-  const totalCount = data.allMarkdownRemark.totalCount;
-  const categoryHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with “${category}”`;
 
   return (
     <Layout>
-      <section className="section">
-        <Helmet title={`${category} | ${title}`} />
-        <div className="container content">
-          <div className="columns">
-            <div
-              className="column is-10 is-offset-1"
-              style={{ marginBottom: "6rem" }}
-            >
-              <h3 className="title is-size-4 is-bold-light">
-                {categoryHeader}
-              </h3>
-              <ul className="categorylist">{postLinks}</ul>
-              <p>
-                <Link to="/categories/">Browse all categories</Link>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Helmet title={`${category} | ${title}`} />
+      <h3>Catégorie {category}</h3>
+      <ArchiveGrid
+        posts={posts.map((post) => ({
+          id: post.node.id,
+          categories: post.node.frontmatter.categories,
+          featuredImage: post.node.frontmatter.featuredImage as File,
+          link: post.node.fields.slug,
+          tags: post.node.frontmatter.tags,
+          title: post.node.frontmatter.title,
+        }))}
+      />
     </Layout>
   );
 };
@@ -65,10 +48,18 @@ export const query = graphql`
       totalCount
       edges {
         node {
+          id
           fields {
             slug
           }
           frontmatter {
+            categories
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(width: 400, quality: 100, layout: CONSTRAINED)
+              }
+            }
+            tags
             title
           }
         }

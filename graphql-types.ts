@@ -3585,7 +3585,7 @@ export type SiteMetadataQuery = { site?: { siteMetadata?: { title?: string | nul
 export type ArticlesIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ArticlesIndexQuery = { allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, type?: string | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+export type ArticlesIndexQuery = { allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
 
 export type ArticleByIdQueryVariables = Exact<{
   id: Scalars['String'];
@@ -3604,7 +3604,7 @@ export type CategorySingleQueryVariables = Exact<{
 }>;
 
 
-export type CategorySingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { title?: string | null | undefined } | null | undefined } }> } };
+export type CategorySingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
 
 export type TagsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
