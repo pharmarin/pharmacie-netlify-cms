@@ -672,17 +672,14 @@ export type MarkdownRemarkTableOfContentsArgs = {
 export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
-  templateKey?: Maybe<Scalars['String']>;
+  type?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
   url?: Maybe<Scalars['String']>;
-  featuredImage?: Maybe<File>;
+  conseils_source?: Maybe<Array<Maybe<Scalars['Int']>>>;
   categories?: Maybe<Array<Maybe<Scalars['String']>>>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
-  featuredPost?: Maybe<Scalars['Boolean']>;
+  featuredImage?: Maybe<File>;
   excerpt?: Maybe<Scalars['String']>;
-  featuredpost?: Maybe<Scalars['Boolean']>;
-  featuredimage?: Maybe<File>;
-  description?: Maybe<Scalars['String']>;
   subtitle?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
@@ -1145,17 +1142,14 @@ export type MarkdownRemarkFilterInput = {
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: InputMaybe<StringQueryOperatorInput>;
   author?: InputMaybe<StringQueryOperatorInput>;
-  templateKey?: InputMaybe<StringQueryOperatorInput>;
+  type?: InputMaybe<StringQueryOperatorInput>;
   date?: InputMaybe<DateQueryOperatorInput>;
   url?: InputMaybe<StringQueryOperatorInput>;
-  featuredImage?: InputMaybe<FileFilterInput>;
+  conseils_source?: InputMaybe<IntQueryOperatorInput>;
   categories?: InputMaybe<StringQueryOperatorInput>;
   tags?: InputMaybe<StringQueryOperatorInput>;
-  featuredPost?: InputMaybe<BooleanQueryOperatorInput>;
+  featuredImage?: InputMaybe<FileFilterInput>;
   excerpt?: InputMaybe<StringQueryOperatorInput>;
-  featuredpost?: InputMaybe<BooleanQueryOperatorInput>;
-  featuredimage?: InputMaybe<FileFilterInput>;
-  description?: InputMaybe<StringQueryOperatorInput>;
   subtitle?: InputMaybe<StringQueryOperatorInput>;
 };
 
@@ -1459,9 +1453,12 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___id'
   | 'childrenMarkdownRemark___frontmatter___title'
   | 'childrenMarkdownRemark___frontmatter___author'
-  | 'childrenMarkdownRemark___frontmatter___templateKey'
+  | 'childrenMarkdownRemark___frontmatter___type'
   | 'childrenMarkdownRemark___frontmatter___date'
   | 'childrenMarkdownRemark___frontmatter___url'
+  | 'childrenMarkdownRemark___frontmatter___conseils_source'
+  | 'childrenMarkdownRemark___frontmatter___categories'
+  | 'childrenMarkdownRemark___frontmatter___tags'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___sourceInstanceName'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___absolutePath'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___relativePath'
@@ -1500,50 +1497,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___featuredImage___childrenMarkdownRemark'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___id'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___children'
-  | 'childrenMarkdownRemark___frontmatter___categories'
-  | 'childrenMarkdownRemark___frontmatter___tags'
-  | 'childrenMarkdownRemark___frontmatter___featuredPost'
   | 'childrenMarkdownRemark___frontmatter___excerpt'
-  | 'childrenMarkdownRemark___frontmatter___featuredpost'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___sourceInstanceName'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___absolutePath'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___relativePath'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___extension'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___size'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___prettySize'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___modifiedTime'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___accessTime'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___changeTime'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___birthTime'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___root'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___dir'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___base'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___ext'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___name'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___relativeDirectory'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___dev'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___mode'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___nlink'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___uid'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___gid'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___rdev'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___ino'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___atimeMs'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___mtimeMs'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___ctimeMs'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___atime'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___mtime'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___ctime'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___birthtime'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___birthtimeMs'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___blksize'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___blocks'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___publicURL'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___childrenImageSharp'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___childrenMarkdownRemark'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___id'
-  | 'childrenMarkdownRemark___frontmatter___featuredimage___children'
-  | 'childrenMarkdownRemark___frontmatter___description'
   | 'childrenMarkdownRemark___frontmatter___subtitle'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
@@ -1601,9 +1555,12 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___id'
   | 'childMarkdownRemark___frontmatter___title'
   | 'childMarkdownRemark___frontmatter___author'
-  | 'childMarkdownRemark___frontmatter___templateKey'
+  | 'childMarkdownRemark___frontmatter___type'
   | 'childMarkdownRemark___frontmatter___date'
   | 'childMarkdownRemark___frontmatter___url'
+  | 'childMarkdownRemark___frontmatter___conseils_source'
+  | 'childMarkdownRemark___frontmatter___categories'
+  | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___frontmatter___featuredImage___sourceInstanceName'
   | 'childMarkdownRemark___frontmatter___featuredImage___absolutePath'
   | 'childMarkdownRemark___frontmatter___featuredImage___relativePath'
@@ -1642,50 +1599,7 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___featuredImage___childrenMarkdownRemark'
   | 'childMarkdownRemark___frontmatter___featuredImage___id'
   | 'childMarkdownRemark___frontmatter___featuredImage___children'
-  | 'childMarkdownRemark___frontmatter___categories'
-  | 'childMarkdownRemark___frontmatter___tags'
-  | 'childMarkdownRemark___frontmatter___featuredPost'
   | 'childMarkdownRemark___frontmatter___excerpt'
-  | 'childMarkdownRemark___frontmatter___featuredpost'
-  | 'childMarkdownRemark___frontmatter___featuredimage___sourceInstanceName'
-  | 'childMarkdownRemark___frontmatter___featuredimage___absolutePath'
-  | 'childMarkdownRemark___frontmatter___featuredimage___relativePath'
-  | 'childMarkdownRemark___frontmatter___featuredimage___extension'
-  | 'childMarkdownRemark___frontmatter___featuredimage___size'
-  | 'childMarkdownRemark___frontmatter___featuredimage___prettySize'
-  | 'childMarkdownRemark___frontmatter___featuredimage___modifiedTime'
-  | 'childMarkdownRemark___frontmatter___featuredimage___accessTime'
-  | 'childMarkdownRemark___frontmatter___featuredimage___changeTime'
-  | 'childMarkdownRemark___frontmatter___featuredimage___birthTime'
-  | 'childMarkdownRemark___frontmatter___featuredimage___root'
-  | 'childMarkdownRemark___frontmatter___featuredimage___dir'
-  | 'childMarkdownRemark___frontmatter___featuredimage___base'
-  | 'childMarkdownRemark___frontmatter___featuredimage___ext'
-  | 'childMarkdownRemark___frontmatter___featuredimage___name'
-  | 'childMarkdownRemark___frontmatter___featuredimage___relativeDirectory'
-  | 'childMarkdownRemark___frontmatter___featuredimage___dev'
-  | 'childMarkdownRemark___frontmatter___featuredimage___mode'
-  | 'childMarkdownRemark___frontmatter___featuredimage___nlink'
-  | 'childMarkdownRemark___frontmatter___featuredimage___uid'
-  | 'childMarkdownRemark___frontmatter___featuredimage___gid'
-  | 'childMarkdownRemark___frontmatter___featuredimage___rdev'
-  | 'childMarkdownRemark___frontmatter___featuredimage___ino'
-  | 'childMarkdownRemark___frontmatter___featuredimage___atimeMs'
-  | 'childMarkdownRemark___frontmatter___featuredimage___mtimeMs'
-  | 'childMarkdownRemark___frontmatter___featuredimage___ctimeMs'
-  | 'childMarkdownRemark___frontmatter___featuredimage___atime'
-  | 'childMarkdownRemark___frontmatter___featuredimage___mtime'
-  | 'childMarkdownRemark___frontmatter___featuredimage___ctime'
-  | 'childMarkdownRemark___frontmatter___featuredimage___birthtime'
-  | 'childMarkdownRemark___frontmatter___featuredimage___birthtimeMs'
-  | 'childMarkdownRemark___frontmatter___featuredimage___blksize'
-  | 'childMarkdownRemark___frontmatter___featuredimage___blocks'
-  | 'childMarkdownRemark___frontmatter___featuredimage___publicURL'
-  | 'childMarkdownRemark___frontmatter___featuredimage___childrenImageSharp'
-  | 'childMarkdownRemark___frontmatter___featuredimage___childrenMarkdownRemark'
-  | 'childMarkdownRemark___frontmatter___featuredimage___id'
-  | 'childMarkdownRemark___frontmatter___featuredimage___children'
-  | 'childMarkdownRemark___frontmatter___description'
   | 'childMarkdownRemark___frontmatter___subtitle'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
@@ -3429,9 +3343,12 @@ export type MarkdownRemarkFieldsEnum =
   | 'id'
   | 'frontmatter___title'
   | 'frontmatter___author'
-  | 'frontmatter___templateKey'
+  | 'frontmatter___type'
   | 'frontmatter___date'
   | 'frontmatter___url'
+  | 'frontmatter___conseils_source'
+  | 'frontmatter___categories'
+  | 'frontmatter___tags'
   | 'frontmatter___featuredImage___sourceInstanceName'
   | 'frontmatter___featuredImage___absolutePath'
   | 'frontmatter___featuredImage___relativePath'
@@ -3510,90 +3427,7 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___featuredImage___internal___mediaType'
   | 'frontmatter___featuredImage___internal___owner'
   | 'frontmatter___featuredImage___internal___type'
-  | 'frontmatter___categories'
-  | 'frontmatter___tags'
-  | 'frontmatter___featuredPost'
   | 'frontmatter___excerpt'
-  | 'frontmatter___featuredpost'
-  | 'frontmatter___featuredimage___sourceInstanceName'
-  | 'frontmatter___featuredimage___absolutePath'
-  | 'frontmatter___featuredimage___relativePath'
-  | 'frontmatter___featuredimage___extension'
-  | 'frontmatter___featuredimage___size'
-  | 'frontmatter___featuredimage___prettySize'
-  | 'frontmatter___featuredimage___modifiedTime'
-  | 'frontmatter___featuredimage___accessTime'
-  | 'frontmatter___featuredimage___changeTime'
-  | 'frontmatter___featuredimage___birthTime'
-  | 'frontmatter___featuredimage___root'
-  | 'frontmatter___featuredimage___dir'
-  | 'frontmatter___featuredimage___base'
-  | 'frontmatter___featuredimage___ext'
-  | 'frontmatter___featuredimage___name'
-  | 'frontmatter___featuredimage___relativeDirectory'
-  | 'frontmatter___featuredimage___dev'
-  | 'frontmatter___featuredimage___mode'
-  | 'frontmatter___featuredimage___nlink'
-  | 'frontmatter___featuredimage___uid'
-  | 'frontmatter___featuredimage___gid'
-  | 'frontmatter___featuredimage___rdev'
-  | 'frontmatter___featuredimage___ino'
-  | 'frontmatter___featuredimage___atimeMs'
-  | 'frontmatter___featuredimage___mtimeMs'
-  | 'frontmatter___featuredimage___ctimeMs'
-  | 'frontmatter___featuredimage___atime'
-  | 'frontmatter___featuredimage___mtime'
-  | 'frontmatter___featuredimage___ctime'
-  | 'frontmatter___featuredimage___birthtime'
-  | 'frontmatter___featuredimage___birthtimeMs'
-  | 'frontmatter___featuredimage___blksize'
-  | 'frontmatter___featuredimage___blocks'
-  | 'frontmatter___featuredimage___publicURL'
-  | 'frontmatter___featuredimage___childrenImageSharp'
-  | 'frontmatter___featuredimage___childrenImageSharp___gatsbyImageData'
-  | 'frontmatter___featuredimage___childrenImageSharp___id'
-  | 'frontmatter___featuredimage___childrenImageSharp___children'
-  | 'frontmatter___featuredimage___childImageSharp___gatsbyImageData'
-  | 'frontmatter___featuredimage___childImageSharp___id'
-  | 'frontmatter___featuredimage___childImageSharp___children'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___id'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___excerpt'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___rawMarkdownBody'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___fileAbsolutePath'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___html'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___htmlAst'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___excerptAst'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___headings'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___timeToRead'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___tableOfContents'
-  | 'frontmatter___featuredimage___childrenMarkdownRemark___children'
-  | 'frontmatter___featuredimage___childMarkdownRemark___id'
-  | 'frontmatter___featuredimage___childMarkdownRemark___excerpt'
-  | 'frontmatter___featuredimage___childMarkdownRemark___rawMarkdownBody'
-  | 'frontmatter___featuredimage___childMarkdownRemark___fileAbsolutePath'
-  | 'frontmatter___featuredimage___childMarkdownRemark___html'
-  | 'frontmatter___featuredimage___childMarkdownRemark___htmlAst'
-  | 'frontmatter___featuredimage___childMarkdownRemark___excerptAst'
-  | 'frontmatter___featuredimage___childMarkdownRemark___headings'
-  | 'frontmatter___featuredimage___childMarkdownRemark___timeToRead'
-  | 'frontmatter___featuredimage___childMarkdownRemark___tableOfContents'
-  | 'frontmatter___featuredimage___childMarkdownRemark___children'
-  | 'frontmatter___featuredimage___id'
-  | 'frontmatter___featuredimage___parent___id'
-  | 'frontmatter___featuredimage___parent___children'
-  | 'frontmatter___featuredimage___children'
-  | 'frontmatter___featuredimage___children___id'
-  | 'frontmatter___featuredimage___children___children'
-  | 'frontmatter___featuredimage___internal___content'
-  | 'frontmatter___featuredimage___internal___contentDigest'
-  | 'frontmatter___featuredimage___internal___description'
-  | 'frontmatter___featuredimage___internal___fieldOwners'
-  | 'frontmatter___featuredimage___internal___ignoreType'
-  | 'frontmatter___featuredimage___internal___mediaType'
-  | 'frontmatter___featuredimage___internal___owner'
-  | 'frontmatter___featuredimage___internal___type'
-  | 'frontmatter___description'
   | 'frontmatter___subtitle'
   | 'excerpt'
   | 'rawMarkdownBody'
@@ -3748,29 +3582,41 @@ export type SiteMetadataQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type SiteMetadataQuery = { site?: { siteMetadata?: { title?: string | null | undefined, description?: string | null | undefined } | null | undefined } | null | undefined };
 
-export type BlogGridQueryVariables = Exact<{ [key: string]: never; }>;
+export type ArticlesIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BlogGridQuery = { allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, featuredPost?: boolean | null | undefined, tags?: Array<string | null | undefined> | null | undefined, templateKey?: string | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+export type ArticlesIndexQuery = { allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, type?: string | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
 
-export type TagsQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type TagsQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
-
-export type BlogPostByIdQueryVariables = Exact<{
+export type ArticleByIdQueryVariables = Exact<{
   id: Scalars['String'];
 }>;
 
 
-export type BlogPostByIdQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, description?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
+export type ArticleByIdQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
 
-export type TagPageQueryVariables = Exact<{
+export type CategoriesIndexQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type CategoriesIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
+
+export type CategorySingleQueryVariables = Exact<{
+  category?: InputMaybe<Scalars['String']>;
+}>;
+
+
+export type CategorySingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { title?: string | null | undefined } | null | undefined } }> } };
+
+export type TagsIndexQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type TagsIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
+
+export type TagSingleQueryVariables = Exact<{
   tag?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type TagPageQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { title?: string | null | undefined } | null | undefined } }> } };
+export type TagSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { title?: string | null | undefined } | null | undefined } }> } };
 
 export type GatsbyImageSharpFixedFragment = { base64?: string | null | undefined, width: number, height: number, src: string, srcSet: string };
 

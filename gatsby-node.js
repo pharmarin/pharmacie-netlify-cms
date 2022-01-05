@@ -1,16 +1,34 @@
-const _ = require("lodash");
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+const { uniq, get, kebabCase, map } = require("lodash");
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      alias: {
-        "@components": path.resolve(__dirname, "src/components"),
-        "@containers": path.resolve(__dirname, "src/containers"),
+const generateTaxonomies = ({ createPage, posts, taxonomySlug }) => {
+  let taxonomies = [];
+
+  posts.forEach((edge) => {
+    if (get(edge, `node.frontmatter.${taxonomySlug}`)) {
+      taxonomies = taxonomies.concat(edge.node.frontmatter[taxonomySlug]);
+    }
+  });
+
+  taxonomies = uniq(taxonomies);
+
+  taxonomies.forEach((taxonomy) => {
+    const taxonomyPath = `/${taxonomySlug}/${kebabCase(taxonomy)}/`;
+
+    createPage({
+      path: taxonomyPath,
+      component: path.resolve(`src/containers/${taxonomySlug}/Single.tsx`),
+      context: {
+        taxonomy,
       },
-    },
+    });
+  });
+
+  createPage({
+    path: `/${taxonomySlug}`,
+    component: path.resolve(`src/containers/${taxonomySlug}/Index.tsx`),
   });
 };
 
@@ -27,8 +45,9 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
+              categories
               tags
-              templateKey
+              type
             }
           }
         }
@@ -41,49 +60,33 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges;
+    const postTypes = uniq(map(posts, "edge.node.frontmatter.type"));
 
     posts.forEach((edge) => {
       const id = edge.node.id;
 
-      switch (String(edge.node.frontmatter.templateKey)) {
-        case "blog-post":
-          createPage({
-            path: edge.node.fields.slug,
-            tags: edge.node.frontmatter.tags,
-            component: path.resolve(`src/templates/blog-post.tsx`),
-            context: {
-              id,
-            },
-          });
-          break;
-        default:
-          break;
-      }
+      edge.node.frontmatter.type &&
+        createPage({
+          path: `/${edge.node.frontmatter.type}s${edge.node.fields.slug}`,
+          component: path.resolve(
+            `src/containers/${edge.node.frontmatter.type}s/Single.tsx`
+          ),
+          context: {
+            id,
+          },
+        });
     });
 
-    // Tag pages:
-    let tags = [];
-    // Iterate through each post, putting all found tags into `tags`
-    posts.forEach((edge) => {
-      if (_.get(edge, `node.frontmatter.tags`)) {
-        tags = tags.concat(edge.node.frontmatter.tags);
-      }
+    postTypes.forEach((postType) => {
+      postType &&
+        createPage({
+          path: `/${postType}s`,
+          component: path.resolve(`src/containers/${postType}s/Index.tsx`),
+        });
     });
-    // Eliminate duplicate tags
-    tags = _.uniq(tags);
 
-    // Make tag pages
-    tags.forEach((tag) => {
-      const tagPath = `/tags/${_.kebabCase(tag)}/`;
-
-      createPage({
-        path: tagPath,
-        component: path.resolve(`src/templates/tags.tsx`),
-        context: {
-          tag,
-        },
-      });
-    });
+    generateTaxonomies({ createPage, posts, taxonomySlug: "tags" });
+    generateTaxonomies({ createPage, posts, taxonomySlug: "categories" });
   });
 };
 

@@ -1,21 +1,8 @@
-import Layout from "components/Layout";
-import BlogGrid from "containers/blog/BlogGrid";
+import ArticlesIndexContainer from "containers/articles/Index";
 import React from "react";
 
-export const IndexPageTemplate = () => {
-  return (
-    <div id="index">
-      <BlogGrid />
-    </div>
-  );
-};
-
 const IndexPage = () => {
-  return (
-    <Layout>
-      <IndexPageTemplate />
-    </Layout>
-  );
+  return <ArticlesIndexContainer />;
 };
 
 export default IndexPage;
