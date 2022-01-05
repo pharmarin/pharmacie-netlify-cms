@@ -1,22 +1,21 @@
 ---
-title: Coaching Pileje
 author: Marin
 type: article
+title: Coaching Pileje
 date: 2021-07-09T14:11:20+00:00
-url: /coaching-pileje/
 featuredImage: /img/blog/image-7.png
+url: /coaching-pileje/
 categories:
   - Formations phytothérapie et aromathérapie
 tags:
   - Formation comptoir
   - Pilèje
 ---
-
 ## Les 5 points du conseil associé à l'ordonnance
 
 1. Conseiller dans l'ordre de l'ordonnance et au fur et à mesure (ne pas attendre la fin de l'ordonnance pour commencer à expliquer les produits)
-2. Utiliser un langage impératif : « *Je vous conseille* » ou « *Je vous recommande* » mais pas « <s>_Ça serait bien de_</s> » ou « <s>_Vous risquez de_</s>«
-3. Poser des questions ouvertes : « *Comment ça se passe avec votre traitement ?* » ou « *Vous en êtes où dans vos cures de magnésium ?*«
+2. Utiliser un langage impératif : « *Je vous conseille* » ou « *Je vous recommande* » mais pas « <s>*Ça serait bien de*</s> » ou « <s>*Vous risquez de*</s> »
+3. Poser des questions ouvertes : « *Comment ça se passe avec votre traitement ?* » ou « *Vous en êtes où dans vos cures de magnésium ?* »
 4. Reformuler
 5. Conseiller sans a priori
 
