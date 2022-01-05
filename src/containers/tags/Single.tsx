@@ -58,7 +58,7 @@ export const query = graphql`
                 gatsbyImageData(width: 400, quality: 100, layout: CONSTRAINED)
               }
             }
-            tag
+            tags
             title
           }
         }
