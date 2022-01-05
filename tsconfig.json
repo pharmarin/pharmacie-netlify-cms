@@ -10,9 +10,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./build",
-    "paths": {
-      "*": ["types/*", "*"]
-    },
     "plugins": [
       {
         "name": "typescript-styled-plugin"
@@ -21,5 +18,5 @@
     "target": "es2015"
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules/*", "public/*"]
+  "exclude": ["node_modules/*", "public/*", ".cache/*"]
 }
