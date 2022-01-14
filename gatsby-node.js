@@ -42,7 +42,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             id
             fields {
-              slug
+              link
             }
             frontmatter {
               categories
@@ -67,9 +67,9 @@ exports.createPages = ({ actions, graphql }) => {
 
       edge.node.frontmatter.type &&
         createPage({
-          path: `/${edge.node.fields.slug}`,
+          path: edge.node.fields.link,
           component: path.resolve(
-            `src/containers/${edge.node.frontmatter.type}s/Single.tsx`
+            `src/containers/${edge.node.frontmatter.type}/Single.tsx`
           ),
           context: {
             id,
@@ -80,8 +80,8 @@ exports.createPages = ({ actions, graphql }) => {
     postTypes.forEach((postType) => {
       postType &&
         createPage({
-          path: `/${postType}s`,
-          component: path.resolve(`src/containers/${postType}s/Index.tsx`),
+          path: `/${postType}`,
+          component: path.resolve(`src/containers/${postType}/Index.tsx`),
         });
     });
 
@@ -95,12 +95,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   fmImagesToRelative(node); // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value =
-      node.frontmatter.type + "s" + createFilePath({ node, getNode });
+    const slug = createFilePath({ node, getNode });
     createNodeField({
-      name: `slug`,
+      name: "link",
       node,
-      value,
+      value: `/${node.frontmatter.type}${slug}`,
     });
   }
 };

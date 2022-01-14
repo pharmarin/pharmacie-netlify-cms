@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Equilibre acide-base (Atelier micronutrition)"
 date: "2019-02-18"
 categories:

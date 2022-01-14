@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Sevrage tabagique"
 date: "2021-03-09"
 featuredImage: "/images/posts/arret-tabac-hypnose-bordeaux.jpg"

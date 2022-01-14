@@ -21,7 +21,7 @@ const TagSingle: React.FC<{ data: TagSingleQuery; pageContext: any }> = ({
           id: post.node.id,
           categories: post.node.frontmatter.categories,
           featuredImage: post.node.frontmatter.featuredImage as File,
-          link: post.node.fields.slug,
+          link: post.node.fields.link,
           tags: post.node.frontmatter.tags,
           title: post.node.frontmatter.title,
         }))}
@@ -49,7 +49,7 @@ export const query = graphql`
         node {
           id
           fields {
-            slug
+            link
           }
           frontmatter {
             categories

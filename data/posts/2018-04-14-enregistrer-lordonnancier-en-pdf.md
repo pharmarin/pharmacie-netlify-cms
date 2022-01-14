@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Enregistrer l'ordonnancier en PDF"
 date: "2018-04-14"
 categories:

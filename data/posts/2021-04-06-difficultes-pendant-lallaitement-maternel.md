@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Difficultés pendant l'allaitement maternel"
 date: "2021-04-06"
 featuredImage: "/images/posts/image.jpeg"

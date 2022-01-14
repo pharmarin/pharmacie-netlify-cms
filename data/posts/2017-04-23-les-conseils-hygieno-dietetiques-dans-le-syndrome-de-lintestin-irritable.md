@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Les conseils hygiéno-diététiques dans le syndrome de l'intestin irritable"
 date: "2017-04-23"
 categories:

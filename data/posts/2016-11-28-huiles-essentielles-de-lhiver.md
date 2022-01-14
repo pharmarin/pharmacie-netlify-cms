@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Huiles essentielles de l'hiver"
 date: "2016-11-28"
 categories:

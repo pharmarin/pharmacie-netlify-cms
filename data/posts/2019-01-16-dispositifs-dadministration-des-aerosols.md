@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Dispositifs d'administration des aérosols"
 date: "2019-01-16"
 categories:

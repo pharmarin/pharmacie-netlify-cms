@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Idées pour ma pharmacie..."
 date: "2018-11-10"
 featuredImage: "/images/posts/visuel_201.jpg"

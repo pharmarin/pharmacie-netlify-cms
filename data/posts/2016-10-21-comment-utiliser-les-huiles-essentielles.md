@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Comment utiliser les huiles essentielles ?"
 date: "2016-10-21"
 categories:

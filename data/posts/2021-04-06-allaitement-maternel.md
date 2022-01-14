@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Allaitement maternel"
 date: "2021-04-06"
 featuredImage: "/images/posts/image-1.jpeg"

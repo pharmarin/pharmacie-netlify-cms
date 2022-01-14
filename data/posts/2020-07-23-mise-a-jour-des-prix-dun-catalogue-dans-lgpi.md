@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Mise à jour des prix d'un catalogue dans LGPI"
 date: "2020-07-23"
 categories:

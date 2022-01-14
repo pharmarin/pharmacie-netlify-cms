@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Conseil aroma – Grippe, Maux de gorge, Rhume"
 date: "2017-05-30"
 categories:

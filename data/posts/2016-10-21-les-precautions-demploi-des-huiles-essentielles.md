@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Les précautions d'emploi des huiles essentielles"
 date: "2016-10-21"
 categories:

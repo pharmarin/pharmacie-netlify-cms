@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Bien choisir ses acides gras"
 date: "2018-11-13"
 categories:

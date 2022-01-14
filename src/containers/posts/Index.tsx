@@ -14,7 +14,7 @@ export const PostsIndex: React.FC<{ data: PostsIndexQuery }> = ({ data }) => {
         id: post.node.id,
         categories: post.node.frontmatter.categories,
         featuredImage: post.node.frontmatter.featuredImage as File,
-        link: post.node.fields.slug,
+        link: post.node.fields.link,
         tags: post.node.frontmatter.tags,
         title: post.node.frontmatter.title,
       }))}
@@ -32,14 +32,14 @@ const PostsIndexContainer = () => {
       }
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { type: { eq: "post" } } }
+        filter: { frontmatter: { type: { eq: "posts" } } }
       ) {
         edges {
           node {
             excerpt(pruneLength: 400)
             id
             fields {
-              slug
+              link
             }
             frontmatter {
               categories
@@ -60,7 +60,7 @@ const PostsIndexContainer = () => {
 
   return (
     <Layout>
-      <Helmet title={`posts | ${site.siteMetadata.title}`} />
+      <Helmet title={`Articles | ${site.siteMetadata.title}`} />
       <PostsIndex data={data} />
     </Layout>
   );

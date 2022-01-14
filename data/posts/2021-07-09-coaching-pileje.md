@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Coaching Pileje"
 date: "2021-07-09"
 categories:

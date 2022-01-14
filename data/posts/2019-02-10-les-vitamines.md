@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "posts"
 title: "Les Vitamines"
 date: "2019-02-10"
 categories:
