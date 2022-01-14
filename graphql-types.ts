@@ -671,16 +671,11 @@ export type MarkdownRemarkTableOfContentsArgs = {
 
 export type MarkdownRemarkFrontmatter = {
   title?: Maybe<Scalars['String']>;
-  author?: Maybe<Scalars['String']>;
   type?: Maybe<Scalars['String']>;
   date?: Maybe<Scalars['Date']>;
-  url?: Maybe<Scalars['String']>;
-  conseils_source?: Maybe<Array<Maybe<Scalars['Int']>>>;
   categories?: Maybe<Array<Maybe<Scalars['String']>>>;
   tags?: Maybe<Array<Maybe<Scalars['String']>>>;
   featuredImage?: Maybe<File>;
-  excerpt?: Maybe<Scalars['String']>;
-  subtitle?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 
@@ -1141,16 +1136,11 @@ export type MarkdownRemarkFilterInput = {
 
 export type MarkdownRemarkFrontmatterFilterInput = {
   title?: InputMaybe<StringQueryOperatorInput>;
-  author?: InputMaybe<StringQueryOperatorInput>;
   type?: InputMaybe<StringQueryOperatorInput>;
   date?: InputMaybe<DateQueryOperatorInput>;
-  url?: InputMaybe<StringQueryOperatorInput>;
-  conseils_source?: InputMaybe<IntQueryOperatorInput>;
   categories?: InputMaybe<StringQueryOperatorInput>;
   tags?: InputMaybe<StringQueryOperatorInput>;
   featuredImage?: InputMaybe<FileFilterInput>;
-  excerpt?: InputMaybe<StringQueryOperatorInput>;
-  subtitle?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type FileFilterInput = {
@@ -1452,11 +1442,8 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark'
   | 'childrenMarkdownRemark___id'
   | 'childrenMarkdownRemark___frontmatter___title'
-  | 'childrenMarkdownRemark___frontmatter___author'
   | 'childrenMarkdownRemark___frontmatter___type'
   | 'childrenMarkdownRemark___frontmatter___date'
-  | 'childrenMarkdownRemark___frontmatter___url'
-  | 'childrenMarkdownRemark___frontmatter___conseils_source'
   | 'childrenMarkdownRemark___frontmatter___categories'
   | 'childrenMarkdownRemark___frontmatter___tags'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___sourceInstanceName'
@@ -1497,8 +1484,6 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___featuredImage___childrenMarkdownRemark'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___id'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___children'
-  | 'childrenMarkdownRemark___frontmatter___excerpt'
-  | 'childrenMarkdownRemark___frontmatter___subtitle'
   | 'childrenMarkdownRemark___excerpt'
   | 'childrenMarkdownRemark___rawMarkdownBody'
   | 'childrenMarkdownRemark___fileAbsolutePath'
@@ -1554,11 +1539,8 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___internal___type'
   | 'childMarkdownRemark___id'
   | 'childMarkdownRemark___frontmatter___title'
-  | 'childMarkdownRemark___frontmatter___author'
   | 'childMarkdownRemark___frontmatter___type'
   | 'childMarkdownRemark___frontmatter___date'
-  | 'childMarkdownRemark___frontmatter___url'
-  | 'childMarkdownRemark___frontmatter___conseils_source'
   | 'childMarkdownRemark___frontmatter___categories'
   | 'childMarkdownRemark___frontmatter___tags'
   | 'childMarkdownRemark___frontmatter___featuredImage___sourceInstanceName'
@@ -1599,8 +1581,6 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___featuredImage___childrenMarkdownRemark'
   | 'childMarkdownRemark___frontmatter___featuredImage___id'
   | 'childMarkdownRemark___frontmatter___featuredImage___children'
-  | 'childMarkdownRemark___frontmatter___excerpt'
-  | 'childMarkdownRemark___frontmatter___subtitle'
   | 'childMarkdownRemark___excerpt'
   | 'childMarkdownRemark___rawMarkdownBody'
   | 'childMarkdownRemark___fileAbsolutePath'
@@ -3342,11 +3322,8 @@ export type MarkdownRemarkEdge = {
 export type MarkdownRemarkFieldsEnum =
   | 'id'
   | 'frontmatter___title'
-  | 'frontmatter___author'
   | 'frontmatter___type'
   | 'frontmatter___date'
-  | 'frontmatter___url'
-  | 'frontmatter___conseils_source'
   | 'frontmatter___categories'
   | 'frontmatter___tags'
   | 'frontmatter___featuredImage___sourceInstanceName'
@@ -3427,8 +3404,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___featuredImage___internal___mediaType'
   | 'frontmatter___featuredImage___internal___owner'
   | 'frontmatter___featuredImage___internal___type'
-  | 'frontmatter___excerpt'
-  | 'frontmatter___subtitle'
   | 'excerpt'
   | 'rawMarkdownBody'
   | 'fileAbsolutePath'
@@ -3582,18 +3557,6 @@ export type SiteMetadataQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type SiteMetadataQuery = { site?: { siteMetadata?: { title?: string | null | undefined, description?: string | null | undefined } | null | undefined } | null | undefined };
 
-export type ArticlesIndexQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type ArticlesIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
-
-export type ArticleByIdQueryVariables = Exact<{
-  id: Scalars['String'];
-}>;
-
-
-export type ArticleByIdQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
-
 export type CategoryIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3605,6 +3568,18 @@ export type CategorySingleQueryVariables = Exact<{
 
 
 export type CategorySingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+
+export type PostsIndexQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type PostsIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+
+export type PostByIdQueryVariables = Exact<{
+  id: Scalars['String'];
+}>;
+
+
+export type PostByIdQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
 
 export type TagsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 

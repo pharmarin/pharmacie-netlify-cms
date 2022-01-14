@@ -3,6 +3,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import { groupBy, kebabCase } from "lodash";
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import { CategoryIndexQuery } from "../../../graphql-types";
 
 const CategoryIndex = () => {
   const { allMarkdownRemark, site } =

@@ -13,9 +13,9 @@ media_folder: static/img/blog
 public_folder: /img
 
 collections:
-  - name: "articles"
+  - name: "posts"
     label: "Articles"
-    folder: "data/articles"
+    folder: "data/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
