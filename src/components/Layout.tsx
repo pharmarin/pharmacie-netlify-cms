@@ -5,7 +5,10 @@ import "styles/global.css";
 import Navbar from "./Navbar";
 import useSiteMetadata from "./SiteMetadata";
 
-const TemplateWrapper: React.FC = ({ children }) => {
+const TemplateWrapper: React.FC<{ className?: string }> = ({
+  children,
+  className,
+}) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -48,7 +51,9 @@ const TemplateWrapper: React.FC = ({ children }) => {
         />
       </Helmet>
       <Navbar />
-      <div className="container mx-auto px-4 mb-4">{children}</div>
+      <div className={"container mx-auto px-4 mb-4 " + className}>
+        {children}
+      </div>
     </div>
   );
 };

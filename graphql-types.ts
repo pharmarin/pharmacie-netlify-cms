@@ -3585,7 +3585,7 @@ export type SiteMetadataQuery = { site?: { siteMetadata?: { title?: string | nul
 export type ArticlesIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ArticlesIndexQuery = { allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+export type ArticlesIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { slug?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
 
 export type ArticleByIdQueryVariables = Exact<{
   id: Scalars['String'];
@@ -3594,10 +3594,10 @@ export type ArticleByIdQueryVariables = Exact<{
 
 export type ArticleByIdQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
 
-export type CategoriesIndexQueryVariables = Exact<{ [key: string]: never; }>;
+export type CategoryIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type CategoriesIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
+export type CategoryIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
 
 export type CategorySingleQueryVariables = Exact<{
   category?: InputMaybe<Scalars['String']>;

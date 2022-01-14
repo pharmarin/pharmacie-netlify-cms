@@ -2,6 +2,7 @@ import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import { Helmet } from "react-helmet";
 import { ArticlesIndexQuery, File } from "../../../graphql-types";
 
 export const ArticlesIndex: React.FC<{ data: ArticlesIndexQuery }> = ({
@@ -24,8 +25,13 @@ export const ArticlesIndex: React.FC<{ data: ArticlesIndexQuery }> = ({
 };
 
 const ArticlesIndexContainer = () => {
-  const data = useStaticQuery<ArticlesIndexQuery>(graphql`
+  const { site, ...data } = useStaticQuery<ArticlesIndexQuery>(graphql`
     query ArticlesIndex {
+      site {
+        siteMetadata {
+          title
+        }
+      }
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         filter: { frontmatter: { type: { eq: "article" } } }
@@ -56,6 +62,7 @@ const ArticlesIndexContainer = () => {
 
   return (
     <Layout>
+      <Helmet title={`Articles | ${site.siteMetadata.title}`} />
       <ArticlesIndex data={data} />
     </Layout>
   );

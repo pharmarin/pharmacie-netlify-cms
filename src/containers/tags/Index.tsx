@@ -1,58 +1,53 @@
 import Layout from "components/Layout";
-import { graphql, Link, PageProps } from "gatsby";
-import { kebabCase } from "lodash";
+import { graphql, Link, useStaticQuery } from "gatsby";
+import { groupBy, kebabCase } from "lodash";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { TagsIndexQuery } from "../../../graphql-types";
 
-const TagsIndex: React.FC<PageProps<TagsIndexQuery>> = ({
-  data: {
-    allMarkdownRemark: { group },
-    site: {
-      siteMetadata: { title },
-    },
-  },
-}) => (
-  <Layout>
-    <section className="section">
-      <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: "6rem" }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
-              {group.map((tag) => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
+const TagsIndex = () => {
+  const { allMarkdownRemark, site } = useStaticQuery<TagsIndexQuery>(graphql`
+    query TagsIndex {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+      allMarkdownRemark(limit: 1000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+          totalCount
+        }
+      }
+    }
+  `);
+
+  return (
+    <Layout>
+      <Helmet title={`Tags | ${site.siteMetadata.title}`} />
+
+      <h1>Tags</h1>
+      <div className="flex flex-row flex-wrap space-x-4">
+        {Object.entries(
+          groupBy(allMarkdownRemark.group, (tag) =>
+            tag.fieldValue?.[0].toUpperCase()
+          )
+        ).map(([letter, tags]) => (
+          <div className="flex items-end">
+            <h2 className="mr-2 text-3xl">{letter}</h2>
+            {tags.map((tag) => (
+              <Link
+                to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                className="mr-5 whitespace-nowrap"
+              >
+                {tag.fieldValue} ({tag.totalCount})
+              </Link>
+            ))}
           </div>
-        </div>
+        ))}
       </div>
-    </section>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default TagsIndex;
-
-export const query = graphql`
-  query TagsIndex {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(limit: 1000) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
-    }
-  }
-`;
