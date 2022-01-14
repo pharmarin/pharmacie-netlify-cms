@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
+  /* h1 {
     @apply text-3xl font-bold mb-1;
   }
 
@@ -33,8 +33,8 @@
   h4:not(:first-child),
   h5:not(:first-child),
   h6:not(:first-child) {
-    @apply mt-2;
-  }
+    @apply mt-8;
+  } */
 
   ul {
     @apply list-disc list-inside;
