@@ -1,6 +1,5 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
-const { fmImagesToRelative } = require("gatsby-remark-relative-images");
 const { uniq, get, kebabCase, map } = require("lodash");
 
 const generateTaxonomies = ({ createPage, posts, taxonomySlug }) => {
@@ -92,7 +91,6 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-  fmImagesToRelative(node); // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode });
