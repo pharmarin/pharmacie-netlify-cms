@@ -3,7 +3,7 @@ type: "posts"
 title: "Aérosol thérapie"
 date: "2019-07-25"
 categories:
-  - "formations-materiel"
+  - "Formations matériel"
   - "formations-medicaments"
 featuredImage: "/images/posts/image-7.png"
 ---

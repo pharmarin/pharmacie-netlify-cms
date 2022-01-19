@@ -3,11 +3,11 @@ type: "posts"
 title: "Conseil aroma – Grippe, Maux de gorge, Rhume"
 date: "2017-05-30"
 categories:
-  - "fiches-patient"
-  - "formations-phytotherapie-et-aromatherapie"
+  - "Fiches patient"
+  - "Formations phytothérapie et aromathérapie"
 tags:
-  - "fiche-conseil"
-  - "pharmacie-dumont"
+  - "Fiche conseil"
+  - "Pharmacie Dumont"
 ---
 
 # Grippe et symptômes grippaux

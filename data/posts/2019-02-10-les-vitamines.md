@@ -3,10 +3,10 @@ type: "posts"
 title: "Les Vitamines"
 date: "2019-02-10"
 categories:
-  - "formations-alimentation"
+  - "Formations alimentation"
 tags:
-  - "micronutrition"
-  - "vitamines"
+  - "Micronutrition"
+  - "Vitamines"
 featuredImage: "/images/posts/image.png"
 ---
 

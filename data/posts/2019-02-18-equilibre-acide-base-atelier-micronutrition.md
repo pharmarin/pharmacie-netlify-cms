@@ -3,12 +3,12 @@ type: "posts"
 title: "Equilibre acide-base (Atelier micronutrition)"
 date: "2019-02-18"
 categories:
-  - "formations-alimentation"
+  - "Formations alimentation"
 tags:
-  - "atelier"
-  - "equilibre-acido-basique"
-  - "formation-soiree"
-  - "micronutrition"
+  - "Atelier"
+  - "Équilibre acido-basique"
+  - "Formation soirée"
+  - "Micronutrition"
 featuredImage: "/images/posts/3_pc_05i01.png"
 ---
 

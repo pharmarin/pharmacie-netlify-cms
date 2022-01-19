@@ -3,9 +3,9 @@ type: "posts"
 title: "Mise à jour des prix d'un catalogue dans LGPI"
 date: "2020-07-23"
 categories:
-  - "formations-logiciel"
+  - "Formations logiciel"
 tags:
-  - "lgpi"
+  - "LGPI"
 featuredImage: "/images/posts/850x523_formation_reunion.png"
 ---
 

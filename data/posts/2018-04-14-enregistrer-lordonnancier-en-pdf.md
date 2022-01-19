@@ -3,10 +3,10 @@ type: "posts"
 title: "Enregistrer l'ordonnancier en PDF"
 date: "2018-04-14"
 categories:
-  - "formations-logiciel"
+  - "Formations logiciel"
 tags:
-  - "lgpi"
-  - "pharmacie-du-port"
+  - "LGPI"
+  - "Pharmacie du port"
   - "stupefiants"
 featuredImage: "/images/posts/enregistrement.jpg"
 ---

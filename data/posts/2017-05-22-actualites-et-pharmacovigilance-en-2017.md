@@ -6,8 +6,8 @@ categories:
   - "formations-medicaments"
   - "formations-pathologie"
 tags:
-  - "pharmacovigilance"
-  - "utip"
+  - "Pharmacovigilance"
+  - "UTIP"
 ---
 
 ## Résumé de l'an dernier

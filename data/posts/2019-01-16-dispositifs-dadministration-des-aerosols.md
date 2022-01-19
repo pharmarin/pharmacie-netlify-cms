@@ -6,7 +6,7 @@ categories:
   - "formations-medicaments"
   - "non-classe"
 tags:
-  - "dispositifs"
+  - "Dispositifs"
 featuredImage: "/images/posts/image-8.png"
 ---
 

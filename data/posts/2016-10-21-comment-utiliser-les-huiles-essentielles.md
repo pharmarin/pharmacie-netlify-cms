@@ -3,9 +3,9 @@ type: "posts"
 title: "Comment utiliser les huiles essentielles ?"
 date: "2016-10-21"
 categories:
-  - "formations-phytotherapie-et-aromatherapie"
+  - "Formations phytothérapie et aromathérapie"
 tags:
-  - "huiles-essentielles"
+  - "Huiles essentielles"
 ---
 
 ## A. Voie cutanée

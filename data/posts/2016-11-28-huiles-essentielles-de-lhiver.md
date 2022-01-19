@@ -3,11 +3,11 @@ type: "posts"
 title: "Huiles essentielles de l'hiver"
 date: "2016-11-28"
 categories:
-  - "formations-phytotherapie-et-aromatherapie"
+  - "Formations phytothérapie et aromathérapie"
 tags:
-  - "huiles-essentielles"
-  - "pathologies-hivernales"
-  - "utip"
+  - "Huiles essentielles"
+  - "Pathologies hivernales"
+  - "UTIP"
 ---
 
 ## A. Anti-infectieuses et immunostimulantes

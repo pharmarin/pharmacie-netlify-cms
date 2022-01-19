@@ -3,11 +3,11 @@ type: "posts"
 title: "Les conseils hygiéno-diététiques dans le syndrome de l'intestin irritable"
 date: "2017-04-23"
 categories:
-  - "fiches-patient"
+  - "Fiches patient"
 tags:
-  - "alimentation"
-  - "colon-irritable"
-  - "probiotiques"
+  - "Alimentation"
+  - "Colon irritable"
+  - "Probiotiques"
 ---
 
 _Élaboré par Susana Reula (nutritionniste), Bernard Gunberg, Patrick Delasalle, Guillaume Bonnaud, Pierre-Adrien Dalbiès, Jerry Pichot, Jean-Christophe Létard, Commission de Nutrition du Club de Réflexion des Cabinets et Groupes d'Hépato-Entérologie_

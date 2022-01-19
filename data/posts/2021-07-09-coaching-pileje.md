@@ -3,10 +3,10 @@ type: "posts"
 title: "Coaching Pileje"
 date: "2021-07-09"
 categories:
-  - "formations-phytotherapie-et-aromatherapie"
+  - "Formations phytothérapie et aromathérapie"
 tags:
-  - "formation-comptoir"
-  - "pileje"
+  - "Formation comptoir"
+  - "PiLèJe"
 featuredImage: "/images/posts/image-7.png"
 ---
 

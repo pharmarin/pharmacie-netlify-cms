@@ -3,8 +3,8 @@ type: "posts"
 title: "Bien choisir ses acides gras"
 date: "2018-11-13"
 categories:
-  - "fiches-patient"
-  - "formations-alimentation"
+  - "Fiches patient"
+  - "Formations alimentation"
 featuredImage: "/images/posts/image-4.png"
 ---
 
