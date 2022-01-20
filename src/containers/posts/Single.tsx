@@ -1,14 +1,15 @@
 import Categories from "components/Categories";
 import Content, { HTMLContent } from "components/Content";
 import Layout from "components/Layout";
+import SingleTitle from "components/SingleTitle";
 import TagList from "components/TagList";
 import { graphql, PageProps } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import { Helmet } from "react-helmet";
-import { File, PostByIDQuery } from "../../../graphql-types";
+import { File, PostsSingleQuery } from "../../../graphql-types";
 
-export const PostSingle: React.FC<{
+export const PostsSingle: React.FC<{
   categories?: string[];
   content?: string;
   contentComponent?: typeof HTMLContent;
@@ -49,16 +50,7 @@ export const PostSingle: React.FC<{
           </div>
           <div className="w-full">
             <section className="article-content w-full space-y-8">
-              <div className="flex flex-col relative sm:-mx-4">
-                <div className="absolute h-full w-full rounded-2xl bg-gray-300 transform -rotate-3"></div>
-                <div className="absolute h-full w-full rounded-2xl bg-gradient-to-br from-green-500 to-teal-400 transform -rotate-1"></div>
-                <div className="relative p-4 pb-1">
-                  <h1 className="text-2xl text-white font-bold">{title}</h1>
-                  <p className="text-sm text-green-900">
-                    Posté le <time dateTime={date}>{date}</time>
-                  </p>
-                </div>
-              </div>
+              <SingleTitle date={date} title={title} />
               <Categories categories={categories} />
               <PostContent
                 className="article-body w-full prose"
@@ -73,19 +65,21 @@ export const PostSingle: React.FC<{
   );
 };
 
-const PostSingleContainer: React.FC<PageProps<PostByIDQuery>> = ({ data }) => {
+const PostsSingleContainer: React.FC<PageProps<PostsSingleQuery>> = ({
+  data,
+}) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <PostSingle
+      <PostsSingle
         categories={post.frontmatter.categories}
         content={post.html}
         contentComponent={HTMLContent}
         date={post.frontmatter.date}
         featuredImage={post.frontmatter.featuredImage as File}
         helmet={
-          <Helmet titleTemplate="%s | posts">
+          <Helmet titleTemplate="Articles | %s">
             <title>{`${post.frontmatter.title}`}</title>
           </Helmet>
         }
@@ -97,10 +91,10 @@ const PostSingleContainer: React.FC<PageProps<PostByIDQuery>> = ({ data }) => {
   );
 };
 
-export default PostSingleContainer;
+export default PostsSingleContainer;
 
 export const pageQuery = graphql`
-  query PostByID($id: String!) {
+  query PostsSingle($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

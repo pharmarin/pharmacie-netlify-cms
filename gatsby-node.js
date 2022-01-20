@@ -1,42 +1,34 @@
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
-const { uniq, get, kebabCase, map } = require("lodash");
+const { uniq, get, kebabCase, map, flatten } = require("lodash");
 
-const generateTaxonomies = ({ createPage, posts, taxonomySlug }) => {
-  let taxonomies = [];
-
-  posts.forEach((edge) => {
-    if (get(edge, `node.frontmatter.${taxonomySlug}`)) {
-      taxonomies = taxonomies.concat(edge.node.frontmatter[taxonomySlug]);
-    }
-  });
-
-  taxonomies = uniq(taxonomies);
-
-  taxonomies.forEach((taxonomy) => {
-    const taxonomyPath = `/${taxonomySlug}/${kebabCase(taxonomy)}/`;
-
-    createPage({
-      path: taxonomyPath,
-      component: path.resolve(`src/containers/${taxonomySlug}/Single.tsx`),
-      context: {
-        taxonomy,
-      },
-    });
-  });
-
-  createPage({
-    path: `/${taxonomySlug}`,
-    component: path.resolve(`src/containers/${taxonomySlug}/Index.tsx`),
-  });
-};
-
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  return graphql(`
+  const generateTaxonomies = ({ slug, list }) => {
+    const taxonomies = uniq(list);
+
+    taxonomies.forEach((taxonomy) => {
+      const taxonomyPath = `/${slug}/${kebabCase(taxonomy)}/`;
+
+      createPage({
+        path: taxonomyPath,
+        component: path.resolve(`src/containers/${slug}/Single.tsx`),
+        context: {
+          taxonomy,
+        },
+      });
+    });
+
+    createPage({
+      path: `/${slug}`,
+      component: path.resolve(`src/containers/${slug}/Index.tsx`),
+    });
+  };
+
+  const postsQuery = await graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allMarkdownRemark {
         edges {
           node {
             id
@@ -52,40 +44,88 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then((result) => {
-    if (result.errors) {
-      result.errors.forEach((e) => console.error(e.toString()));
-      return Promise.reject(result.errors);
+  `);
+
+  if (postsQuery.errors) {
+    postsQuery.errors.forEach((e) => console.error(e.toString()));
+    return Promise.reject(postsQuery.errors);
+  }
+
+  const posts = postsQuery.data.allMarkdownRemark.edges;
+  const postTypes = uniq(map(posts, "edge.node.frontmatter.type"));
+
+  posts.forEach((edge) => {
+    const id = edge.node.id;
+
+    edge.node.frontmatter.type &&
+      createPage({
+        path: edge.node.fields.link,
+        component: path.resolve(
+          `src/containers/${edge.node.frontmatter.type}/Single.tsx`
+        ),
+        context: {
+          id,
+        },
+      });
+  });
+
+  postTypes.forEach((postType) => {
+    postType &&
+      createPage({
+        path: `/${postType}`,
+        component: path.resolve(`src/containers/${postType}/Index.tsx`),
+      });
+  });
+
+  generateTaxonomies({
+    list: flatten(posts.map((post) => post.node.frontmatter.tags)),
+    slug: "tags",
+  });
+  generateTaxonomies({
+    list: flatten(posts.map((post) => post.node.frontmatter.categories)),
+    slug: "categories",
+  });
+
+  /**
+   * PRODUCTS
+   **/
+
+  const productsQuery = await graphql(`
+    {
+      allProductsJson {
+        nodes {
+          id
+          fields {
+            link
+          }
+          laboratoire
+        }
+      }
     }
+  `);
 
-    const posts = result.data.allMarkdownRemark.edges;
-    const postTypes = uniq(map(posts, "edge.node.frontmatter.type"));
+  if (productsQuery.errors) {
+    productsQuery.errors.forEach((e) => console.error(e.toString()));
+    return Promise.reject(productsQuery.errors);
+  }
 
-    posts.forEach((edge) => {
-      const id = edge.node.id;
+  const products = productsQuery.data.allProductsJson.nodes;
 
-      edge.node.frontmatter.type &&
-        createPage({
-          path: edge.node.fields.link,
-          component: path.resolve(
-            `src/containers/${edge.node.frontmatter.type}/Single.tsx`
-          ),
-          context: {
-            id,
-          },
-        });
+  products.forEach((product) => {
+    const { id, fields } = product;
+
+    createPage({
+      path: fields.link,
+      component: path.resolve(`src/containers/products/Single.tsx`),
+      context: {
+        id,
+      },
     });
+  });
 
-    postTypes.forEach((postType) => {
-      postType &&
-        createPage({
-          path: `/${postType}`,
-          component: path.resolve(`src/containers/${postType}/Index.tsx`),
-        });
-    });
-
-    generateTaxonomies({ createPage, posts, taxonomySlug: "tags" });
-    generateTaxonomies({ createPage, posts, taxonomySlug: "categories" });
+  generateTaxonomies({
+    list: products.map((product) => product.laboratoire),
+    slug: "laboratoires",
   });
 };
 
@@ -98,6 +138,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: "link",
       node,
       value: `/${node.frontmatter.type}${slug}`,
+    });
+  }
+
+  if (node.internal.type === "ProductsJson") {
+    const { laboratoire, title } = node;
+    createNodeField({
+      name: "link",
+      node,
+      value: `/products/${kebabCase(laboratoire)}/${kebabCase(title)}`,
     });
   }
 };

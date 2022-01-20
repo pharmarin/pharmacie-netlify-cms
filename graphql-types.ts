@@ -67,6 +67,10 @@ export type File = Node & {
   childrenMarkdownRemark?: Maybe<Array<Maybe<MarkdownRemark>>>;
   /** Returns the first child node of type MarkdownRemark or null if there are no children of given type on this node */
   childMarkdownRemark?: Maybe<MarkdownRemark>;
+  /** Returns all children nodes filtered by type ProductsJson */
+  childrenProductsJson?: Maybe<Array<Maybe<ProductsJson>>>;
+  /** Returns the first child node of type ProductsJson or null if there are no children of given type on this node */
+  childProductsJson?: Maybe<ProductsJson>;
   id: Scalars['ID'];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -690,6 +694,32 @@ export type MarkdownRemarkFields = {
   link?: Maybe<Scalars['String']>;
 };
 
+export type ProductsJson = Node & {
+  id: Scalars['ID'];
+  parent?: Maybe<Node>;
+  children: Array<Node>;
+  internal: Internal;
+  title?: Maybe<Scalars['String']>;
+  attributes?: Maybe<ProductsJsonAttributes>;
+  featuredImage?: Maybe<Scalars['String']>;
+  laboratoire?: Maybe<Scalars['String']>;
+  jsonId?: Maybe<Scalars['String']>;
+  fields?: Maybe<ProductsJsonFields>;
+};
+
+export type ProductsJsonAttributes = {
+  indication?: Maybe<Array<Maybe<Scalars['String']>>>;
+  composition?: Maybe<Array<Maybe<Scalars['String']>>>;
+  action?: Maybe<Array<Maybe<Scalars['String']>>>;
+  utilisation?: Maybe<Array<Maybe<Scalars['String']>>>;
+  avantages?: Maybe<Array<Maybe<Scalars['String']>>>;
+  conseils?: Maybe<Array<Maybe<Scalars['String']>>>;
+};
+
+export type ProductsJsonFields = {
+  link?: Maybe<Scalars['String']>;
+};
+
 export type Query = {
   file?: Maybe<File>;
   allFile: FileConnection;
@@ -709,6 +739,8 @@ export type Query = {
   allImageSharp: ImageSharpConnection;
   markdownRemark?: Maybe<MarkdownRemark>;
   allMarkdownRemark: MarkdownRemarkConnection;
+  productsJson?: Maybe<ProductsJson>;
+  allProductsJson: ProductsJsonConnection;
 };
 
 
@@ -751,6 +783,8 @@ export type QueryFileArgs = {
   childImageSharp?: InputMaybe<ImageSharpFilterInput>;
   childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
   childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
+  childrenProductsJson?: InputMaybe<ProductsJsonFilterListInput>;
+  childProductsJson?: InputMaybe<ProductsJsonFilterInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
@@ -972,6 +1006,28 @@ export type QueryAllMarkdownRemarkArgs = {
   limit?: InputMaybe<Scalars['Int']>;
 };
 
+
+export type QueryProductsJsonArgs = {
+  id?: InputMaybe<StringQueryOperatorInput>;
+  parent?: InputMaybe<NodeFilterInput>;
+  children?: InputMaybe<NodeFilterListInput>;
+  internal?: InputMaybe<InternalFilterInput>;
+  title?: InputMaybe<StringQueryOperatorInput>;
+  attributes?: InputMaybe<ProductsJsonAttributesFilterInput>;
+  featuredImage?: InputMaybe<StringQueryOperatorInput>;
+  laboratoire?: InputMaybe<StringQueryOperatorInput>;
+  jsonId?: InputMaybe<StringQueryOperatorInput>;
+  fields?: InputMaybe<ProductsJsonFieldsFilterInput>;
+};
+
+
+export type QueryAllProductsJsonArgs = {
+  filter?: InputMaybe<ProductsJsonFilterInput>;
+  sort?: InputMaybe<ProductsJsonSortInput>;
+  skip?: InputMaybe<Scalars['Int']>;
+  limit?: InputMaybe<Scalars['Int']>;
+};
+
 export type StringQueryOperatorInput = {
   eq?: InputMaybe<Scalars['String']>;
   ne?: InputMaybe<Scalars['String']>;
@@ -1182,10 +1238,42 @@ export type FileFilterInput = {
   childImageSharp?: InputMaybe<ImageSharpFilterInput>;
   childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
   childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
+  childrenProductsJson?: InputMaybe<ProductsJsonFilterListInput>;
+  childProductsJson?: InputMaybe<ProductsJsonFilterInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   internal?: InputMaybe<InternalFilterInput>;
+};
+
+export type ProductsJsonFilterListInput = {
+  elemMatch?: InputMaybe<ProductsJsonFilterInput>;
+};
+
+export type ProductsJsonFilterInput = {
+  id?: InputMaybe<StringQueryOperatorInput>;
+  parent?: InputMaybe<NodeFilterInput>;
+  children?: InputMaybe<NodeFilterListInput>;
+  internal?: InputMaybe<InternalFilterInput>;
+  title?: InputMaybe<StringQueryOperatorInput>;
+  attributes?: InputMaybe<ProductsJsonAttributesFilterInput>;
+  featuredImage?: InputMaybe<StringQueryOperatorInput>;
+  laboratoire?: InputMaybe<StringQueryOperatorInput>;
+  jsonId?: InputMaybe<StringQueryOperatorInput>;
+  fields?: InputMaybe<ProductsJsonFieldsFilterInput>;
+};
+
+export type ProductsJsonAttributesFilterInput = {
+  indication?: InputMaybe<StringQueryOperatorInput>;
+  composition?: InputMaybe<StringQueryOperatorInput>;
+  action?: InputMaybe<StringQueryOperatorInput>;
+  utilisation?: InputMaybe<StringQueryOperatorInput>;
+  avantages?: InputMaybe<StringQueryOperatorInput>;
+  conseils?: InputMaybe<StringQueryOperatorInput>;
+};
+
+export type ProductsJsonFieldsFilterInput = {
+  link?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type MarkdownRemarkFieldsFilterInput = {
@@ -1482,6 +1570,7 @@ export type FileFieldsEnum =
   | 'childrenMarkdownRemark___frontmatter___featuredImage___publicURL'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___childrenImageSharp'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___childrenMarkdownRemark'
+  | 'childrenMarkdownRemark___frontmatter___featuredImage___childrenProductsJson'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___id'
   | 'childrenMarkdownRemark___frontmatter___featuredImage___children'
   | 'childrenMarkdownRemark___excerpt'
@@ -1579,6 +1668,7 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___frontmatter___featuredImage___publicURL'
   | 'childMarkdownRemark___frontmatter___featuredImage___childrenImageSharp'
   | 'childMarkdownRemark___frontmatter___featuredImage___childrenMarkdownRemark'
+  | 'childMarkdownRemark___frontmatter___featuredImage___childrenProductsJson'
   | 'childMarkdownRemark___frontmatter___featuredImage___id'
   | 'childMarkdownRemark___frontmatter___featuredImage___children'
   | 'childMarkdownRemark___excerpt'
@@ -1634,6 +1724,105 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___internal___mediaType'
   | 'childMarkdownRemark___internal___owner'
   | 'childMarkdownRemark___internal___type'
+  | 'childrenProductsJson'
+  | 'childrenProductsJson___id'
+  | 'childrenProductsJson___parent___id'
+  | 'childrenProductsJson___parent___parent___id'
+  | 'childrenProductsJson___parent___parent___children'
+  | 'childrenProductsJson___parent___children'
+  | 'childrenProductsJson___parent___children___id'
+  | 'childrenProductsJson___parent___children___children'
+  | 'childrenProductsJson___parent___internal___content'
+  | 'childrenProductsJson___parent___internal___contentDigest'
+  | 'childrenProductsJson___parent___internal___description'
+  | 'childrenProductsJson___parent___internal___fieldOwners'
+  | 'childrenProductsJson___parent___internal___ignoreType'
+  | 'childrenProductsJson___parent___internal___mediaType'
+  | 'childrenProductsJson___parent___internal___owner'
+  | 'childrenProductsJson___parent___internal___type'
+  | 'childrenProductsJson___children'
+  | 'childrenProductsJson___children___id'
+  | 'childrenProductsJson___children___parent___id'
+  | 'childrenProductsJson___children___parent___children'
+  | 'childrenProductsJson___children___children'
+  | 'childrenProductsJson___children___children___id'
+  | 'childrenProductsJson___children___children___children'
+  | 'childrenProductsJson___children___internal___content'
+  | 'childrenProductsJson___children___internal___contentDigest'
+  | 'childrenProductsJson___children___internal___description'
+  | 'childrenProductsJson___children___internal___fieldOwners'
+  | 'childrenProductsJson___children___internal___ignoreType'
+  | 'childrenProductsJson___children___internal___mediaType'
+  | 'childrenProductsJson___children___internal___owner'
+  | 'childrenProductsJson___children___internal___type'
+  | 'childrenProductsJson___internal___content'
+  | 'childrenProductsJson___internal___contentDigest'
+  | 'childrenProductsJson___internal___description'
+  | 'childrenProductsJson___internal___fieldOwners'
+  | 'childrenProductsJson___internal___ignoreType'
+  | 'childrenProductsJson___internal___mediaType'
+  | 'childrenProductsJson___internal___owner'
+  | 'childrenProductsJson___internal___type'
+  | 'childrenProductsJson___title'
+  | 'childrenProductsJson___attributes___indication'
+  | 'childrenProductsJson___attributes___composition'
+  | 'childrenProductsJson___attributes___action'
+  | 'childrenProductsJson___attributes___utilisation'
+  | 'childrenProductsJson___attributes___avantages'
+  | 'childrenProductsJson___attributes___conseils'
+  | 'childrenProductsJson___featuredImage'
+  | 'childrenProductsJson___laboratoire'
+  | 'childrenProductsJson___jsonId'
+  | 'childrenProductsJson___fields___link'
+  | 'childProductsJson___id'
+  | 'childProductsJson___parent___id'
+  | 'childProductsJson___parent___parent___id'
+  | 'childProductsJson___parent___parent___children'
+  | 'childProductsJson___parent___children'
+  | 'childProductsJson___parent___children___id'
+  | 'childProductsJson___parent___children___children'
+  | 'childProductsJson___parent___internal___content'
+  | 'childProductsJson___parent___internal___contentDigest'
+  | 'childProductsJson___parent___internal___description'
+  | 'childProductsJson___parent___internal___fieldOwners'
+  | 'childProductsJson___parent___internal___ignoreType'
+  | 'childProductsJson___parent___internal___mediaType'
+  | 'childProductsJson___parent___internal___owner'
+  | 'childProductsJson___parent___internal___type'
+  | 'childProductsJson___children'
+  | 'childProductsJson___children___id'
+  | 'childProductsJson___children___parent___id'
+  | 'childProductsJson___children___parent___children'
+  | 'childProductsJson___children___children'
+  | 'childProductsJson___children___children___id'
+  | 'childProductsJson___children___children___children'
+  | 'childProductsJson___children___internal___content'
+  | 'childProductsJson___children___internal___contentDigest'
+  | 'childProductsJson___children___internal___description'
+  | 'childProductsJson___children___internal___fieldOwners'
+  | 'childProductsJson___children___internal___ignoreType'
+  | 'childProductsJson___children___internal___mediaType'
+  | 'childProductsJson___children___internal___owner'
+  | 'childProductsJson___children___internal___type'
+  | 'childProductsJson___internal___content'
+  | 'childProductsJson___internal___contentDigest'
+  | 'childProductsJson___internal___description'
+  | 'childProductsJson___internal___fieldOwners'
+  | 'childProductsJson___internal___ignoreType'
+  | 'childProductsJson___internal___mediaType'
+  | 'childProductsJson___internal___owner'
+  | 'childProductsJson___internal___type'
+  | 'childProductsJson___title'
+  | 'childProductsJson___attributes___indication'
+  | 'childProductsJson___attributes___composition'
+  | 'childProductsJson___attributes___action'
+  | 'childProductsJson___attributes___utilisation'
+  | 'childProductsJson___attributes___avantages'
+  | 'childProductsJson___attributes___conseils'
+  | 'childProductsJson___featuredImage'
+  | 'childProductsJson___laboratoire'
+  | 'childProductsJson___jsonId'
+  | 'childProductsJson___fields___link'
   | 'id'
   | 'parent___id'
   | 'parent___parent___id'
@@ -3390,6 +3579,19 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___featuredImage___childMarkdownRemark___timeToRead'
   | 'frontmatter___featuredImage___childMarkdownRemark___tableOfContents'
   | 'frontmatter___featuredImage___childMarkdownRemark___children'
+  | 'frontmatter___featuredImage___childrenProductsJson'
+  | 'frontmatter___featuredImage___childrenProductsJson___id'
+  | 'frontmatter___featuredImage___childrenProductsJson___children'
+  | 'frontmatter___featuredImage___childrenProductsJson___title'
+  | 'frontmatter___featuredImage___childrenProductsJson___featuredImage'
+  | 'frontmatter___featuredImage___childrenProductsJson___laboratoire'
+  | 'frontmatter___featuredImage___childrenProductsJson___jsonId'
+  | 'frontmatter___featuredImage___childProductsJson___id'
+  | 'frontmatter___featuredImage___childProductsJson___children'
+  | 'frontmatter___featuredImage___childProductsJson___title'
+  | 'frontmatter___featuredImage___childProductsJson___featuredImage'
+  | 'frontmatter___featuredImage___childProductsJson___laboratoire'
+  | 'frontmatter___featuredImage___childProductsJson___jsonId'
   | 'frontmatter___featuredImage___id'
   | 'frontmatter___featuredImage___parent___id'
   | 'frontmatter___featuredImage___parent___children'
@@ -3552,6 +3754,196 @@ export type MarkdownRemarkSortInput = {
   order?: InputMaybe<Array<InputMaybe<SortOrderEnum>>>;
 };
 
+export type ProductsJsonConnection = {
+  totalCount: Scalars['Int'];
+  edges: Array<ProductsJsonEdge>;
+  nodes: Array<ProductsJson>;
+  pageInfo: PageInfo;
+  distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
+  group: Array<ProductsJsonGroupConnection>;
+};
+
+
+export type ProductsJsonConnectionDistinctArgs = {
+  field: ProductsJsonFieldsEnum;
+};
+
+
+export type ProductsJsonConnectionMaxArgs = {
+  field: ProductsJsonFieldsEnum;
+};
+
+
+export type ProductsJsonConnectionMinArgs = {
+  field: ProductsJsonFieldsEnum;
+};
+
+
+export type ProductsJsonConnectionSumArgs = {
+  field: ProductsJsonFieldsEnum;
+};
+
+
+export type ProductsJsonConnectionGroupArgs = {
+  skip?: InputMaybe<Scalars['Int']>;
+  limit?: InputMaybe<Scalars['Int']>;
+  field: ProductsJsonFieldsEnum;
+};
+
+export type ProductsJsonEdge = {
+  next?: Maybe<ProductsJson>;
+  node: ProductsJson;
+  previous?: Maybe<ProductsJson>;
+};
+
+export type ProductsJsonFieldsEnum =
+  | 'id'
+  | 'parent___id'
+  | 'parent___parent___id'
+  | 'parent___parent___parent___id'
+  | 'parent___parent___parent___children'
+  | 'parent___parent___children'
+  | 'parent___parent___children___id'
+  | 'parent___parent___children___children'
+  | 'parent___parent___internal___content'
+  | 'parent___parent___internal___contentDigest'
+  | 'parent___parent___internal___description'
+  | 'parent___parent___internal___fieldOwners'
+  | 'parent___parent___internal___ignoreType'
+  | 'parent___parent___internal___mediaType'
+  | 'parent___parent___internal___owner'
+  | 'parent___parent___internal___type'
+  | 'parent___children'
+  | 'parent___children___id'
+  | 'parent___children___parent___id'
+  | 'parent___children___parent___children'
+  | 'parent___children___children'
+  | 'parent___children___children___id'
+  | 'parent___children___children___children'
+  | 'parent___children___internal___content'
+  | 'parent___children___internal___contentDigest'
+  | 'parent___children___internal___description'
+  | 'parent___children___internal___fieldOwners'
+  | 'parent___children___internal___ignoreType'
+  | 'parent___children___internal___mediaType'
+  | 'parent___children___internal___owner'
+  | 'parent___children___internal___type'
+  | 'parent___internal___content'
+  | 'parent___internal___contentDigest'
+  | 'parent___internal___description'
+  | 'parent___internal___fieldOwners'
+  | 'parent___internal___ignoreType'
+  | 'parent___internal___mediaType'
+  | 'parent___internal___owner'
+  | 'parent___internal___type'
+  | 'children'
+  | 'children___id'
+  | 'children___parent___id'
+  | 'children___parent___parent___id'
+  | 'children___parent___parent___children'
+  | 'children___parent___children'
+  | 'children___parent___children___id'
+  | 'children___parent___children___children'
+  | 'children___parent___internal___content'
+  | 'children___parent___internal___contentDigest'
+  | 'children___parent___internal___description'
+  | 'children___parent___internal___fieldOwners'
+  | 'children___parent___internal___ignoreType'
+  | 'children___parent___internal___mediaType'
+  | 'children___parent___internal___owner'
+  | 'children___parent___internal___type'
+  | 'children___children'
+  | 'children___children___id'
+  | 'children___children___parent___id'
+  | 'children___children___parent___children'
+  | 'children___children___children'
+  | 'children___children___children___id'
+  | 'children___children___children___children'
+  | 'children___children___internal___content'
+  | 'children___children___internal___contentDigest'
+  | 'children___children___internal___description'
+  | 'children___children___internal___fieldOwners'
+  | 'children___children___internal___ignoreType'
+  | 'children___children___internal___mediaType'
+  | 'children___children___internal___owner'
+  | 'children___children___internal___type'
+  | 'children___internal___content'
+  | 'children___internal___contentDigest'
+  | 'children___internal___description'
+  | 'children___internal___fieldOwners'
+  | 'children___internal___ignoreType'
+  | 'children___internal___mediaType'
+  | 'children___internal___owner'
+  | 'children___internal___type'
+  | 'internal___content'
+  | 'internal___contentDigest'
+  | 'internal___description'
+  | 'internal___fieldOwners'
+  | 'internal___ignoreType'
+  | 'internal___mediaType'
+  | 'internal___owner'
+  | 'internal___type'
+  | 'title'
+  | 'attributes___indication'
+  | 'attributes___composition'
+  | 'attributes___action'
+  | 'attributes___utilisation'
+  | 'attributes___avantages'
+  | 'attributes___conseils'
+  | 'featuredImage'
+  | 'laboratoire'
+  | 'jsonId'
+  | 'fields___link';
+
+export type ProductsJsonGroupConnection = {
+  totalCount: Scalars['Int'];
+  edges: Array<ProductsJsonEdge>;
+  nodes: Array<ProductsJson>;
+  pageInfo: PageInfo;
+  distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
+  group: Array<ProductsJsonGroupConnection>;
+  field: Scalars['String'];
+  fieldValue?: Maybe<Scalars['String']>;
+};
+
+
+export type ProductsJsonGroupConnectionDistinctArgs = {
+  field: ProductsJsonFieldsEnum;
+};
+
+
+export type ProductsJsonGroupConnectionMaxArgs = {
+  field: ProductsJsonFieldsEnum;
+};
+
+
+export type ProductsJsonGroupConnectionMinArgs = {
+  field: ProductsJsonFieldsEnum;
+};
+
+
+export type ProductsJsonGroupConnectionSumArgs = {
+  field: ProductsJsonFieldsEnum;
+};
+
+
+export type ProductsJsonGroupConnectionGroupArgs = {
+  skip?: InputMaybe<Scalars['Int']>;
+  limit?: InputMaybe<Scalars['Int']>;
+  field: ProductsJsonFieldsEnum;
+};
+
+export type ProductsJsonSortInput = {
+  fields?: InputMaybe<Array<InputMaybe<ProductsJsonFieldsEnum>>>;
+  order?: InputMaybe<Array<InputMaybe<SortOrderEnum>>>;
+};
+
 export type SiteMetadataQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3569,17 +3961,41 @@ export type CategorySingleQueryVariables = Exact<{
 
 export type CategorySingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { link?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
 
+export type LaboratoiresIndexQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type LaboratoiresIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
+
+export type LaboratoiresSingleQueryVariables = Exact<{
+  laboratoire?: InputMaybe<Scalars['String']>;
+}>;
+
+
+export type LaboratoiresSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { totalCount: number, nodes: Array<{ id: string, laboratoire?: string | null | undefined, title?: string | null | undefined, fields?: { link?: string | null | undefined } | null | undefined }> } };
+
 export type PostsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type PostsIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { edges: Array<{ node: { excerpt?: string | null | undefined, id: string, fields?: { link?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
 
-export type PostByIdQueryVariables = Exact<{
+export type PostsSingleQueryVariables = Exact<{
   id: Scalars['String'];
 }>;
 
 
-export type PostByIdQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
+export type PostsSingleQuery = { markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
+
+export type ProductsIndexQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type ProductsIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { nodes: Array<{ id: string, laboratoire?: string | null | undefined, title?: string | null | undefined, fields?: { link?: string | null | undefined } | null | undefined }> } };
+
+export type ProductsSingleQueryVariables = Exact<{
+  id: Scalars['String'];
+}>;
+
+
+export type ProductsSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, productsJson?: { id: string, laboratoire?: string | null | undefined, title?: string | null | undefined, attributes?: { action?: Array<string | null | undefined> | null | undefined, avantages?: Array<string | null | undefined> | null | undefined, composition?: Array<string | null | undefined> | null | undefined, conseils?: Array<string | null | undefined> | null | undefined, indication?: Array<string | null | undefined> | null | undefined, utilisation?: Array<string | null | undefined> | null | undefined } | null | undefined } | null | undefined };
 
 export type TagsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 

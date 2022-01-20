@@ -41,11 +41,18 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        path: `${__dirname}/data/products`,
+        name: "products",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         path: `${__dirname}/static/img`,
         name: "images",
       },
     },
-    `gatsby-plugin-image`,
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -77,6 +84,7 @@ module.exports = {
         ],
       },
     },
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-plugin-netlify-cms",
       options: {

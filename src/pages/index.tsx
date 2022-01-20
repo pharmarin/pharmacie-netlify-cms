@@ -1,8 +1,8 @@
-import PostsIndexContainer from "containers/posts/Index";
+import ProductsIndexContainer from "containers/products/Index";
 import React from "react";
 
 const IndexPage = () => {
-  return <PostsIndexContainer />;
+  return <ProductsIndexContainer />;
 };
 
 export default IndexPage;

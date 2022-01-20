@@ -1,0 +1,3212 @@
+[
+  {
+    "id": "a174b7d0-17cf-4164-bf33-15e7e5d548af",
+    "title": "Hydrolat de tea tree",
+    "attributes": {
+      "indication": [
+        "Acné",
+        "Plaies, plaies buccales, mycoses",
+        "Pellicules du cuir chevelu"
+      ]
+    },
+    "featuredImage": "/images/products/14156_hydrolats_de_tea_tree_150_ml.jpg.thumb_1000x800.jpg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "de07aeda-b8b1-4c3d-9c40-09d4a68eb970",
+    "title": "Hydrolat de lavande officinale",
+    "attributes": {
+      "indication": ["Douleur, irritation", "Brûlures, coups de soleil"]
+    },
+    "featuredImage": "/images/products/14152_hydrolats_de_lavande_150_ml.jpg.thumb_1000x800.jpg",
+    "laboratoire": "Paranarom"
+  },
+  {
+    "id": "7c747fcc-3ca2-4dd1-8c2a-4c9f8dc65c1d",
+    "title": "Hydrolat de camomille romaine",
+    "attributes": {
+      "indication": [
+        "Irritations, gonflements",
+        "Urticaire, eczéma, couperose, érythème fessier"
+      ],
+      "conseils": [
+        "+ Hélichryse : Appliquer en compresse ophtalmique (calme et décongestionne)",
+        "+ Lavande : Après une épilation"
+      ]
+    },
+    "featuredImage": "/images/products/14151_hydrolats_de_camomille_150_ml.jpg.thumb_1000x800.jpg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "eb76f9c3-8d0a-4510-bbf3-302f30bddffa",
+    "title": "Hydrolat de romarin à verbénone",
+    "attributes": {
+      "indication": [
+        "Peau grasse à imperfection",
+        "Cheveux qui graissent",
+        "Fibrine : permet de casser la fibrine et cicatrisant (ulcères)"
+      ],
+      "conseils": ["Faire en masque sur le visage avec de l'argile en poudre"]
+    },
+    "featuredImage": "/images/products/14154_hydrolats_de_romarin_verbenone_150_ml.jpg.thumb_1000x800.jpg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "fec25109-752a-4b5b-8223-8a8db8931ca4",
+    "title": "Hydrolat de rose de Damas",
+    "attributes": {
+      "indication": ["Peau sèche, peau mature", "Tonifiant, tenseur"]
+    },
+    "featuredImage": "/images/products/13956_hydrolat_precieux_de_rose_bio_170_ml.jpg.thumb_1000x800.jpg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "b4ea73a0-ab10-41cc-bf97-efb57a404e4b",
+    "title": "Hydrolat de néroli",
+    "attributes": {
+      "indication": [
+        "Peau terne, manque d'éclat, peau sèche",
+        "Aide à fixer le maquillage"
+      ],
+      "utilisation": ["Directement sur la peau"],
+      "conseils": ["Relaxant : 1 cuillère à café dans le biberon"],
+      "avantages": ["Adapté à tous les types de peaux"]
+    },
+    "featuredImage": "/images/products/14153_hydrolats_de_neroli_150_ml.jpg.thumb_1000x800.jpg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "e4522793-3ede-404a-8e9a-ea58e2b5f76e",
+    "title": "Fogger Éco-Logis",
+    "attributes": {
+      "composition": ["Perméthrine", "S-Méthoprène", "Pyrèthre"],
+      "utilisation": ["Laisser agir pendant 2 heures puis aérer"],
+      "avantages": ["Traite jusqu'à 36 m²", "Jusqu'à 8 mois d'efficacité"]
+    },
+    "featuredImage": "/images/products/eco-logis-fogger-biocanina.jpg",
+    "laboratoire": "Biocanina"
+  },
+  {
+    "id": "d0214b95-2490-4334-be6f-c099124b5608",
+    "title": "Tick-Puss spray",
+    "attributes": {
+      "indication": [
+        "Puces, tiques et poux",
+        "Si très infecté ou en prévention"
+      ],
+      "composition": ["Fipronil"],
+      "action": [
+        "Chien : 3 mois contre les puces et 4 semaines contre les tiques",
+        "Chat : 6 semaines contre les puces et 4 semaines contre les tiques"
+      ],
+      "utilisation": [
+        "À rebrousse-poil",
+        "Peut également être utilisé en bas de pantalon pour éviter les tiques en rando"
+      ],
+      "conseils": [
+        "Traiter l'environnement (95 % des larves sont dans l'environnement) avec un fogger ou un spray"
+      ]
+    },
+    "featuredImage": "/images/products/tick-puss-500-scaled-1.jpg",
+    "laboratoire": "Biocanina"
+  },
+  {
+    "id": "7bc52263-cf10-45c0-aeda-c1e8e39382fd",
+    "title": "Cartimotil Structure",
+    "attributes": {
+      "indication": ["Arthrose"],
+      "composition": ["Chrondoïtine", "MSM", "Manganèse"]
+    },
+    "featuredImage": "/images/products/cartimotil-structure-300.jpg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "f89792dc-a73d-4487-b098-58d0c7cc4d86",
+    "title": "Cartimotil Fort",
+    "attributes": {
+      "indication": ["Inflammation aigue"],
+      "composition": ["Curcuma", "Porphyral", "Boswellia"]
+    },
+    "featuredImage": "/images/products/cartimotil-fort-06-2020_300x300.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "36db8db3-6153-4d99-829b-5acc1b8f2a29",
+    "title": "Cartimotil Gel",
+    "attributes": { "indication": ["Douleur aigue"] },
+    "featuredImage": "/images/products/cartimotil-gel_3_300x300.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "c878ecc0-5223-47ff-85a8-c275e1f9e909",
+    "title": "Omegabiane Oméga 3-6-9",
+    "attributes": {
+      "indication": ["Sécheresse cutanée, eczéma", "Traitements asséchants"]
+    },
+    "featuredImage": "/images/products/omegabiane-3-6-9-100caps-06-2020_300x300.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "01ee1419-12c8-43ee-820d-7d083ce2d37d",
+    "title": "Babybiane HMO",
+    "attributes": {
+      "indication": ["Nourrissons non allaités"],
+      "composition": [
+        "Human Milk Oligosaccharides : stimule le système immunitaire"
+      ],
+      "action": ["80 % des bébés ne sont pas allaités"],
+      "utilisation": ["1 sachet matin et soir pour enrichir le lait en poudre"],
+      "conseils": ["Présents dans le Guigoz Optipro"]
+    },
+    "featuredImage": "/images/products/babybiane-hmo-300.jpg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "9f32d4ac-fce2-4f2f-a761-50218b423ee8",
+    "title": "Feminabiane Endocalm",
+    "attributes": {
+      "indication": ["Règles douloureuses", "Endométriose"],
+      "composition": [
+        "PEA",
+        "Probiotiques agissant sur l'inflammation et sur l'immunité",
+        "Alchémille : régulation hormonale",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/ortie/\" data-type=\"phytotherapie\" data-id=\"1483\">Ortie</a>"
+      ],
+      "utilisation": [
+        "2 comprimés et 1 gélule par jour à avaler avec un verre d’eau de préférence avant un repas"
+      ]
+    },
+    "featuredImage": "/images/products/feminabiane-endocalm-300-1.jpg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "0647ae1e-59e5-401b-88eb-d4d4e57e10b8",
+    "title": "PEAbiane",
+    "attributes": {
+      "indication": ["Douleurs chroniques", "Fibromyalgie"],
+      "composition": [
+        "PalmitoEthanolAmide : action sur les récepteurs endocanabinoïdes de la douleur"
+      ],
+      "utilisation": ["1 à 4 gélules par jour, à répartir dans la journée"]
+    },
+    "featuredImage": "/images/products/pileje-pea-biane-45-gelules.jpg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "c1f2c908-1e55-4e51-8963-4ea97bc557b5",
+    "title": "Neurobiane",
+    "attributes": {
+      "indication": ["Stress", "Fringales vers 17h"],
+      "composition": ["L-tryptophane", "Vitamine B6", "Magnésium"],
+      "utilisation": ["Prise à 17h avec une collation légèrement sucrée"]
+    },
+    "featuredImage": "/images/products/telechargement.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "21233e42-eee7-4147-bdd7-478054c7fac4",
+    "title": "Dynabiane",
+    "attributes": {
+      "indication": [
+        "Difficultés à se mettre en route le matin",
+        "Manque de motivation"
+      ],
+      "composition": [
+        "Vitamine C",
+        "Vitamine B6",
+        "Acide folique",
+        "Vitamine B12",
+        "Cuivre",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/guarana/\" data-type=\"phytotherapie\" data-id=\"1454\">Guarana</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/ginseng/\" data-type=\"phytotherapie\" data-id=\"1400\">Ginseng</a>",
+        "L-thyrosine"
+      ],
+      "utilisation": [
+        "Prendre à jeun à 10h",
+        "À prendre à distance d'un repas sucré pour éviter l'utilisation de la Tyrosine par le muscle"
+      ]
+    },
+    "featuredImage": "/images/products/product_3269983b.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "dd0d8dcd-c686-4747-9d7d-c447fe8cf8f8",
+    "title": "Somnispray",
+    "attributes": {
+      "composition": [
+        "Mélatonine (1,8 mg/2 pulvérisations)",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/melisse/\" data-type=\"phytotherapie\" data-id=\"1471\">Mélisse</a>",
+        "Vitamine B6",
+        "Vitamine B12"
+      ],
+      "utilisation": [
+        "2 sprays sous la langue 20 à 30 minutes avant le coucher"
+      ],
+      "avantages": ["Pas de passage gastrique donc plus efficace"]
+    },
+    "featuredImage": "/images/products/telechargement-1.jpg",
+    "laboratoire": "Therascience"
+  },
+  {
+    "id": "df142a86-c422-415c-9a29-245fac4c4999",
+    "title": "D-Nat",
+    "attributes": {
+      "composition": [
+        "Vitamine D (1000 UI/goutte)",
+        "HV d'Olive 1ère pression à froid"
+      ],
+      "utilisation": [
+        "<em>Sujet à risque </em>: 4 gouttes par jour",
+        "<em>Adulte</em> : 2 gouttes par jour",
+        "<em>Enfant</em> : 1 goutte par jour"
+      ],
+      "conseils": [
+        "Associer à du Magnesium pour aider à la transformation en Calcitriol"
+      ],
+      "avantages": ["Se conserve 1 an à l'abris de la lumière"]
+    },
+    "featuredImage": "/images/products/telechargement.jpg",
+    "laboratoire": "Therascience"
+  },
+  {
+    "id": "7e0276c1-6ae9-4ab0-b462-72d9f5ca614b",
+    "title": "Perméa +",
+    "attributes": {
+      "indication": [
+        "Hyperperméabilité intestinale aiguë ou chronique",
+        "Allergies, intolérances intestinales, eczéma"
+      ],
+      "composition": [
+        "Glutamine, zinc, boswellia : jonctions serrées",
+        "Gomme d'accacia : réparation de la muqueuse intestinale",
+        "Quercétine, zinc, vitamine D3, boswellia et curcuma : antiinflammatoire",
+        "Biffidobacterium bs01 : allergie",
+        "S thermophilus SP4 : réparation de la muqueuse intestinale"
+      ],
+      "action": [
+        "Réparation de la barrière intestinale",
+        "Diminution de l'inflammation et des radicaux libres",
+        "Soutien de la fonction hépatique",
+        "Renforcement de la flore intestinale + fibres"
+      ],
+      "utilisation": [
+        "1 jour sur deux jusqu'à la fin de la boite puis faire une pause d'une semaine puis faire le point",
+        "Se prend généralement le soir, à deux heures d’intervalle des repas"
+      ],
+      "conseils": [""]
+    },
+    "featuredImage": "/images/products/ori-permea-avec-microbiote-660.jpg",
+    "laboratoire": "Therascience"
+  },
+  {
+    "id": "3c6d34a0-c86f-465f-941a-deb911cd97a6",
+    "title": "Nutriderm",
+    "attributes": {
+      "indication": [
+        "Traitement asséchant",
+        "Peaux dénutries, déshydratées, fatiguées",
+        "Sécheresse vaginale"
+      ],
+      "composition": [
+        "Oméga 6, 7 et 9",
+        "HV de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/bourrache/\" data-type=\"phytotherapie\" data-id=\"1203\">Bourrache</a> : diminution de la desquamation, des rougeurs, des démangeaison, hydratation",
+        "HV d'<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/onagre/\" data-type=\"phytotherapie\" data-id=\"1479\">Onagre</a> : diminution de l'inflammation, troubles cutanés liés à la ménopause, dermatite atopique",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/argan/\" data-type=\"aromatherapie\" data-id=\"1136\">HV d’Argan</a> : relipidante, cicatrisante, antioxydante, revitalisante",
+        "HV d'Argousier : riche en oméga 7, augmentation de la cohésion cellulaire, de la souplesse tissulaire, rétention hydrique",
+        "Coenzyme Q10 : meilleur métabolisme énergétique, diminution des collagénases"
+      ],
+      "utilisation": ["1 capsule par jour le soir"],
+      "conseils": ["Formule très nourrissante"]
+    },
+    "featuredImage": "/images/products/ori-nutriderm-1122.jpg",
+    "laboratoire": "Therascience"
+  },
+  {
+    "id": "4c19bfd5-7fac-4296-ba81-f9787daebd82",
+    "title": "Berbérine",
+    "attributes": {
+      "indication": [
+        "Hypercholestérolémies",
+        "Hyperglycémies",
+        "Diabétique de type 2"
+      ],
+      "composition": ["Berbérine pure (500 mg)"],
+      "utilisation": ["2 (à 4) comprimés par jour, en cure longue"],
+      "conseils": ["Très bien en parallèle d'une prise de Metformine"],
+      "avantages": [
+        "Diminution des LDL cholestérol et des triglycérides, augmentation du glucose intracellulaire",
+        "Augmentation de la sensibilité à l'insuline et des transformation des acides gras en énergie"
+      ]
+    },
+    "featuredImage": "/images/products/ar-berb-rine-1201.jpg",
+    "laboratoire": "Therascience"
+  },
+  {
+    "id": "3e6163a2-d9e4-4261-810d-30b395bbb6b0",
+    "title": "Flexifluid",
+    "attributes": {
+      "indication": ["Raideurs acticulaires", "Arthrose", "Sportifs"],
+      "composition": [
+        "Chondroïtine : constituant du cartilage",
+        "Glucosamine : lubrifiant articulaire",
+        "MSM : protection des tissus conjonctifs",
+        "Solicium organique : reminéralisant",
+        "Cuivre, manganèse, zine : antioxydants",
+        "Vitamine C : augmentation de la synthèse de collagène"
+      ],
+      "utilisation": [
+        "40 mL par jour (2 godets) pendant 1 mois puis en 20 mL/jour en entretien jusqu'à amélioration puis cures de rappel"
+      ],
+      "conseils": ["Associer avec Extincyl (antiinflammatoire naturel)"],
+      "avantages": [
+        "Formule liquide, meilleure disponibilité",
+        "Produit en France"
+      ]
+    },
+    "featuredImage": "/images/products/ori-flexifluid-512.jpg",
+    "laboratoire": "Therascience"
+  },
+  {
+    "id": "17e4aa67-a529-400e-8069-9de0066e9b0b",
+    "title": "Triphasic Progressive",
+    "attributes": {
+      "indication": ["Freine la chute progressive"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/oranger-doux/\" data-type=\"aromatherapie\" data-id=\"1116\">HE d’Oranger doux</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/lavande-fine/\" data-type=\"aromatherapie\" data-id=\"1105\">HE de Lavande fine</a>",
+        "Cresson",
+        "Capucine",
+        "Ginseng brésilien"
+      ],
+      "utilisation": [
+        "Phase d'attaque : 2 fois par semaine pendant 1 mois",
+        "Phase d'entretien : 1 fois par semaine à vie ou 3 mois tous les 6 mois",
+        "<em>Visser à fond le flacon avant de mélanger</em>"
+      ],
+      "conseils": ["À commencer le plus tôt possible"],
+      "avantages": ["Action sur les 3 phases de la pousse"]
+    },
+    "featuredImage": "/images/products/3282770110456_R.Furterer-TRIPHASIC-PROGRESSIVE-8-flac.png",
+    "laboratoire": "Furterer"
+  },
+  {
+    "id": "12457718-6589-4646-8847-65a2c0f8980e",
+    "title": "Triphasic Reactional",
+    "attributes": {
+      "composition": [
+        "Lotus : limite le stress cellulaire et stimule la repousse",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/citronnier/\" data-type=\"aromatherapie\" data-id=\"1088\">HE de Citronnier</a>"
+      ],
+      "utilisation": [
+        "1 ampoule par semaine, sur l'ensemble du cuir chevelu propre et humide",
+        "À utiliser pendant 3 mois"
+      ]
+    },
+    "featuredImage": "/images/products/furterer-triphasic-reactional-rituel-anti-chute-12-ampoules-de-5ml.jpg",
+    "laboratoire": "Furterer"
+  },
+  {
+    "id": "eeb19ddc-1018-496b-aaec-ed7cb5cba5d2",
+    "title": "Astera fresh",
+    "attributes": {
+      "indication": ["Dermite séborrhéique", "Eczéma"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/menthe-poivree/\" data-type=\"aromatherapie\" data-id=\"1112\">HE de Menthe poivrée</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/eucalyptus-globuleux/\" data-type=\"aromatherapie\" data-id=\"2045\">HE d’Eucalyptus globuleux</a>"
+      ],
+      "utilisation": [
+        "Avant le shampooing, appliquer sur 10 raies puis masser et laisser poser 5 à 10 minutes",
+        "Utiliser 1 fois par semaine"
+      ]
+    },
+    "featuredImage": "/images/products/furterer-astera-fresh-p44280.jpg",
+    "laboratoire": "Furterer"
+  },
+  {
+    "id": "b0be985c-5ff0-4631-ad41-2cb96f9267e2",
+    "title": "Complexe 5",
+    "attributes": {
+      "indication": ["Fortifie le cheveux, pousse plus vite et plus fort"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/oranger-doux/\" data-type=\"aromatherapie\" data-id=\"1116\">HE d’Oranger doux</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/lavande-fine/\" data-type=\"aromatherapie\" data-id=\"1105\">HE de Lavande fine</a>"
+      ],
+      "utilisation": [
+        "Avant le shampooing, appliquer sur 10 raies puis masser et laisser poser 5 à 10 minutes",
+        "Utiliser 1 fois par semaine"
+      ]
+    },
+    "featuredImage": "/images/products/furterer-complexe-5-p44281.jpg",
+    "laboratoire": "Furterer"
+  },
+  {
+    "id": "e59f75c0-1e67-4343-94d5-6336dd5997a2",
+    "title": "Colilen",
+    "attributes": {
+      "indication": ["Cicatrisant de la zone intestinale"],
+      "utilisation": [
+        "2 gélules 3 fois par jour, hors des repas",
+        "Faire une cure de 1 mois"
+      ]
+    },
+    "featuredImage": "/images/products/colilen-ibs-96-fr-web-1.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "34877623-70fd-42c7-8a0e-720a24f60549",
+    "title": "Natura Mix Renfort",
+    "attributes": {
+      "indication": ["Convalescence", "Fatigue sans besoin de coup de fouet"],
+      "avantages": ["Apport physiologique, sans surdosage"]
+    },
+    "featuredImage": "/images/products/naturamix-sostegno-fr-web-2.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "2b8d587a-d947-4958-9131-1d073c10245e",
+    "title": "Fitoroid",
+    "attributes": {
+      "indication": ["Lavage et protection du nez contre les allergènes"],
+      "action": ["Hyperosmotique", "Anti-inflammatoire indirect"]
+    },
+    "featuredImage": "/images/products/fitonasal-spray-concentre-30-ml-aboca.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "1cfe23e2-e35a-47ad-8a73-f08b6e74a005",
+    "title": "Coligas",
+    "attributes": {
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/fenouil/\" data-type=\"phytotherapie\" data-id=\"1379\">Fenouil</a>",
+        "Carvi",
+        "Cumin"
+      ],
+      "conseils": ["Comme le météospasmyl"]
+    },
+    "featuredImage": "/images/products/coligas-fast-gelules-aboca.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "50706163-2cf6-46bb-a55e-a9977c48a2fd",
+    "title": "Fitoroid crème",
+    "attributes": {
+      "indication": ["Hémorroïdes"],
+      "action": ["Action sur la douleur, la tonicité et la lubrification"],
+      "avantages": [
+        "Peut être utilisé chez la femme enceinte malgré la présence de menthe poivrée (très faiblement dosée) dans la formule"
+      ]
+    },
+    "featuredImage": "/images/products/Neofitoroid-C-web-FR-1.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "93360ead-95db-40b0-9877-d65f7ec84456",
+    "title": "Firoroïd gélules",
+    "attributes": [],
+    "featuredImage": "/images/products/NEOFITOROID-GELULES.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "6ad8a259-69c9-488b-8e49-6c3f07d1c0b0",
+    "title": "Natura Mix Energie",
+    "attributes": [],
+    "featuredImage": "/images/products/NatMix-Advanced-Energie-bustine-web-FR-1.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "c884e5eb-24f7-4747-aa51-8c3a02c0ce01",
+    "title": "Sedivitax ProNight",
+    "attributes": {
+      "indication": [
+        "Difficultés d'endormissement",
+        "Limitation des réveils nocturnes",
+        "Resynchronisation du rythme circadien"
+      ],
+      "composition": [
+        "Sans mélatonine",
+        "Ashwaganda : action hépatique, régulation de la glycémie",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/passiflore/\" data-type=\"phytotherapie\" data-id=\"1486\">Passiflore</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/houblon/\" data-type=\"phytotherapie\" data-id=\"1460\">Houblon</a>"
+      ],
+      "action": [
+        "Action sur la sphère périphérique : cortisol, glycémie",
+        "Action en 3 à 4 jours, pas d'action immédiate"
+      ],
+      "utilisation": ["30 minutes avant le coucher"]
+    },
+    "featuredImage": "/images/products/aboca-sedivitax-pronight-advanced-sachets-sommeil.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "a880d895-2f1f-4d60-9abb-3e16e39667ea",
+    "title": "Sedivitax",
+    "attributes": {
+      "indication": ["Anxiété"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/valeriane/\" data-type=\"phytotherapie\" data-id=\"1559\">Valériane</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/melisse/\" data-type=\"phytotherapie\" data-id=\"1471\">Mélisse</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/eschscholtzia/\" data-type=\"phytotherapie\" data-id=\"1373\">Eschscholtzia (Pavot de Californie)</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/passiflore/\" data-type=\"phytotherapie\" data-id=\"1486\">Passiflore</a>"
+      ],
+      "action": ["Pas d'action hypnotique"],
+      "avantages": ["Comme Euphytose, mais plus concentré"]
+    },
+    "featuredImage": "/images/products/product_9544947b.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "cfa9f0c9-62c3-4889-8f5d-0170598fcfee",
+    "title": "LenoDiar",
+    "attributes": {
+      "indication": ["Diarrhées (action sur la cause)"],
+      "utilisation": ["2 gélules toutes les 3 heures"],
+      "conseils": ["Associer à un probiotique"],
+      "avantages": [
+        "Dispositif médical : protège la muqueuse intestinale",
+        "Fonction barrière qui empêche le passage des virus/bactéries (séquestration)",
+        "Résultat en 2 à 4 heures"
+      ]
+    },
+    "featuredImage": "/images/products/aboca-lenodiar-adulte-20-gelules.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "79aa776a-63ef-4dd3-a184-cb5fbcd3cc4f",
+    "title": "LenoDiar Pediatric",
+    "attributes": {
+      "indication": ["Diarrhées (action sur la cause)"],
+      "utilisation": ["1 sachet toutes les 3 heures"],
+      "conseils": ["Associer à un probiotique"],
+      "avantages": [
+        "Dispositif médical : protège la muqueuse intestinale",
+        "Fonction barrière qui empêche le passage des virus/bactéries (séquestration)",
+        "Résultat en 2 à 4 heures"
+      ]
+    },
+    "featuredImage": "/images/products/aboca-lenodiar-pediatric-12-sachets.png",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "db2e2a3b-d9fb-414a-8c13-cc4d4d4276f2",
+    "title": "Sollievo",
+    "attributes": {
+      "indication": ["Constipation"],
+      "avantages": ["Extrait de Séné : moins irritant que le totum"]
+    },
+    "featuredImage": "/images/products/Sollievo-Aboca-Boite-de-90-comprimes-8032472014959.jpg",
+    "laboratoire": "Aboca"
+  },
+  {
+    "id": "553fa8f4-f27a-4b0d-b781-a2ba84608c48",
+    "title": "Ergyphilus ATB",
+    "attributes": {
+      "indication": ["Diarrhées sous antibiotique, développement de candida"],
+      "utilisation": [
+        "3 gélules par jour pendant la durée du traitement antibiotique"
+      ]
+    },
+    "featuredImage": "/images/products/nutergia-ergyphilus-atb-30-gelules.png",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "49940183-1578-46bd-ac6f-65477013abb2",
+    "title": "Ergyphilus GST",
+    "attributes": {
+      "indication": [
+        "Inflammation gastrique, dysbiose gastrique",
+        "Helicobacter pilori, candidose",
+        "Traitement IPP, antiinflammatoires",
+        "Alcool, tabac"
+      ],
+      "composition": [
+        "Lactobacillus reuteri + Lactobacillus pentosus : action gastrique",
+        "Lactobacillus rhamnosus + Lactobacillus acidophilus + Bifidobacterium bifidum : action gastrique et intestinale",
+        "Vitamine C (forme non excitante)"
+      ],
+      "action": [
+        "Action antiinflammatoire, gastroprotection",
+        "Stimulation de l'immunité",
+        "Inhibition de H pilori et candida"
+      ],
+      "utilisation": [
+        "4 par jour pendant une semaine puis 2 par jour (à renouveler tous les 2 à 3 mois)",
+        "- <em>Diminution de la prise d'IPP</em> : commencer à 2 gélules par jour"
+      ],
+      "conseils": [
+        "Associer à des fibres prébiotiques pour stimuler la croissance des probiotiques",
+        "Associer à une prise d'<em>antiinflammatoires</em>, <em>Pylera</em>, <em>Helikit</em>, <em>Fungizone</em>",
+        "Utiliser Ergybase pour tamponner l'acidité de l'organisme"
+      ]
+    },
+    "featuredImage": "/images/products/telechargement-1.jpg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "c5683e32-09fd-48b0-b984-65e27a6c1f6d",
+    "title": "Granions de Bismuth",
+    "attributes": {
+      "indication": [
+        "Antiinflammatoire de la gorge",
+        "Angine, rhinopharyngite"
+      ],
+      "utilisation": ["4 ampoules le 1er jour, puis 3 ampoules pendant 2 jours"]
+    },
+    "featuredImage": "/images/products/granions-bismuth2019.png",
+    "laboratoire": "Granions"
+  },
+  {
+    "id": "c3c1b898-18d0-4222-b55e-04b5196f2bb6",
+    "title": "Granions Décontractant musculaire (amp/cp)",
+    "attributes": {
+      "indication": [
+        "Crampes, sportifs",
+        "Personnes âgée polymédiquées",
+        "> Ampoules : curatif",
+        "> Comprimés : traitement de fond"
+      ],
+      "composition": ["Potassium", "Magnésium"]
+    },
+    "featuredImage": "/images/products/granions-decontractant-musculaire-30-ampoules.jpg",
+    "laboratoire": "Granions"
+  },
+  {
+    "id": "c492cf61-aa3e-40ba-8385-6af91e8aac39",
+    "title": "Granions de Cuivre/Or/Argent",
+    "attributes": {
+      "indication": [
+        "Grosse convalescence, état asthénique",
+        "Pré-vaccination"
+      ],
+      "action": ["Stimulation surrénalienne (Au)"]
+    },
+    "featuredImage": "/images/products/oligosol-cuivre-or-argent.jpg",
+    "laboratoire": "Granions"
+  },
+  {
+    "id": "8ed8099d-b80c-4245-a175-c1bbb684a32d",
+    "title": "Granions de Soufre",
+    "attributes": {
+      "indication": ["Sinusite"],
+      "utilisation": ["3 ampoules par jour pendant 5 jours"]
+    },
+    "featuredImage": "/images/products/granions-soufre2019.png",
+    "laboratoire": "Granions"
+  },
+  {
+    "id": "0bbf0783-8377-442b-ba23-9d9a596162a7",
+    "title": "Granions d'Argent",
+    "attributes": {
+      "indication": ["Infections virales (rhume, aphtes)"],
+      "composition": ["Argent colloïdal"],
+      "utilisation": [
+        "Rhume : 3 ampoules par jour pendant 5 jours",
+        "Aphtes : en gargarisme pendant 3 minutes"
+      ]
+    },
+    "featuredImage": "/images/products/unnamed.jpg",
+    "laboratoire": "Granions"
+  },
+  {
+    "id": "51d7af79-574c-4be2-b4c2-e94a705d9af4",
+    "title": "Granions de Zinc",
+    "attributes": {
+      "indication": ["Acné", "Immunité (antiviral)"],
+      "action": [
+        "Augmentation de la production de macrophages",
+        "Diminution de la production de radicaux libres"
+      ]
+    },
+    "featuredImage": "/images/products/telechargement.jpg",
+    "laboratoire": "Granions"
+  },
+  {
+    "id": "44948900-17ac-4c72-a98f-cf5ffc5efd5f",
+    "title": "Granions de Selenium",
+    "attributes": {
+      "indication": ["Prévention des infections virales"],
+      "composition": [""],
+      "action": [
+        "Cofacteurs de la glutathion peroxydase",
+        "Antioxydant",
+        "Action sur la virulence du virus"
+      ],
+      "utilisation": [
+        "1 ampoule par jour pendant 1 mois puis 10 ampoules par mois"
+      ]
+    },
+    "featuredImage": "/images/products/granions-se_le_nium2019.png",
+    "laboratoire": "Granions"
+  },
+  {
+    "id": "f3b1655d-d82d-403f-9637-b5bbb0edc857",
+    "title": "Granions de Cuivre",
+    "attributes": {
+      "indication": [
+        "<span style=\"font-size: inherit;\">Infection virale en cours</span> : grippe, COVID, herpès"
+      ],
+      "action": ["Antiviral, anti-inflammatoire"],
+      "utilisation": [
+        "6 ampoules par jour pendant la période inflammatoire (grippe, COVID)"
+      ]
+    },
+    "featuredImage": "/images/products/granions-de-cuivre-30-ampoules.jpg",
+    "laboratoire": "Granions"
+  },
+  {
+    "id": "2ce1a7a2-9d14-49a6-befa-8df4ecb92e37",
+    "title": "EPS de Rhodiole",
+    "attributes": {
+      "indication": ["Angoisse, anxiété", "Stress chronique"],
+      "composition": [
+        "EPS de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/rhodiole/\" data-type=\"phytotherapie\" data-id=\"1531\">Rhodiole</a>"
+      ],
+      "action": ["Plante adaptogène : régule la production de cortisol"],
+      "utilisation": ["2 comprimés le matin (excitant)"]
+    },
+    "featuredImage": "/images/products/product_10701275b.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "7e8957a6-1e23-43bf-ab3b-aa948bca5c00",
+    "title": "EPS de Noyer",
+    "attributes": {
+      "indication": ["Diarrhées"],
+      "composition": [
+        "EPS de noyer : antidiarrhéique, antiseptique et antispasmodique"
+      ],
+      "utilisation": ["1 à 2 comprimés par jour"]
+    },
+    "featuredImage": "/images/products/phytostandard-noyer-nouvelle-charte-1.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "e9a1a1e9-0fff-4576-9a5b-470e30ba3de8",
+    "title": "Protéochoc",
+    "attributes": {
+      "indication": ["Inflammation", "Post-opération", "Post-vaccination"],
+      "composition": ["Porphyral"],
+      "utilisation": ["6 comprimés par jour pendant 3 à 4 jours"]
+    },
+    "featuredImage": "/images/products/pileje-proteochoc-36-capsules.jpg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "b8490419-84a2-4c92-8f0b-cea0cb9a5443",
+    "title": "Immuchoc",
+    "attributes": {
+      "indication": [
+        "Récupération en cas de pathologie",
+        "Post-vaccination COVID"
+      ],
+      "composition": [
+        "Porphyral",
+        "Eleuthérocoque : dynamisant",
+        "Vitamine C",
+        "Eucalyptus"
+      ],
+      "utilisation": ["3 comprimés par jour pendant 5 jours"],
+      "conseils": [
+        "En cas de contre-indication à Immuchoc, conseiller <a href=\"https://pharmacie.marionetmarin.fr/produit/proteochoc/\" data-type=\"produit\" data-id=\"3168\">Protéochoc</a>"
+      ]
+    },
+    "featuredImage": "/images/products/immuchoc_1_300x300.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "d1358981-c44d-4af9-9de5-82ebe16de501",
+    "title": "Lactibiane ALR",
+    "attributes": {
+      "indication": [
+        "Désensibilisation allergique non spécifique (pollens, acariens, pollution, poils de chat)"
+      ],
+      "composition": [
+        "> <strong>Gélules blanches</strong>",
+        "Probiotiques : rééquilibre la balance lymphocytaire",
+        "> <strong>Gélules jaunes</strong><br>Quercétine d'oignon : diminution de la libération d'histamine, augmentation de la capacité respiratoire<br>Ac. rosmarinique -> prévention des symptômes de la rhinite allergique"
+      ],
+      "utilisation": [
+        "1 gélule de chaque couleur le matin pendant 1 mois puis 1 jour sur 2 pendant 2 mois",
+        "À refaire chaque année en prévention"
+      ],
+      "avantages": ["Prévention des symptômes allergiques"]
+    },
+    "featuredImage": "/images/products/product_6790673b-1.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "3396dfc5-cc55-4cdd-a04d-175c8f8a1f4d",
+    "title": "ErgyTol",
+    "attributes": {
+      "indication": [
+        "<strong>Inflammation en général</strong>",
+        "Douleurs articulaires",
+        "Douleurs menstruelles",
+        "Douleurs digestives",
+        "Voies respiratoires",
+        "Rétablissement, coup, choc"
+      ],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/curcuma/\" data-type=\"phytotherapie\" data-id=\"1265\">Curcuma</a>, HE de Curcuma, Boswellia, <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/harpagophyton/\" data-type=\"phytotherapie\" data-id=\"1456\">Harpagophyton</a> : anti-inflammatoire",
+        "Bambou : reminéralisant",
+        "Zinc, Sélénium, Vitamines B5 et B6 : cofacteurs du glutathion (lutte contre l'inflammation)"
+      ],
+      "action": [
+        "HE de Curcuma : meilleure absorption du Curcuma",
+        "Zinc, Curcuma : augmentation de la production de protéines de choc HSP"
+      ],
+      "utilisation": [
+        "2 à 3 gélules par jour au cours des repas, en 1 ou plusieurs prises +- 1 gélule en fin de journée",
+        "<em>Céphalées de tension</em> : 3 gélules par jour puis diminution progressive",
+        "<em>Douleurs menstruelles</em> : 3 gélules d'un coup (à partir de 15 ans)",
+        "Maximum 10 jours"
+      ],
+      "conseils": [
+        "ErgyMag : en cas de céphalées de tension",
+        "<a href=\"https://pharmacie.marionetmarin.fr/produit/ergymunyl/\" data-type=\"produit\" data-id=\"2858\">ErgyMunyl</a> : sinusite, bronchite",
+        "ErgyProtect Confort : sphère digestive",
+        "ErgyPaïne Plus : si gonflement après une opération, coup, choc",
+        "ErgyBiol : après une opération",
+        "ErgyOstéo : consolidation des os",
+        "ErgyFemina : douleurs de règles",
+        "ErgyPhytum, ErgySil : articulations → puis continuer avec <a href=\"https://pharmacie.marionetmarin.fr/produit/ergycartil-fort/\" data-type=\"produit\" data-id=\"2835\">ErgyCartil Fort</a>",
+        "ErgyBase : tendinite",
+        "Touristes en montagne, randonneurs"
+      ]
+    },
+    "featuredImage": "/images/products/image-7.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "71fc9f3a-c980-4661-a2ee-abff1aa6dfbc",
+    "title": "ErgyZym",
+    "attributes": {
+      "indication": [
+        "Repas copieux : riches en protéines, glucides, lipides ou excès d'alcool",
+        "Mastication insuffisante : repas pris trop rapidement, personnes âgées",
+        "Digestion perturbée par le stress : repas rapide",
+        "Dysfonctionnement enzymatique : âge (diminution de l'activité des protéases), médicaments",
+        "Sensibilité digestive : gluten, lactose"
+      ],
+      "composition": [
+        "Amylase, cellulase : digestion des glucides",
+        "Protéase : digestion des protéines",
+        "Lactase : digestion du lactose",
+        "Lipase : digestion des lipides",
+        "Prolyl-oligopeptidase : augmentation de la tolérance au gluten",
+        "Bétaïne HCl : augmentation de la motricité digestive",
+        "Calcium : participe au bon fonctionnement des enzymes digestives",
+        "Vitamines B2 et B3 : maintien de la muqueuse"
+      ],
+      "utilisation": [
+        "1 gélule aux 2 principaux repas",
+        "À prendre au début ou au milieu du repas, pour mélanger avec le bol alimentaire",
+        "Usage ponctuel recommandé mais chronique possible"
+      ],
+      "conseils": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/produit/ergyepur/\" data-type=\"produit\" data-id=\"2855\">ErgyEpur</a> : épuration du foie",
+        "ErgyDetox : si écoeuré par tout, tout le temps → action sur l'ensemble de l'organisme",
+        "<a href=\"https://pharmacie.marionetmarin.fr/produit/ergydigest/\" data-type=\"produit\" data-id=\"3052\">ErgyDigest</a> : drainage hépatique et vésiculaire, augmentation de la production et du stockage de la bile (digestion difficile après un repas) = traitement de fond",
+        "ErgyCalm : relaxation",
+        "ErgyProtect Confort : confort intestinal"
+      ],
+      "avantages": [
+        "Possible si pas de vésicule (donc mauvaise digestion des lipides)"
+      ]
+    },
+    "featuredImage": "/images/products/image-6.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "d2a76342-88c1-42f4-9700-c3882f78cf23",
+    "title": "Ergy C 400",
+    "attributes": {
+      "indication": [
+        "Infection",
+        "Soutien du fonctionnement immunitaire",
+        "Cicatrisation, algodystrophie"
+      ],
+      "composition": ["L-Ascorbate de calcium", "Trans-resvératrol"],
+      "utilisation": [
+        "1 cuillère mesure = 1 g = 400 mg de Vitamine C absorbée",
+        "<strong>Adulte</strong> : 1 cuillère mesure par jour",
+        "<em>Pour la cicatrisation</em> : 2 cuillères mesure en 2 prises",
+        "<strong>Enfants de 3 à 10 ans</strong> : 1/2 cuillère mesure par jour",
+        "À diluer dans de l'eau, une compote, ..."
+      ],
+      "conseils": [""],
+      "avantages": [
+        "Pas acidifiant, pas laxatif",
+        "125 doses dans le pot = 4 mois d'utilisation"
+      ]
+    },
+    "featuredImage": "/images/products/image-5.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "39f86b6d-e96f-4494-aa60-8823d0e39a95",
+    "title": "Biotic P2 Baby CDN",
+    "attributes": {
+      "indication": [
+        "Coliques, diarrhées du nourrisson",
+        "Naissance par césarienne"
+      ],
+      "composition": ["2 souches probiotiques"],
+      "action": ["Probiotiques retrouvés dans le lait maternel"],
+      "utilisation": ["6 gouttes par jour dans la bouche"]
+    },
+    "featuredImage": "/images/products/image-4.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "237f55a1-2a43-4ffd-be17-d6b8f7f7a2d0",
+    "title": "GlutaProtect",
+    "attributes": {
+      "indication": ["Hyperperméabilité intestinale", "Colon irritable"],
+      "composition": ["Glutamine", "Aloe vera"],
+      "utilisation": ["1 cuillère mesure par jour pendant 20 jours"],
+      "avantages": ["Action rapide"]
+    },
+    "featuredImage": "/images/products/image-3.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "60412c09-7021-4e8b-8d6f-d1a243243e4a",
+    "title": "Stoma-Protect",
+    "attributes": {
+      "indication": [
+        "Reflux, acidité",
+        "Protection, apaisement de la muqueuse gastrique"
+      ],
+      "utilisation": ["1 à 3 comprimés à sucer par jour"],
+      "conseils": ["Penser à donner Pulpe d'Aloe Vera"],
+      "avantages": ["Aucune CI"]
+    },
+    "featuredImage": "/images/products/image-2.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "4e254210-174f-40f8-90da-d07f257c796a",
+    "title": "Glucolight",
+    "attributes": {
+      "indication": [
+        "Plus de 5 kg à perdre",
+        "Ménopause",
+        "Obésité abdominale",
+        "Préresistance à l'insuline"
+      ],
+      "composition": ["Myoinositol, cannelle : régulation de l'insulinémie"],
+      "action": [""],
+      "utilisation": ["1 sachet par jour pendant 2 à 3 mois"],
+      "avantages": ["Réduit le gout du sucre, attention"]
+    },
+    "featuredImage": "/images/products/image-1.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "61fffacd-120e-4d73-b89f-b58831f373d7",
+    "title": "Biotic P5 Flash",
+    "attributes": {
+      "indication": ["Diarrhées aigües, quelle qu'en soit l'origine"],
+      "composition": [
+        "Probiotiques",
+        "Myrtille : antiseptique naturel, anti-inflammatoire"
+      ],
+      "utilisation": ["2 gélules par jour pendant 5 jours"]
+    },
+    "featuredImage": "/images/products/image.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "f91c5ab1-bd91-43fa-bca5-a9bb94ad7d12",
+    "title": "ErgyDigest",
+    "attributes": {
+      "indication": [
+        "Amélioration de la digestion",
+        "Détoxification digestive",
+        "Imperfections cutanées",
+        "Changements de saison"
+      ],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/artichaut/\" data-type=\"phytotherapie\" data-id=\"1175\">Artichaut</a> : stimulation des voies biliaires",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/radis-noir/\" data-type=\"phytotherapie\" data-id=\"1523\">Radis noir</a> : stimulation du foie",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/romarin/\" data-type=\"phytotherapie\" data-id=\"1533\">Romarin</a> : stimulation du foie",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/bardane/\" data-type=\"phytotherapie\" data-id=\"1182\">Bardane</a>",
+        "Zinc",
+        "Molybdène"
+      ],
+      "utilisation": [
+        "10 mL le matin dans un verre d'eau",
+        "En dehors des repas"
+      ],
+      "conseils": [
+        "Utiliser ErgyDigest pour un problème chronique et <a href=\"https://pharmacie.marionetmarin.fr/produit/ergyzym/\" data-type=\"produit\" data-id=\"3157\">ErgyZym</a> pour un problème plus ponctuel"
+      ]
+    },
+    "featuredImage": "/images/products/image-2.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "2b548c81-3689-4d25-98f7-0552259f05d9",
+    "title": "ErgyDraine",
+    "attributes": {
+      "indication": [
+        "Élimination : sportif, minceur, acidité cellulaire (inflammation)",
+        "Détoxification",
+        "Drainage de l'organisme",
+        "Aux changements de saison"
+      ],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/reine-des-pres/\" data-type=\"phytotherapie\" data-id=\"1527\">Reine des prés</a> : drainage",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/artichaut/\" data-type=\"phytotherapie\" data-id=\"1175\">Artichaut</a> : détoxification",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/cassis/\" data-type=\"phytotherapie\" data-id=\"1214\">Cassis</a> : inflammation, contrôle du poids, élimination rénale",
+        "Aubier de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/tilleul/\" data-type=\"phytotherapie\" data-id=\"1557\">Tilleul</a> : élimination rénale",
+        "Chrome"
+      ],
+      "utilisation": [
+        "10 mL le matin dans un verre d'eau ou dans 1 litre d'eau à boire dans la journée"
+      ]
+    },
+    "featuredImage": "/images/products/nutergia-ergydraine_A.jpg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "ac3f3ceb-a0c7-48c4-b982-808f77723d8a",
+    "title": "EPS de Desmodium",
+    "attributes": {
+      "indication": [
+        "Excès de paracétamol",
+        "Contraception",
+        "Hépatoprotecteur"
+      ],
+      "composition": ["EPS de Desmodium"],
+      "action": ["Diminution des transaminases"],
+      "conseils": ["1 à 2 gélules par jour, 10 jours par mois"]
+    },
+    "featuredImage": "/images/products/image-12.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "ae0fdfda-2567-46d3-95a0-c0813f28e861",
+    "title": "EPS Artichaut/Radis noir",
+    "attributes": {
+      "indication": ["Détoxification hépatique"],
+      "composition": [
+        "EPS <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/artichaut/\" data-type=\"phytotherapie\" data-id=\"1175\">Artichaut</a>",
+        "EPS <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/radis-noir/\" data-type=\"phytotherapie\" data-id=\"1523\">Radis noir</a>"
+      ],
+      "utilisation": ["2 comprimés le soir au coucher"],
+      "avantages": ["L'artichaut a également une action sur la constipation"]
+    },
+    "featuredImage": "/images/products/image-11.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "67e65d45-8ba0-4626-939f-04ebde147789",
+    "title": "Omegabiane Foie de Morue",
+    "attributes": {
+      "indication": [
+        "Stimulation du système immunitaire",
+        "Prévention des crevasses"
+      ],
+      "composition": ["Vitamine A", "Vitamine D"]
+    },
+    "featuredImage": "/images/products/image-10.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "9f822ae6-5779-4903-9e33-63143aa70ccd",
+    "title": "Omegabiane DHA",
+    "attributes": {
+      "indication": [
+        "Troubles de la mémoire",
+        "Troubles de l'humeur (dont prévention du baby-blues chez la femme allaitante)",
+        "Prévention de la DMLA"
+      ],
+      "composition": ["Acide docohexaénoïque (DHA) : 250 mg"],
+      "action": ["Participe au bon fonctionnement du cerveau"]
+    },
+    "featuredImage": "/images/products/image-9.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "c0a95775-61a4-462c-99b5-13fb3b0b98b1",
+    "title": "Omegabiane Poissons des mers froides",
+    "attributes": {
+      "indication": ["Régime hyperprotéiné"],
+      "composition": ["ω3 à longues chaines"]
+    },
+    "featuredImage": "/images/products/image-8.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "ef4859be-f0ca-4654-a57f-d16a0f5ca1f3",
+    "title": "Lactichoc",
+    "attributes": {
+      "indication": [
+        "Post-coloscopie",
+        "En cas de gastro-entérite persistante",
+        "Post-antibiotique sur une longue durée ou à forte doses",
+        "Intoxication alimentaire",
+        "Grosse dysbiose"
+      ],
+      "utilisation": ["2 gélules le matin à jeun, pendant 10 jours"]
+    },
+    "featuredImage": "/images/products/image-7.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "2100ca30-256e-41ff-a485-a3b5dfad9486",
+    "title": "Perméaline",
+    "attributes": {
+      "indication": [
+        "Hyper-perméabilité intestinale",
+        "Intolérance alimentaire, allergie"
+      ],
+      "composition": [
+        "L-Glutamine : acide aminé intervenant dans les jonctions serrées entre les entérocytes",
+        "Extrait de thé vert",
+        "Zinc"
+      ],
+      "action": ["Cicatrisation de la muqueuse intestinale"],
+      "utilisation": ["1 stick par jour, à diluer dans un verre d'eau"]
+    },
+    "featuredImage": "/images/products/image-1.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "a13866e2-599f-4669-903a-b1fdedaedb2b",
+    "title": "Noctesia",
+    "attributes": {
+      "indication": ["Insomnie", "Stress, anxiété"],
+      "composition": [
+        "EPS <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/eschscholtzia/\" data-type=\"phytotherapie\" data-id=\"1373\">Eschscholtzia (Pavot de Californie)</a>",
+        "EPS <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/valeriane/\" data-type=\"phytotherapie\" data-id=\"1559\">Valériane</a>"
+      ],
+      "avantages": [
+        "2 fois plus dosé que l'<a href=\"https://pharmacie.marionetmarin.fr/produit/eps-eschscholtzia-valeriane/\" data-type=\"produit\" data-id=\"2086\">EPS Eschscholtzia/Valériane</a>"
+      ]
+    },
+    "featuredImage": "/images/products/image.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "2a92c021-6994-4a38-946e-ad5daddbec40",
+    "title": "Immudia 3 ans et plus",
+    "attributes": {
+      "indication": [
+        "Diminution des infections ORL, grippe",
+        "Après un antibiotique"
+      ],
+      "utilisation": ["Comprimés à sucer gout fraise"],
+      "conseils": ["Utilisable en préventif ou curatif", "De 3 ans à adulte"]
+    },
+    "featuredImage": "/images/products/3D_IMMUDIA_3_2006P-1024x1024-1.png",
+    "laboratoire": "NHCO"
+  },
+  {
+    "id": "ecf665d2-9318-457a-a550-cb3cb92760fb",
+    "title": "Immudia 1 à 3 ans",
+    "attributes": {
+      "indication": ["Diminution des pathologies entériques ou ORL"],
+      "composition": ["Probiotiques", "Vitamine D"],
+      "conseils": ["Sticks à mettre dans de l'eau ou une compote"]
+    },
+    "featuredImage": "/images/products/3D_IMMUDIA_1-3ANS_2006P-1024x1024-1.png",
+    "laboratoire": "NHCO"
+  },
+  {
+    "id": "c91dbdf7-949d-45d4-bd74-0bd002bd2c4f",
+    "title": "Immudia 0 à 12 mois",
+    "attributes": {
+      "indication": ["Prévention pathologies entériques ou ORL"],
+      "composition": ["Souches probiotiques", "Vitamine D"],
+      "utilisation": ["18 gouttes par jour"],
+      "conseils": [
+        "Utile en préventif (souvent malade, césarienne) ou en curatif"
+      ]
+    },
+    "featuredImage": "/images/products/3D_IMMUDIA_0_12MOIS_2006P-2.png",
+    "laboratoire": "NHCO"
+  },
+  {
+    "id": "fa70fa7b-7f5e-4475-a82b-4e101a6de193",
+    "title": "Priorel",
+    "attributes": {
+      "indication": ["Prévention grippe"],
+      "composition": [
+        "3 souches probiotique : Coryoniformis K8",
+        "Eleuthérocoque",
+        "Extrait de feuille d'olivier"
+      ],
+      "action": [
+        "Eleuthérocoque : diminution des symptômes",
+        "Feuille d'olivier : bloque l'entrée Influenza"
+      ],
+      "utilisation": ["28 jours de traitement"],
+      "avantages": [
+        "Diminution des symptômes avec ou sans vaccin (prévention)",
+        "Augmente efficacité du vaccin",
+        "OK chez l'asthmatique (pas d'huiles essentielles)"
+      ]
+    },
+    "featuredImage": "/images/products/telechargement.jpg",
+    "laboratoire": "NHCO"
+  },
+  {
+    "id": "37543a09-7ff5-4edb-bc15-76d6f6ed1c10",
+    "title": "Actibron",
+    "attributes": {
+      "indication": ["Toux grasse"],
+      "composition": [
+        "N-Acétyl-Cystéine",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/eucalyptus-globuleux/\" data-type=\"aromatherapie\" data-id=\"2045\">HE d’Eucalyptus globuleux</a>",
+        "Pin",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/curcuma/\" data-type=\"phytotherapie\" data-id=\"1265\">Curcuma</a>",
+        "Origan",
+        "Glutamine"
+      ],
+      "action": [
+        "Origan : antibactérien",
+        "Glutamine : augmente l'immunité pulmonaire"
+      ],
+      "utilisation": ["4 gélules par jour pendant 7 jours"]
+    },
+    "featuredImage": "/images/products/Actibron_Gamme-Respi-1000x1000-1.png",
+    "laboratoire": "NHCO"
+  },
+  {
+    "id": "211ea5ec-103a-4e9c-925a-a7112bcac513",
+    "title": "Vitorel",
+    "attributes": {
+      "indication": [
+        "Infections respiratoires supérieures : nez bouché, nez qui coule, sinus, rhinite"
+      ],
+      "composition": [
+        "<strong>Comprimé à sucer</strong>",
+        "- Bromelaïne",
+        "- <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/menthe-poivree/\" data-type=\"aromatherapie\" data-id=\"1112\">HE de Menthe poivrée</a>",
+        "- <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/eucalyptus-globuleux/\" data-type=\"aromatherapie\" data-id=\"2045\">HE d’Eucalyptus globuleux</a>",
+        "<strong>Comprimé à avaler</strong>",
+        "- <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/menthe-poivree/\" data-type=\"aromatherapie\" data-id=\"1112\">HE de Menthe poivrée</a>",
+        "- <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/thym/\" data-type=\"phytotherapie\" data-id=\"1555\">Thym</a>",
+        "- <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/eucalyptus-globuleux/\" data-type=\"phytotherapie\" data-id=\"1376\">Eucalyptus globuleux</a>",
+        "- Selenium",
+        "- Andrographis"
+      ],
+      "action": ["Décongestionnant"],
+      "utilisation": [
+        "3 fois par jour pendant 5 jours",
+        "1 comprimé à sucer et 1 comprimé à avaler"
+      ]
+    },
+    "featuredImage": "/images/products/Vitorel_Gamme-Respi-1000x1000-1.png",
+    "laboratoire": "NHCO"
+  },
+  {
+    "id": "d2352c0f-d557-473b-a01a-0849c82d6f2d",
+    "title": "Nodé K",
+    "attributes": {
+      "indication": ["Psoriasis capillaire"],
+      "action": ["Kératolytique"],
+      "utilisation": [
+        "Appliquer pur et sur cheveux secs puis laisser agir 10 minutes avant de rincer"
+      ]
+    },
+    "featuredImage": "/images/products/image-6.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "8bf5701b-aae8-47b6-8369-22c898833cdf",
+    "title": "Nodé DS+",
+    "attributes": {
+      "indication": [
+        "Dermatite séborrhéique capillaire",
+        "Rougeurs, démangeaisons"
+      ],
+      "composition": ["Antifongique luttant contre Malassezia furfur"]
+    },
+    "featuredImage": "/images/products/image-5.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "8cd72fc7-af4a-466c-9b2f-5c22bb52430d",
+    "title": "Nodé G shampooing",
+    "attributes": {
+      "indication": ["Cheveux gras"],
+      "composition": [
+        "Même composition que <a href=\"https://pharmacie.marionetmarin.fr/produit/node-shampooing-fluide/\" data-type=\"produit\" data-id=\"3002\">Nodé Shampooing fluide</a>",
+        "Zinc : Moins de regraissage"
+      ]
+    },
+    "featuredImage": "/images/products/image-3.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "25274ec4-ed1a-4716-8857-4609e2496ba4",
+    "title": "Nodé Shampooing fluide",
+    "attributes": {
+      "composition": [
+        "Tensioactifs issus du lait de coco et d'avoine",
+        "Sans silicones ou parabènes"
+      ],
+      "action": [
+        "Non détergent",
+        "Capte la saleté sans altérer le film hydrolipidique"
+      ],
+      "avantages": ["pH 5,5", "Ne pique pas les yeux", "Fabrication en France"]
+    },
+    "featuredImage": "/images/products/image-2.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "7a0873d9-31ed-42ff-b7a0-b573121f58df",
+    "title": "Biphase Lipo alcoolique",
+    "attributes": {
+      "indication": [
+        "Désinfection des mains",
+        "Virucide, bactéricide et fongicide"
+      ],
+      "composition": ["Alcool > 70 %", "Huile de Karité", "Squalènes"],
+      "action": [""],
+      "utilisation": ["2 à 3 pulvérisations dans le creux de la main"],
+      "conseils": [
+        "Prix un peu élevé mais pas la peine d'acheter une crème mains"
+      ]
+    },
+    "featuredImage": "/images/products/image-1.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "1a6c0c7d-3de3-4b58-8258-b78cb4cd7826",
+    "title": "Biotic-P2 Restaure",
+    "attributes": {
+      "indication": ["En accompagnement des traitements antibiotiques"],
+      "composition": ["2 souches probiotiques"],
+      "utilisation": [
+        "1 à 2 gélules par jour",
+        "Possibilité de prendre au cours des repas et pendant l'antibiotique"
+      ],
+      "avantages": [
+        "Prix raisonnable",
+        "Peut être pris en même temps que l'antibiotique",
+        "Ouverture des gélules possible"
+      ]
+    },
+    "featuredImage": "/images/products/aragan-restaure-ferments-lactiques-10-glules.jpg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "337000c8-a06c-4657-abd6-3c772c620908",
+    "title": "Biotic-P10 Clinical",
+    "attributes": {
+      "indication": [
+        "Intolérances alimentaires",
+        "Allergies, eczéma",
+        "Post-coloscopie",
+        "Inflammation intestinale"
+      ],
+      "composition": ["10 souches probiotiques à forte concentration"],
+      "utilisation": [
+        "1 gélule le matin à jeun sur 20 jours",
+        "Puis passer sur <a href=\"https://pharmacie.marionetmarin.fr/produit/lactibiane-reference/\" data-type=\"produit\" data-id=\"2533\">Lactibiane Référence</a> ou <a href=\"https://pharmacie.marionetmarin.fr/produit/biotic-p7/\" data-type=\"produit\" data-id=\"2989\">Biotic-P7 Entéro</a>"
+      ],
+      "avantages": ["Un des seuls produits avec autant de souches"]
+    },
+    "featuredImage": "/images/products/telechargement.png",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "9110b1e8-0099-4e80-a1e5-093810c380d4",
+    "title": "Biotic-P7 Junior",
+    "attributes": {
+      "indication": ["Immunité", "Troubles digestifs"],
+      "composition": ["7 souches probiotiques"],
+      "utilisation": ["1 stick orodispersible par jour, 10 jours par mois"],
+      "conseils": [""],
+      "avantages": [
+        "Sticks orodispersibles sans eau (gout prune)",
+        "Stimulation de l'immunité"
+      ]
+    },
+    "featuredImage": "/images/products/unnamed.png",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "b83a8aaf-4315-4ddb-b2fc-23db76562a17",
+    "title": "Biotic-P7 Adulte",
+    "attributes": {
+      "indication": [
+        "Constipation",
+        "Colon irritable avec tendance à la constipation"
+      ],
+      "composition": ["Fibres d'acacia", "7 souches de probiotiques"],
+      "utilisation": ["1 à 2 sachets le matin à jeun dans un verre d'eau"],
+      "conseils": [
+        "Penser en conseil lors d'une délivrance de LaxActifs, Sollievo, OptiFibre, Microlax, Dulcolax"
+      ],
+      "avantages": [
+        "Association de probiotiques et de prébiotiques",
+        "Action rapide et traitement de fond"
+      ]
+    },
+    "featuredImage": "/images/products/images.png",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "2162eee6-8a51-413b-be57-db12702a7484",
+    "title": "Biotic-P7 Entéro",
+    "attributes": {
+      "indication": [
+        "Alternance diarrhées et constipation",
+        "Sensibilité intestinale, inflammation, ballonnements ",
+        "Refaire la flore"
+      ],
+      "composition": ["7 souches probiotiques"],
+      "utilisation": ["1 gélules le matin à jeun"]
+    },
+    "featuredImage": "/images/products/aragan-biotic-p7-entro-30-glules.jpg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "6a51d14d-dde4-47b9-b41c-f12d4707dbb8",
+    "title": "Capsules bronches",
+    "attributes": {
+      "indication": ["Sinusite", "Bronchite"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/cannelier-de-chine/\" data-type=\"aromatherapie\" data-id=\"2041\">HE de Cannelier de Chine</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/origan-compact/\" data-type=\"aromatherapie\" data-id=\"1117\">HE d’Origan compact</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/citronnier/\" data-type=\"aromatherapie\" data-id=\"1088\">HE de Citronnier</a>"
+      ],
+      "action": ["Effet antiseptique ++"],
+      "utilisation": [
+        "1 capsule avant le repas 3 fois par jour pendant 7 jours"
+      ]
+    },
+    "featuredImage": "/images/products/image-18.jpeg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "a84d5ee8-9026-457c-a129-8fea019ea2e5",
+    "title": "Oleaocaps 1 : Voies respiratoires (Origan)",
+    "attributes": {
+      "indication": ["Mal de gorge", "Bronchite"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/origan-compact/\" data-type=\"aromatherapie\" data-id=\"1117\">HE d’Origan compact</a> ++"
+      ],
+      "utilisation": [
+        "Curatif : 2 capsules avant le repas, 3 fois par jour pendant 5 jours",
+        "Préventif : 2 capsules par jour avant un repas"
+      ]
+    },
+    "featuredImage": "/images/products/image-17.jpeg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "cfbe71ed-9a11-49e0-ad48-5ed0f5d2d994",
+    "title": "Solution défenses naturelles",
+    "attributes": {
+      "utilisation": [
+        "Voie orale : 2 gouttes 3 fois par jour",
+        "Inhalation sèche : 3 gouttes dans la paume de la main, puis réchauffer avant de faire une coque devant le nez",
+        "Inhalation humide : 3 à 5 gouttes dans un bol d'eau frémissante",
+        "Diffusion",
+        "Friction : 3 à 4 gouttes sur la poitrine ou les avant-bras"
+      ],
+      "conseils": ["Utilisable dès 3 ans si dilution dans une huile végétale"]
+    },
+    "featuredImage": "/images/products/image-16.jpeg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "f0fd8b91-5e57-4c78-b2f9-7f0ac0eb568b",
+    "title": "Pastilles apaisantes",
+    "attributes": {
+      "indication": ["Angine", "Maux de gorge"],
+      "conseils": [
+        "En cas d'angine bactérienne, en attendant de consulter le médecin"
+      ]
+    },
+    "featuredImage": "/images/products/image-15.jpeg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "41e62d65-5d7f-4085-9f8f-816506d1256c",
+    "title": "Spray gorge",
+    "attributes": {
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/sariette-des-montagnes/\" data-type=\"aromatherapie\" data-id=\"1127\">HE de Sariette des montagnes</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/cannelier-de-chine/\" data-type=\"aromatherapie\" data-id=\"2041\">HE de Cannelier de Chine</a>"
+      ]
+    },
+    "featuredImage": "/images/products/image-14.jpeg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "6eeb48cb-fd9a-421e-a1aa-939cdb5f67ca",
+    "title": "Spray nasal décongestionnant",
+    "attributes": {
+      "indication": ["Nez bouché"],
+      "action": [
+        "Spray hypertonique",
+        "Hamamélis + <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/geranium-bourbon/\" data-type=\"aromatherapie\" data-id=\"2047\">HE de Géranium bourbon</a> : action hémostatique"
+      ],
+      "conseils": [
+        "Ne pas utiliser en cas de nez sec → Utiliser Allergoforce (anti-allergique)"
+      ]
+    },
+    "featuredImage": "/images/products/image-13.jpeg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "e2e4847e-a63b-43aa-b79a-7793f4cd789e",
+    "title": "Sirop refroidissements",
+    "attributes": {
+      "indication": ["Toux sèche"],
+      "composition": [
+        "Bourgeons de <a href=\"https://pharmacie.marionetmarin.fr/produit/viorne/\" data-type=\"produit\" data-id=\"2947\">Viorne</a>"
+      ]
+    },
+    "featuredImage": "/images/products/image-12.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "46008d91-2a75-400a-85c0-337d9c56652e",
+    "title": "Sirop des fumeurs",
+    "attributes": { "indication": ["Toux grasse avec beaucoup de sécrétions"] },
+    "featuredImage": "/images/products/image-9.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "60c035e8-3d00-4317-b874-dec170b2ee83",
+    "title": "Sirop des chantres",
+    "attributes": {
+      "indication": ["Enrouements, extinctions de voix"],
+      "composition": ["Bourgeons d'Aulne"]
+    },
+    "featuredImage": "/images/products/image-10.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "1306c054-6d17-45aa-abd9-49880cb36435",
+    "title": "Sirop respiration",
+    "attributes": {
+      "indication": ["Voix respiratoires encombrées"],
+      "composition": ["Bourgeons de Peuplier", "Bourgeons de Pin"]
+    },
+    "featuredImage": "/images/products/image-11.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "01d21b4c-0d9c-496a-aec3-c292869633e8",
+    "title": "Sirop voies respiratoires (Sirop hiver)",
+    "attributes": {
+      "indication": ["Toux sèche, grasse ou mixte"],
+      "conseils": [
+        "On peut ajouter 20 gouttes d'huile essentielle dans le flacon pour cibler le type de toux : <br>- Toux sèche : <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/cypres/\" data-type=\"aromatherapie\" data-id=\"1089\">HE de Cyprès</a><br>- Toux grasse : <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/eucalyptus-globuleux/\" data-type=\"aromatherapie\" data-id=\"2045\">HE d’Eucalyptus globuleux</a><br>- Toux inflammatoire (collante, douloureuse) : HE de Sapin de Sibérie<br>- Toux trainante : <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/niaouli/\" data-type=\"aromatherapie\" data-id=\"1115\">HE de Niaouli</a>"
+      ]
+    },
+    "featuredImage": "/images/products/image-8.jpeg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "7355b61f-a100-4f56-9f1f-988486062f28",
+    "title": "Baume respiratoire (Baume pectoral)",
+    "attributes": {
+      "utilisation": [
+        "2 à 3 fois par jour localement",
+        "Ne s'utilise pas en inhalation !!"
+      ],
+      "avantages": ["Utilisable chez asthmatique"]
+    },
+    "featuredImage": "/images/products/image-7.jpeg",
+    "laboratoire": "Pranarom"
+  },
+  {
+    "id": "bef55b29-63ab-485c-8562-42c6a3781200",
+    "title": "Cassis Gommes",
+    "attributes": {
+      "indication": ["Inflammation de la gorge"],
+      "action": ["Effet cortison-like"],
+      "utilisation": ["1 gomme = 7 gouttes"]
+    },
+    "featuredImage": "/images/products/image-6.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "ca6bda45-ba58-4871-b4cd-422e657bf9af",
+    "title": "Sanogem",
+    "attributes": {
+      "indication": ["Antiseptique naturel (viral, bactérien en fongique)"],
+      "composition": ["Bourgeons d'Aulne", "Bourgeons de Peuplier"],
+      "utilisation": [
+        "Enfant (dès la naissance) : 1 goutte par année révolue",
+        "Curatif : 5 gouttes 3 fois par jour",
+        "Préventif : 15 gouttes le matin (cures de 3 semaines avec fenêtre thérapeutique d'une semaine)"
+      ]
+    },
+    "featuredImage": "/images/products/image-5.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "faeb4d0f-48c9-44a7-8dfb-8b089eae06c6",
+    "title": "Sinugem",
+    "attributes": {
+      "indication": [
+        "Sinusite",
+        "Congestion, inflammation ORL",
+        "Otites récurrentes"
+      ],
+      "utilisation": [
+        "Enfant (dès la naissance) : 1 goutte par année révolue",
+        "Curatif : 5 gouttes 3 fois par jour",
+        "Préventif : 15 gouttes le matin (cures de 3 semaines avec fenêtre thérapeutique d'une semaine)"
+      ]
+    },
+    "featuredImage": "/images/products/image-4.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "e3ed77d2-ff51-4b5b-9531-bf62bc370c83",
+    "title": "Tonigem",
+    "attributes": {
+      "indication": ["Fatigue physique (pour tenir sur la durée)"],
+      "composition": ["Sequoia"],
+      "utilisation": [
+        "<span style=\"font-size: inherit;\">15 gouttes le matin (cures de 3 semaines avec fenêtre thérapeutique d'une semaine)</span>"
+      ]
+    },
+    "featuredImage": "/images/products/image-3.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "7937829c-c932-4f00-845b-459ecd835664",
+    "title": "Ronce",
+    "attributes": {
+      "indication": [
+        "BPCO, asthme sévère",
+        "Fractures sévères",
+        "Gros coup de fatigue, coup de vieux"
+      ],
+      "utilisation": [
+        "Enfant (dès la naissance) : 1 goutte par année révolue",
+        "Curatif : 5 gouttes 3 fois par jour",
+        "Préventif : 15 gouttes le matin (cures de 3 semaines avec fenêtre thérapeutique d'une semaine)"
+      ]
+    },
+    "featuredImage": "/images/products/image-2.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "4622c852-f6da-4a19-8703-eae3b4282e24",
+    "title": "Noyer",
+    "attributes": {
+      "indication": ["Difficultés d'endormissement"],
+      "utilisation": ["2 à 3 gouttes au coucher"]
+    },
+    "featuredImage": "/images/products/image-1.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "230cab2f-7838-4e38-8622-c523aaf9d024",
+    "title": "Rosier sauvage - Rosa canina - Églantier",
+    "attributes": {
+      "indication": ["Stimulation des défenses immunitaires"],
+      "utilisation": [
+        "Enfant (dès la naissance) : 1 goutte par année révolue",
+        "Curatif : 5 gouttes 3 fois par jour",
+        "Préventif : 15 gouttes le matin (cures de 3 semaines avec fenêtre thérapeutique d'une semaine)"
+      ]
+    },
+    "featuredImage": "/images/products/image.png",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "6a0de7c3-18f8-4fed-aef1-2e0ae5d2ea07",
+    "title": "Viorne",
+    "attributes": {
+      "indication": [
+        "<span style=\"font-size: inherit;\">Terrains allergiques (eczéma, asthme, ...)</span>"
+      ],
+      "utilisation": [
+        "Enfant (dès la naissance) : 1 goutte par année révolue",
+        "Curatif : 5 gouttes 3 fois par jour",
+        "Préventif : 15 gouttes le matin (cures de 3 semaines avec fenêtre thérapeutique d'une semaine)"
+      ],
+      "conseils": ["À utiliser tout l'hiver"],
+      "avantages": [""]
+    },
+    "featuredImage": "/images/products/image.jpeg",
+    "laboratoire": "HerbalGem"
+  },
+  {
+    "id": "c4352411-0fd9-4c44-b40e-11dcb1a2c27b",
+    "title": "Lecitone Âge",
+    "attributes": {
+      "indication": ["Perte de mémoire"],
+      "composition": ["Bacopa", "Phospholipides", "Anti-oxydants", "Héricium"],
+      "utilisation": ["1 à 2 gélule par jour"]
+    },
+    "featuredImage": "/images/products/image-26.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "a4dc5a44-f81e-44cf-90d6-0f9839f461d7",
+    "title": "Lecitone SOS",
+    "attributes": {
+      "indication": ["Situations d'urgence"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/rhodiole/\" data-type=\"phytotherapie\" data-id=\"1531\">Rhodiole</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/ginseng/\" data-type=\"phytotherapie\" data-id=\"1400\">Ginseng</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/passiflore/\" data-type=\"phytotherapie\" data-id=\"1486\">Passiflore</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/aubepine/\" data-type=\"phytotherapie\" data-id=\"1177\">Aubépine</a>"
+      ],
+      "action": ["Adaptogène", "Anxiolytique"],
+      "utilisation": ["1 à 2 pulvérisation, jusqu'à 6 fois par jour"]
+    },
+    "featuredImage": "/images/products/image-25.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "5207c302-f72a-43ca-b2df-911231784d2d",
+    "title": "Lecitone Genius",
+    "attributes": {
+      "indication": [
+        "Fatigue physique et psychique",
+        "Préparation aux examens",
+        "Perte de mémoire"
+      ],
+      "composition": [
+        "Kola",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/guarana/\" data-type=\"phytotherapie\" data-id=\"1454\">Guarana</a>",
+        "Bacopa",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/ginkgo/\" data-type=\"phytotherapie\" data-id=\"1397\">Ginko biloba</a>",
+        "Omega 3"
+      ],
+      "utilisation": [
+        "2 le matin, 15 jours à 1 mois de traitement avant un examen"
+      ],
+      "avantages": ["2 en 1 : Booster physique et concentration + mémoire "]
+    },
+    "featuredImage": "/images/products/image-23.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "f8498ad4-d2fd-4607-bd11-b3173bf7ca8c",
+    "title": "FlexProtect",
+    "attributes": {
+      "indication": [
+        "Arthrose",
+        "Post-fracture ou pose de prothèse",
+        "Tendinites chroniques"
+      ],
+      "composition": [
+        "Collagène et précurseurs du collagène (Glycine, Lysine, Proline)",
+        "Acide hyaluronique",
+        "Bambou"
+      ],
+      "action": ["2 à 4 par jour, à moduler selon la crise"]
+    },
+    "featuredImage": "/images/products/image-4.png",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "97cb3d81-5799-4e6b-911e-869aff8aa307",
+    "title": "MyoActifs",
+    "attributes": {
+      "indication": ["Contractures musculaires", "Crampes"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/valeriane/\" data-type=\"phytotherapie\" data-id=\"1559\">Valériane</a>",
+        "Magnésium",
+        "Banane",
+        "Vitamine B6",
+        "Coenzyme Q10"
+      ],
+      "utilisation": [
+        "2 fois par jour, jusqu'à 4 fois par jour les premiers jours si grosse crise"
+      ]
+    },
+    "featuredImage": "/images/products/image-3.png",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "f801d3f2-c9ba-4597-a3a5-4797baabb5a1",
+    "title": "TuxActifs [TuxiGreen]",
+    "attributes": {
+      "indication": ["Tous types de toux"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/thym/\" data-type=\"phytotherapie\" data-id=\"1555\">Thym</a>",
+        "Plantain",
+        "Camomille",
+        "Miel",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/eucalyptus-globuleux/\" data-type=\"aromatherapie\" data-id=\"2045\">Eucalyptus globuleux</a>"
+      ],
+      "utilisation": ["1 à 3 cuillère de 10 mL/j"],
+      "avantages": ["Gout coca/citron"]
+    },
+    "featuredImage": "/images/products/image-22.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "e629924d-e1ff-44b6-98ca-4d5d8614dae8",
+    "title": "SinuFlash",
+    "attributes": {
+      "indication": ["Diminution de l'intensité des symptômes du rhume"],
+      "composition": [
+        "Probiotiques",
+        "Extrait de pépins de pamplemousse",
+        "Andrographis"
+      ],
+      "utilisation": ["1 matin + 1 soir"]
+    },
+    "featuredImage": "/images/products/image-21.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "8ba31be1-6402-4f6d-8b3a-190d0cc2b936",
+    "title": "RespiGreen [RhinActifs]",
+    "attributes": {
+      "indication": ["Rhûme"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/thym/\" data-type=\"phytotherapie\" data-id=\"1555\">Thym</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/eucalyptus-radie/\" data-type=\"aromatherapie\" data-id=\"2046\">Eucalyptus radié</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/ravintsara/\" data-type=\"aromatherapie\" data-id=\"1125\">Ravintsara</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/origan-compact/\" data-type=\"aromatherapie\" data-id=\"1117\">Origan</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/citronnier/\" data-type=\"aromatherapie\" data-id=\"1088\">Citron</a>"
+      ],
+      "utilisation": ["2 fois par jour pendant 5 jours"]
+    },
+    "featuredImage": "/images/products/image-20.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "07d54c2e-3ee3-48c9-9219-f55cb3a4fab8",
+    "title": "AvirActifs",
+    "attributes": {
+      "indication": [
+        "Dès les premiers symptômes d'une infection virale (gastro, ORL, herpès)"
+      ],
+      "composition": [
+        "Laurier noble",
+        "Niaouli",
+        "Cyprès",
+        "Zinc",
+        "Vitamine D3"
+      ],
+      "action": [""],
+      "utilisation": [
+        "2 fois par jour pendant la durée de l'infection",
+        "Jusqu'à 4 fois par jour les premiers jours"
+      ]
+    },
+    "featuredImage": "/images/products/image-2.png",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "d5a264e6-a636-40eb-94a9-36188574f464",
+    "title": "ImmunActifs",
+    "attributes": {
+      "indication": ["Booster les défenses immunitaires"],
+      "composition": [
+        "Propolis",
+        "Échinacées",
+        "Zinc",
+        "Ginseng",
+        "Ravintsara"
+      ],
+      "utilisation": ["2 fois par jour 15 jours par mois"]
+    },
+    "featuredImage": "/images/products/image-18.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "ec4e2734-266f-4b35-ab3b-fa02a163ffea",
+    "title": "Gelée royale",
+    "attributes": {
+      "indication": [""],
+      "action": ["Multivitamines", "Immunostimulant"],
+      "conseils": ["À conserver au frigo"]
+    },
+    "featuredImage": "/images/products/image-1.png",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "4fa332df-9555-47fa-be95-8f0d89096c3a",
+    "title": "Biotic-P2 Defenses",
+    "attributes": {
+      "indication": [
+        "Prévention des pathologies hivernales (pneumo, ORL, digestives)"
+      ],
+      "composition": [
+        "2 souches probiotiques (dont Bifidobacterium rhamnosus GG)",
+        "Vitamine C",
+        "Vitamine D"
+      ],
+      "utilisation": ["1 fois par jour pendant 1 mois puis 10 jours par mois"],
+      "conseils": [
+        "Associer <a href=\"https://pharmacie.marionetmarin.fr/produit/gelee-royale/\" data-type=\"produit\" data-id=\"2922\">Gelée royale</a>",
+        "\"Je voudrais quelque chose pour ne pas tomber malade cet hiver\"",
+        "En complément d'un conseil pour une pathologie hivernale",
+        "En prévention d'un herpès"
+      ]
+    },
+    "featuredImage": "/images/products/image-16.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "9abe1dcf-350d-48f4-9cad-5d22a765771e",
+    "title": "Gynéquilibre",
+    "attributes": {
+      "indication": ["Mycose", "Vaginose"],
+      "composition": [
+        "Probiotiques",
+        "Huile de bourrache",
+        "Acide hyaluronique"
+      ],
+      "action": [
+        "L'huile de bourrache a une activité anti-inflammatoire et hydratante des muqueuses"
+      ],
+      "utilisation": [
+        "Crise : 2 fois par jour pendant 5 jours puis 1 par jour",
+        "Prévention : 1 fois par jour pendant 15 jours",
+        "En cas de vaginose : un traitement de 3 mois est nécessaire (conseil associé Secnol ou seul)"
+      ]
+    },
+    "featuredImage": "/images/products/image-15.jpeg",
+    "laboratoire": "Aragan"
+  },
+  {
+    "id": "d8c2001d-8f83-4737-b623-eb920f175106",
+    "title": "Action Reliever",
+    "attributes": {
+      "indication": ["Arthrose du genou"],
+      "action": ["Décharge de l'articulation du côté douloureux"],
+      "utilisation": [
+        "Placer la baleine rigide du côté douloureux = zone chaude et gonflée (côté interne dans 90 % des cas)",
+        "Serrer les sangles à l'<strong>arrière</strong> puis à l'<strong>avant</strong>"
+      ],
+      "avantages": [
+        "Clips pour l'enlever et la remettre rapidement",
+        "Augmente le périmètre de marche",
+        "Retarde la nécessité d'une intervention chirurgicale"
+      ]
+    },
+    "featuredImage": "/images/products/image-14.jpeg",
+    "laboratoire": "Thuasne"
+  },
+  {
+    "id": "f45b0ea0-a721-4985-a874-cb1a5f6e6b45",
+    "title": "Bepanthen Sensicalm",
+    "attributes": {
+      "indication": ["Crise modérée d'eczéma"],
+      "composition": ["Céramides et triglycérides"],
+      "action": [
+        "Apport de ciment extracellulaire",
+        "Diminution de l'inflammation"
+      ],
+      "avantages": ["Utilisable sur un eczéma des paupières"]
+    },
+    "featuredImage": "/images/products/image-13.jpeg",
+    "laboratoire": "Bayer"
+  },
+  {
+    "id": "1afc6064-31bf-4eb0-8de5-4bb7512489a0",
+    "title": "Hydralin balance",
+    "attributes": {
+      "indication": ["Vaginose bactérienne"],
+      "composition": [
+        "Acide lactique : milieu défavorable aux bactéries, action sur les odeurs",
+        "Glycogène : prébiotique"
+      ],
+      "utilisation": ["Appliquer le soir pendant 7 jours d'affilée"],
+      "conseils": ["Utiliser un pro biotique en relai"]
+    },
+    "featuredImage": "/images/products/image.png",
+    "laboratoire": "Bayer"
+  },
+  {
+    "id": "61d27236-3187-4aa0-ae6d-2d4421bee6c3",
+    "title": "Euphytose nuit",
+    "attributes": {
+      "indication": ["Difficultés d'endormissement"],
+      "composition": [
+        "Mélatonine 1 mg",
+        "Feuilles d'oranger",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/tilleul/\" data-type=\"phytotherapie\" data-id=\"1557\">Tilleul</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/grande-camomille/\" data-type=\"phytotherapie\" data-id=\"1451\">Camomille</a>",
+        "Menthe poivrée",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/sauge-sclaree/\" data-type=\"phytotherapie\" data-id=\"1538\">Sauge</a>"
+      ],
+      "utilisation": ["Tisane chaude ou froide"]
+    },
+    "featuredImage": "/images/products/image-12.jpeg",
+    "laboratoire": "Bayer"
+  },
+  {
+    "id": "ce17816f-d047-4de8-90c7-424340d2883a",
+    "title": "BiseptineCica",
+    "attributes": {
+      "indication": [
+        "Plaies ouvertes",
+        "Brulures, coups de soleil",
+        "Gerçure, crevasse"
+      ],
+      "composition": ["Hydrogel"],
+      "utilisation": ["Appliquer si besoin jusqu'à fermeture de la plaie"],
+      "avantages": [
+        "Empêche l'apparition de la cicatrice",
+        "Aide à la cicatrisation"
+      ]
+    },
+    "featuredImage": "/images/products/image-11.jpeg",
+    "laboratoire": "Bayer"
+  },
+  {
+    "id": "4df8cdb4-2b43-4f82-adf4-6a426b277684",
+    "title": "Huile corps nourrissante et régénérante",
+    "attributes": {
+      "indication": [""],
+      "composition": ["HV de noisette", "Eau de fleur d'oranger : apaisant"],
+      "action": ["Nutrition, souplesse et élasticité"],
+      "avantages": ["Huile sèche riche", "Texture OK pour massages"]
+    },
+    "featuredImage": "/images/products/image-10.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "6cb73f27-ae61-4e5e-ad0a-1059f67ce4aa",
+    "title": "Eau micellaire démaquillante",
+    "attributes": {
+      "composition": ["Graines de moringa : capte les impuretés"],
+      "conseils": [
+        "Repasser plusieurs cotons pour être sûr que la peau est bien nettoyée"
+      ]
+    },
+    "featuredImage": "/images/products/image-9.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "5ce323ed-bd6a-4ead-8432-2a84294cd77c",
+    "title": "Masque détoxifiant éclat",
+    "attributes": {
+      "composition": [
+        "Extrait de graines de sésame : détoxifiant",
+        "Extrait d'agrumes : éclat"
+      ],
+      "avantages": ["Gelée aux 3 textures"]
+    },
+    "featuredImage": "/images/products/image-8.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "cdc34c9d-0ab9-40c7-a5d9-bb41ae34611b",
+    "title": "Masque nettoyant micro-exfoliant",
+    "attributes": {
+      "composition": ["Acide salicylique", "Poudre de noyaux d'abricot"],
+      "utilisation": [
+        "Appliquer sur peau humide et laisser poser 3 minutes avant de rincer"
+      ],
+      "conseils": [""],
+      "avantages": ["Gommage enzymatique et mécanique"]
+    },
+    "featuredImage": "/images/products/image-7.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "5b6baf1b-3b77-40a9-8034-3ecdc6fabe88",
+    "title": "Huile de nuit fondamentale",
+    "attributes": {
+      "composition": [
+        "Oléo-extrait de riz : régénérant",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/jojoba/\" data-type=\"aromatherapie\" data-id=\"1138\">HV de jojoba</a>"
+      ],
+      "utilisation": [
+        "À la place d'une crème de nuit",
+        "On peut utiliser un sérum avant application"
+      ],
+      "conseils": [
+        "Associer le <a href=\"https://pharmacie.marionetmarin.fr/produit/soin-yeux-energisant/\" data-type=\"produit\" data-id=\"2895\">contour des yeux au blé noir</a>"
+      ]
+    },
+    "featuredImage": "/images/products/image-6.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "653a4011-aa6c-45f2-a5a6-91363c2196e1",
+    "title": "Soin yeux énergisant",
+    "attributes": {
+      "indication": ["Anti-poches", "Anti-cernes"],
+      "composition": ["Blé noir (sarrasin)"],
+      "action": ["Décongestionnant"],
+      "utilisation": ["Appliquer matin et/ou soir"]
+    },
+    "featuredImage": "/images/products/image-5.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "373aa6f4-5adf-4419-bbbe-e2f304778452",
+    "title": "Soin hydratant teinté multi-perfecteur",
+    "attributes": {
+      "indication": ["Prévention anti-âge"],
+      "composition": ["Thé blanc : polyphénols antioxydants"]
+    },
+    "featuredImage": "/images/products/image-4.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "7115c992-546b-440f-88e4-b716044855bb",
+    "title": "Crème riche hydratante éclat",
+    "attributes": {
+      "indication": ["Peaux sèches"],
+      "composition": [
+        "Cellules d'agrumes : booster d'hydratation",
+        "Huiles végétales d'abricot et de <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/macadamia/\" data-type=\"aromatherapie\" data-id=\"1139\">macadamia</a>"
+      ]
+    },
+    "featuredImage": "/images/products/image-3.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "9e72bc85-b4b4-4746-b43a-6f1c957e0fdd",
+    "title": "Fluide hydratant correcteur de peau",
+    "attributes": {
+      "indication": [
+        "Peaux mixtes à grasses (attention : n'est pas matifiant)",
+        "Atténue les rougeurs, le feu du rasoir"
+      ]
+    },
+    "featuredImage": "/images/products/image-2.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "2f2553c5-1a49-4d75-b6fd-05cf9cf48f04",
+    "title": "Sérum essentiel antioxydant",
+    "attributes": {
+      "composition": [
+        "Extrait de graines de chia : antioxydants",
+        "Vitamine C : éclat"
+      ]
+    },
+    "featuredImage": "/images/products/image-1.jpeg",
+    "laboratoire": "Nuxe Bio"
+  },
+  {
+    "id": "3c77e1c8-c724-4d11-bf34-b30deae57118",
+    "title": "Ergyphilus Enfant",
+    "attributes": {
+      "indication": [
+        "Immunité, allergie, enfant né par césarienne, non allaité",
+        "Diarrhée, gastro",
+        "Colique, RGO"
+      ],
+      "utilisation": [
+        "Prévention : 1 sachet/jour",
+        "Curatif : 2 sachets/jour si symptômes"
+      ],
+      "conseils": ["À diluer dans le biberon"],
+      "avantages": ["Utilisable de 0 à 6 ans"]
+    },
+    "featuredImage": "/images/products/image-21.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "a58b6385-2626-403f-b8fe-df239432d807",
+    "title": "Ergyphilus Confort",
+    "attributes": {
+      "indication": [
+        "Constipation",
+        "Ballonnements",
+        "Alternance diarrhée/constipation",
+        "Symptômes liés au stress"
+      ],
+      "composition": [
+        "Probiotiques : 4 souches dont le planétarium qui absorbe les gaz, active le péristaltisme et évite les dysbiose"
+      ],
+      "utilisation": [
+        "Préventif : 2/j le matin à jeun minimum 1 mois",
+        "Curatif : 4/j → 1 semaine puis 2/j jusqu’à la fin"
+      ]
+    },
+    "featuredImage": "/images/products/image-20.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "98daafac-3a7c-4579-9ed1-ff6ae30ad8a0",
+    "title": "Ergyphilus Plus",
+    "attributes": {
+      "indication": [
+        "Antibiotique",
+        "Diarrhée bactérienne ou virale",
+        "Immunité, atopie, asthme",
+        "Prévention des pathologies hivernale"
+      ],
+      "utilisation": [
+        "Préventif : 2/jour",
+        "Curatif : 6/j pdt 2j puis 4/j pdt 2j puis 2/j jusqu’à la fin de la boite"
+      ]
+    },
+    "featuredImage": "/images/products/image-19.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "3e9db738-68c8-42c5-b858-75e6b20e88f8",
+    "title": "ErgyMag",
+    "attributes": {
+      "indication": ["Fatigue, stress", "Tension musculaire liée au stress"],
+      "composition": [
+        "4 sels de Mg :<br>- Marin : bien toléré, action durable mais lente<br>- Bisglycinate : rapide et bien assimilé<br>- Citrate et carbonate : basifiant pour mieux assimilé le Mg car si organisme acide il y a une fuite des minéraux"
+      ],
+      "utilisation": [
+        "3 gélules par jour en 2 prises, max 2/prise (car si plus, fuite dans les urines)"
+      ],
+      "conseils": [
+        "À prendre en dehors des repas sinon tampon de l’acidité de l’estomac et non celle intracellulaire"
+      ],
+      "avantages": ["Action rapide et durable"]
+    },
+    "featuredImage": "/images/products/image-18.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "4b488ab3-554d-4713-beb5-df17f96e1d7e",
+    "title": "ErgyMunyl",
+    "attributes": {
+      "indication": ["Récupérer plus rapidement", "Eviter les récidives"],
+      "composition": [
+        "<a href=\"http://130.61.240.213/phytotherapie/echinacee/\">Échinacée</a>",
+        "Achillée",
+        "Pamplemousse",
+        "Plantain",
+        "<a href=\"http://130.61.240.213/phytotherapie/olivier/\">Olivier</a>",
+        "<a href=\"http://130.61.240.213/phytotherapie/romarin/\">Romarin</a>"
+      ],
+      "action": ["L'achillée est antipyrétique"],
+      "utilisation": [
+        "Préventif : 10 jours/mois<br>- Adulte : 10 mL<br>- 6 - 12 ans : 5 mL<br>- 3 - 6 ans : 2,5 mL",
+        "Curatif pathologie ORL<br>- Adulte : 3 x 20 mL<br>- 6 - 12 ans : 3 x 10 mL<br>- 3 - 6 ans : 3 x 5 mL"
+      ]
+    },
+    "featuredImage": "/images/products/image-17.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "8ac90326-2e11-4abe-a174-53bcb99bdfb3",
+    "title": "ErgyEpur",
+    "attributes": {
+      "indication": [
+        "Détoxification hépatique + vésicule biliaire",
+        "Patient polymédiqué, ménopausée ou pré-ménopausée, règles, fumeurs, post-anesthésie"
+      ],
+      "composition": [
+        "<a href=\"http://130.61.240.213/phytotherapie/artichaut/\">Artichaut</a>",
+        "<a href=\"http://130.61.240.213/phytotherapie/chardon-marie/\">Chardon marie</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/boldo/\" data-type=\"phytotherapie\" data-id=\"1184\">Boldo</a>",
+        "Desmodium",
+        "Zinc",
+        "Molybdène",
+        "Cuivre",
+        "Oligo-éléments"
+      ],
+      "utilisation": [
+        "<strong>> 12 ans</strong> : 20 mL/jour pendant 7 jours puis 10 mL (pur ou à diluer dans 1/2 verre d'eau)",
+        "<strong>6-12 ans</strong> : 5 mL/jour",
+        "<strong>3-6 ans</strong> : 2,5 mL/jour",
+        "En dehors des repas",
+        "Cure de 2 à 3 mois, à faire 2 à 3 fois dans l'année"
+      ],
+      "conseils": [
+        "Pour les personnes consommant beaucoup de Doliprane, AINS, pilules, statines, uvedose, CB12/Aliby, réveil 1-3h, teint terne, anesthésie, alcool, fatigue chroniques"
+      ]
+    },
+    "featuredImage": "/images/products/image-16.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "25349d8a-67de-481c-aecd-fe4fe6d6e51e",
+    "title": "ErgyStress Sommeil",
+    "attributes": {
+      "indication": [
+        "Troubles du sommeil : problèmes d'endormissement, sommeil agité, réveils nocturnes, décalage horaire"
+      ],
+      "composition": [
+        "Mélatonine naturelle",
+        "Passiflore",
+        "Eschscholtzia",
+        "Magnésium marin et vitamine B6",
+        "Vitamine B9"
+      ],
+      "action": [
+        "La vitamine B9 relance la synthèse de la mélatonine par l’organisme"
+      ],
+      "utilisation": ["2 gélules 30 minutes avant le coucher"],
+      "conseils": [""]
+    },
+    "featuredImage": "/images/products/image-15.jpeg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "93207fba-9ff1-4b86-b371-bfaa3842ac0a",
+    "title": "ErgyStress Seren",
+    "attributes": {
+      "indication": [
+        "Troubles de l’humeur : irritabilité, nervosité, émotivité",
+        "Surcharge émotionnelle, sevrage tabagique, grignotage compulsif, sevrage des antidépresseurs "
+      ],
+      "composition": [
+        "Tryptophane",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/rhodiole/\">Rhodiole</a>",
+        "Magnésium marin"
+      ],
+      "action": [" Le tryptophane est un précurseur de la sérotonine"],
+      "utilisation": [
+        "1 à 2 gélules le matin au petit déjeuner",
+        "Si irritabilité en fin de journée : en début d’après midi et le soir à 16-17h"
+      ]
+    },
+    "featuredImage": "/images/products/nutergia-ergystress-seren-anciennement-vectiseryl_A.jpg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "2bdaf87b-fa2a-43e6-88b4-36de6f99f57c",
+    "title": "ErgyStress Activ",
+    "attributes": {
+      "indication": [
+        "Manque de motivation",
+        "Anxiété",
+        "Surmenage (surcharge de travail, examens, compétitions, prescription de produits stimulants, sevrage anxiolytiques)"
+      ],
+      "composition": ["Tyrosine", "Bachota", "Magnésium marin"],
+      "action": ["La Tyrosine est un précurseur de la dopamine"],
+      "utilisation": [
+        "2 gélules à jeun",
+        "Possibilité d’adapter de 1 à 3 gélules par jour"
+      ]
+    },
+    "featuredImage": "/images/products/nutergia-ergystress-activ-anciennement-ergystrecyl_A.jpg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "de2e6efa-edb2-4f54-97b9-f0c957ae5b0c",
+    "title": "ErgyPhilus Intima",
+    "attributes": {
+      "indication": [
+        "Mycose, vaginose, vaginite, vulvite",
+        "Mastite (sein)",
+        "Infection urinaire, mycose"
+      ],
+      "composition": [
+        "Lactobacillus acidophilus + Lactobacillus crispatus + Lactobacillus gasseri : restauration de la flore uro-vaginale",
+        "Lactobacillus rhamnosus + Bifidobacterium bifidum : restauration de la flore intestinale",
+        "<span style=\"font-size: inherit;\">Lactobacillus fermentum : prévention des mastites</span>"
+      ],
+      "utilisation": [
+        "Prévention : 2 gélules/j",
+        "Traitement : 2 gélules matin et soir → 7 jours (en association avec traitement phyto/HE/allopathie)"
+      ],
+      "conseils": [
+        "Prendre à distance des repas et des antibiotiques",
+        "<em>Infections urinaires</em> : associer à ErgyCamberryl",
+        "<em>En fin de grossesse</em> : diminution du Streptocoque vaginale, rééquilibrage de la flore avant accouchement, prévention des mastites"
+      ]
+    },
+    "featuredImage": "/images/products/ergyphilus-intima-10cm-rvb-hd-05-19.png",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "53015ca1-abb3-44ce-b1dd-db4d06d02f55",
+    "title": "ErgyPhytum",
+    "attributes": {
+      "indication": ["Arthrose"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/harpagophyton/\">Harpagophytum</a>",
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/cassis/\">Cassis</a>"
+      ],
+      "utilisation": [
+        "10 à 20 mL/jour pendant 20 jours",
+        "Peut être augmenté à 60 mL/j",
+        "Entretien : cure de 20 j/trimestre"
+      ]
+    },
+    "featuredImage": "/images/products/nutergia-ergyphytum_A.jpg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "93a260a2-7c0f-4b63-96ca-a712ec0d27db",
+    "title": "ErgyCartil Fort",
+    "attributes": {
+      "indication": ["Arthrose en crise"],
+      "composition": [
+        "Chondroïtine",
+        "Glucosamine",
+        "HE de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/curcuma/\">Curcuma</a>",
+        "Collagène",
+        "Acide hyaluronique"
+      ],
+      "utilisation": ["1 à 3 sachets/j pendant 15 jours"],
+      "avantages": ["Peut être utilisé en prévention des rides"]
+    },
+    "featuredImage": "/images/products/Nutergia-ergycartil-fort-sachet.jpg",
+    "laboratoire": "Nutergia"
+  },
+  {
+    "id": "cdb8f2ef-90be-4dd1-9f65-c386665d4bae",
+    "title": "Sebium Peeling",
+    "attributes": {
+      "indication": ["Cicatrices d'acné"],
+      "composition": ["Acide glycolique 15 %"],
+      "action": [
+        "Lisse le grain de peau",
+        "Enlève les microkystes",
+        "Améliore le teint"
+      ]
+    },
+    "featuredImage": "/images/products/Sebium-Nightpeel-40ml-28615B-MAD-Mars19.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "43f43e48-314f-4e1d-84f9-e946a88925f3",
+    "title": "Gammes Medi-Secure",
+    "attributes": {
+      "indication": [
+        "Atoderm Xereane : Sécheresses cutanées",
+        "Cicabio Restore : Lésions cutanées",
+        "-> Pour les problèmes par une chimiothérapie, radiothérapie ou dialyse"
+      ],
+      "composition": [
+        "Antalgicine pour une action antidouleur ou antidémangeaisons"
+      ]
+    },
+    "featuredImage": "/images/products/visuel_produits_medisecure_1.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "bf7db326-9c6a-49d9-91dc-1e6f1645c3e7",
+    "title": "Atoderm Intensive Eye",
+    "attributes": {
+      "indication": ["Paupières irritées"],
+      "utilisation": [
+        "Prévention : une noisette en démaquillant, puis l'équivalent d'un grain de riz",
+        "Traitement : un grain de riz matin et soir sur tout l'oeil"
+      ],
+      "avantages": [
+        "Action 3 en 1 : apaisant + réparateur + démaquillant",
+        "Tube airless"
+      ]
+    },
+    "featuredImage": "/images/products/Atoderm-Intensive-eye-T100ml-28072-MAD-janv-2020.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "4e654e55-7a3e-443a-88e9-829d6a9ada58",
+    "title": "Atoderm Intensive Gel-Crème",
+    "attributes": {
+      "indication": ["Dermatite atopique"],
+      "composition": ["Sans parfum"],
+      "action": [
+        "Apaisant et relipidant",
+        "Diminue l'adhésion des Staphylococcus aureus"
+      ],
+      "avantages": [
+        "Galénique agréable pour l'été (effet frais à l'application)"
+      ]
+    },
+    "featuredImage": "/images/products/Atoderm-Intensive-gel-creme-F500-ml-28147-MAD-Avril-2020-HD.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "256307c7-dfc4-4eec-91bc-7397bbde7818",
+    "title": "Atoderm Intensive Baume",
+    "attributes": {
+      "indication": ["Dermatite atopique"],
+      "action": ["Anti-démangeaisons", "Émollient"],
+      "avantages": ["Utilisable en contour des yeux"]
+    },
+    "featuredImage": "/images/products/Atoderm-Intensive-baume-500ml-MAD-nov-2019.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "3ab84748-cdb4-419c-b2a0-1a3282c259d5",
+    "title": "Photoderm Photerpès",
+    "attributes": {
+      "indication": ["Protection solaire pour les lèvres sujettes aux herpès"],
+      "avantages": ["Contient un antiviral"]
+    },
+    "featuredImage": "/images/products/Photoderm-Photerpes-SPF-50-4g.jpg",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "ebbf5665-d465-4d2e-826f-55f7f8dec8cb",
+    "title": "Photoderm AKN Mat",
+    "attributes": { "avantages": ["Même composant que Sebium Mat"] },
+    "featuredImage": "/images/products/Photoderm-AKN-Mat-SPF-30-40ml.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "27c53c5b-07b1-4409-bbff-50d1736a9710",
+    "title": "Photoderm AR",
+    "attributes": {
+      "indication": ["Protection des peaux sensibles"],
+      "composition": [""],
+      "conseils": ["Protection anti-rougeurs en relais de Créaline AR"],
+      "avantages": ["Même composant que Créaline AR"]
+    },
+    "featuredImage": "/images/products/Photoderm-AR-SPF-50-T30ml-28565C-MAD-mars-2020.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "4e1cd5c4-4fd4-4f81-ae4c-a43c09073be1",
+    "title": "Photoderm M",
+    "attributes": {
+      "indication": ["Prévention du melasma (masque de grossesse)"],
+      "composition": [
+        "Glabridine : anti-inflammatoire",
+        "Pigments : filtrent la lumière bleue"
+      ]
+    },
+    "featuredImage": "/images/products/Photoderm-M-SPF-50-40ml-28546.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "f88e835e-4179-48a3-8c14-5071242fd170",
+    "title": "Photoderm Laser",
+    "attributes": {
+      "indication": ["Protection et prévention des tâches hyper-pigmentées"],
+      "composition": ["Glabridine : anti-inflammatoire"],
+      "conseils": [
+        "Pour une cicatrice : commencer par Cicabio 50+ jusqu'à cicatrisation complète puis passer à Photoderm Laser"
+      ]
+    },
+    "featuredImage": "/images/products/Photoderm-LASER-SPF-50-30ml.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "45e40ed5-536f-4f3c-b977-7ddff3b86491",
+    "title": "Photoderm Bronz",
+    "attributes": {
+      "composition": ["Tyrosine et Cuivre"],
+      "action": ["Booste la production de mélatonine"]
+    },
+    "featuredImage": "/images/products/Photoderm-BRONZ-Huile-seche-SPF-50-200ml.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "9d64c5c4-77d8-49e1-9df4-740a6ddfeb13",
+    "title": "Photoderm Mineral",
+    "attributes": {
+      "indication": ["Allergie aux filtres chimiques", "Enfants de 0 à 6 mois"]
+    },
+    "featuredImage": "/images/products/Photoderm-MINERAL-SPF-50-100g.png",
+    "laboratoire": "Bioderma"
+  },
+  {
+    "id": "18524799-d290-414f-a888-fcfc23c81cec",
+    "title": "EPS Griffonia",
+    "attributes": {
+      "indication": [
+        "Dépression légère",
+        "Pulsions sucrées",
+        "Sevrage tabagique ou alcoolique",
+        "Irritabilité"
+      ],
+      "action": [
+        "Inhibiteur de la recapture de la sérotonine (précurseur de la sérotonine)"
+      ],
+      "utilisation": [
+        "1 à 2 comprimés à prendre au moment où la personne en ressent le besoin"
+      ],
+      "conseils": [""],
+      "avantages": ["Action rapide"]
+    },
+    "featuredImage": "/images/products/image-14.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "675685a7-b38e-4ebe-b07b-ccda972e9492",
+    "title": "Formag Enfant",
+    "attributes": {
+      "indication": [
+        "Cauchemars",
+        "Problèmes d'attention",
+        "Irritabilité",
+        "Problèmes de sommeil"
+      ],
+      "utilisation": ["Dès 1 an : 100 mg/j", "3 à 12 ans : 1 stick/j"],
+      "conseils": [
+        "À prendre le matin ou le soir, en fonction du problème à traiter"
+      ]
+    },
+    "featuredImage": "/images/products/image-13.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "a223e332-7fc5-460d-a753-82a8a7058ffa",
+    "title": "EPS Valériane",
+    "attributes": {
+      "indication": ["Contractures musculaires"],
+      "composition": ["EPS de Valériane : myorelaxant"],
+      "utilisation": ["2 à 4 comprimés par jour"],
+      "conseils": [
+        "Contracture musculaire : associer <a href=\"https://pharmacie.marionetmarin.fr/produit/formag/\" data-type=\"produit\" data-id=\"2088\">Magnesium</a> + Cartimotil gel"
+      ]
+    },
+    "featuredImage": "/images/products/image-12.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "0c0cb3bf-e90f-4ff2-979d-e55b31376641",
+    "title": "EPS Réglisse",
+    "attributes": {
+      "indication": [
+        "Maux de gorge",
+        "Protection des muqueuses gastriques",
+        "Hypotension"
+      ]
+    },
+    "featuredImage": "/images/products/image-10.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "0742fb96-60fa-4471-af6a-d50be9fed4ba",
+    "title": "EPS Cassis/Plantain",
+    "attributes": {
+      "indication": ["Allergie (en période de crise)"],
+      "composition": [
+        "EPS de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/cassis/\">Cassis</a>",
+        "EPS de Plantain"
+      ],
+      "action": [
+        "Plantain : antihistaminique, antispasmodique bronchique et antitussif",
+        "Cassis : antiinflammatoire"
+      ],
+      "utilisation": [
+        "6 à 8 comprimés par jour si pris seul, sinon 1 à 2 le matin en plus d'un traitement antihistaminique"
+      ],
+      "conseils": [
+        "Associer au traitement antihistaminique",
+        "Associer <a href=\"https://pharmacie.marionetmarin.fr/produit/permealine/\" data-type=\"produit\" data-id=\"3032\">Perméaline</a> + <a href=\"https://pharmacie.marionetmarin.fr/produit/lactibiane-tolerance/\" data-type=\"produit\" data-id=\"2531\">Lactibiane Tolérance</a> en traitement de fond (<em>Est-ce que vous avez déjà pensé à un traitement de fond ?</em>)",
+        "Proposer <a href=\"https://pharmacie.marionetmarin.fr/produit/lactibiane-alr/\" data-type=\"produit\" data-id=\"3163\">Lactibiane ALR</a> en prévention lors de la prochaine période à risque"
+      ],
+      "avantages": ["Aucune contre-indication"]
+    },
+    "featuredImage": "/images/products/image-9.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "b930859c-8ef2-474e-8353-099579bd198c",
+    "title": "EPS Marronnier d'Inde",
+    "attributes": { "utilisation": ["4 comprimés par jour"] },
+    "featuredImage": "/images/products/image-8.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "61b9d561-6382-413a-8db4-93f45ce39d3f",
+    "title": "EPS Mélilot/Vigne rouge",
+    "attributes": {
+      "indication": ["Oedèmes lymphatiques", "Mauvais retour veineux"],
+      "composition": [
+        "EPS de Mélilot : action lymphatique (gonflement)",
+        "EPS de Vigne rouge : action veineuse (lourdeur et picotements)"
+      ],
+      "utilisation": ["2 à 4 par jour"]
+    },
+    "featuredImage": "/images/products/image-10.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "118d26e1-b225-4194-b45d-7c984d40ac8a",
+    "title": "Digebiane RFx",
+    "attributes": {
+      "indication": ["Reflux gastro-oesophagien", "Brûlures gastriques"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/melisse/\">Mélisse</a> : digestion, antispasmodique",
+        "Réglisse (déglycyrrhizinée) : mucoprotecteur",
+        "Alginate et pectine : mucoprotecteur",
+        "Carbonates : tampon gastrique"
+      ],
+      "utilisation": ["2 à 4 comprimés à croquer par jour"],
+      "conseils": ["\"Alternative naturelle aux IPP\""],
+      "avantages": ["Antispasmodique et pansement gastrique"]
+    },
+    "featuredImage": null,
+    "laboratoire": null
+  },
+  {
+    "id": "680bd9cf-119e-48f5-842c-e3a58c335398",
+    "title": "Lactibiane Enfant",
+    "attributes": {
+      "indication": [
+        "Atopie",
+        "Problèmes intestinaux : constipation, ballonnements",
+        "Immunité"
+      ],
+      "composition": ["Probiotiques", "Vitamine D"],
+      "action": ["Rééquilibrage intestinal"],
+      "utilisation": ["Atopie : 1 sachet par jour pendant 2 à 3 mois"]
+    },
+    "featuredImage": "/images/products/image-7.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "15f85b26-d645-4c9f-917d-b89ff18e7b68",
+    "title": "Lactibiane Topic AD",
+    "attributes": {
+      "indication": [
+        "Dermatite atopique",
+        "Démangeaisons",
+        "Eczéma de paupière"
+      ],
+      "composition": ["Prébiotiques et probiotiques"],
+      "conseils": ["Conseil associé aux dermocorticoïdes"],
+      "avantages": [
+        "Apaisement immédiat",
+        "Rééquilibre la flore cutanée",
+        "Utilisable chez le nourrisson",
+        "Utilisable sur les paupières"
+      ]
+    },
+    "featuredImage": "/images/products/image-6-scaled.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "4a8ebedb-5852-4a79-8280-0369a0089749",
+    "title": "Femibiane CBU",
+    "attributes": {
+      "indication": ["Prévention ou traitement des cystites"],
+      "composition": ["Probiotiques", "Extrait de cannelle et de cranberry"],
+      "utilisation": [
+        "Traitement : 1 gélules blanche + 1 gélule marron, 4 fois par jour pendant 3 jours",
+        "Prévention : 1 gélule blanche + 1 gélule marron, 1 jour sur 2"
+      ]
+    },
+    "featuredImage": "/images/products/image-7.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "9f11638a-e457-44a5-9010-3b8ea0f24681",
+    "title": "Femibiane CBU Flash",
+    "attributes": {
+      "indication": ["Cystite non compliquée"],
+      "composition": [
+        "HE de <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/giroflier/\">Girofle</a>, <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/cannelier-de-chine/\">Cannelle</a> et <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/sariette-des-montagnes/\">Sarriette</a> : antibactérien",
+        "Cumin et <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/bruyere/\">Bruyère</a> : antiseptique, anti-inflammatoire et diurétique"
+      ],
+      "utilisation": [
+        "4 gélules par jour (à répartir dans la journée) pendant 5 jours",
+        "Possibilité de prendre 2 gélules tout de suite et 2 gélules le soir le premier jour"
+      ],
+      "conseils": ["Boire 2 litres d'eau par jour"]
+    },
+    "featuredImage": "/images/products/image-5.jpeg",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "e59382a3-bff9-4b9e-ace8-805b8c1bf3bd",
+    "title": "Kératosane 30",
+    "attributes": {
+      "indication": ["Callosités, épaississements"],
+      "composition": ["Urée 30 %"]
+    },
+    "featuredImage": "/images/products/image-4.jpeg",
+    "laboratoire": "Uriage"
+  },
+  {
+    "id": "2a6fb6e2-4e1b-4de7-9f4e-d39fbf1e6979",
+    "title": "Pruriced",
+    "attributes": {
+      "indication": ["Piqûres d'insecte", "Varicelle"],
+      "utilisation": [""]
+    },
+    "featuredImage": "/images/products/image-3.jpeg",
+    "laboratoire": "Uriage"
+  },
+  {
+    "id": "6519cfcc-cca6-427b-9125-fc59ef001f12",
+    "title": "Cica-Spray",
+    "attributes": {
+      "utilisation": [
+        "Vésicules de varicelle",
+        "Eczéma de l’oreille : sur un coton-tige"
+      ]
+    },
+    "featuredImage": "/images/products/image-2.jpeg",
+    "laboratoire": "Uriage"
+  },
+  {
+    "id": "a816dd2b-91e2-440d-b14c-a47bf34bff61",
+    "title": "Cica-Huile",
+    "attributes": {
+      "composition": [
+        "Huiles végétales à 99,9 % dont huile de Tamanu utilisée en Polynésie sur les tatouages"
+      ],
+      "utilisation": [
+        "Préventif : dès les premiers mois de grossesse",
+        "Correctif : en post-opération dès le retrait des points ou sur un tatouage après 1 semaine"
+      ]
+    },
+    "featuredImage": "/images/products/image-1.jpeg",
+    "laboratoire": "Uriage"
+  },
+  {
+    "id": "ca18d7dd-caf5-4c71-af64-31dde8f0e282",
+    "title": "Cica-Gel nettoyant",
+    "attributes": { "indication": ["Démangeaisons", "Varicelle"] },
+    "featuredImage": "/images/products/image-1.png",
+    "laboratoire": "Uriage"
+  },
+  {
+    "id": "0c5d729b-530e-4cb9-8ce7-f9d7faa93736",
+    "title": "Essence d'eau",
+    "attributes": {
+      "indication": [
+        "Pour femmes, hommes et adolescents qui n’aiment pas la texture crème ou gel",
+        "Accompagnement d’une routine ou utiliser seule"
+      ],
+      "composition": [
+        "Eau thermale Uriage enrichie en Ca et Mg : action barrière",
+        "Inuline : prébiotique",
+        "Arbre à soie : détoxifiant",
+        "Acide hyaluronique : repulpant"
+      ],
+      "utilisation": [
+        "3 gouttes sur le visage + 2 gouttes pour cou et décolleté"
+      ],
+      "avantages": [
+        "Un flacon dure pendant 6 mois pour une utilisation 2 fois par jour"
+      ]
+    },
+    "featuredImage": "/images/products/image.png",
+    "laboratoire": "Uriage"
+  },
+  {
+    "id": "3de06195-131a-4254-bebd-97ea23fe960c",
+    "title": "Enabiane",
+    "attributes": {
+      "composition": ["Citrates de Mg, Ca et K"],
+      "utilisation": [
+        "1 stick par jour dans 1L d’eau",
+        "3 à 4 par semaine pendant 3 à 4 mois (+ Modification alimentaire)"
+      ],
+      "avantages": ["Taux de correction : 54 mEq d’acide"]
+    },
+    "featuredImage": "/images/products/image-1.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "6161a2a2-a6b7-4420-a5eb-f7090166c422",
+    "title": "Gel labial Bouton de lèvre",
+    "attributes": {
+      "indication": ["Herpès ", "Perlèche"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/niaouli/\">HE de Niaouli</a> (antiviral, réparateur cutané, apaisant)",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/tea-tree/\">HE d’Arbre à thé</a> (anti bactérien)",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/geranium-bourbon/\">HE de Géranium</a> (réparateur)",
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/ciste-ladanifere/\">HE de Ciste ladinifère</a> (hémostatique, réparateur)"
+      ],
+      "utilisation": [
+        "Appliquer le sur les lèvres ou dans le nez, jusqu’à 5 fois par jour"
+      ]
+    },
+    "featuredImage": "/images/products/gel-labial-bouton-de-lC3A8vre-comptoir-aroma.jpg",
+    "laboratoire": "Le Comptoir Aroma"
+  },
+  {
+    "id": "84345eb7-5f00-4087-89a4-1b8d963b2c5a",
+    "title": "Capsules Force",
+    "attributes": {
+      "indication": ["Prévention ou traitement des infections "],
+      "utilisation": [
+        "Préventif : 1 capsule marin et soir, 5 jours sur 7",
+        "Curatif : 2 capsules matin, midi et soir pendant 5 jours (boîte entière)"
+      ]
+    },
+    "featuredImage": "/images/products/883339_3273818833390.png",
+    "laboratoire": "Le Comptoir Aroma"
+  },
+  {
+    "id": "1e07a95e-5925-4753-8b21-0c992e5f6a04",
+    "title": "Citronella Lait corps",
+    "attributes": {
+      "indication": ["Répulsif moustique", "Apaisant"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/eucalyptus-citronne/\">HE d'Eucalyptus citronné</a>, <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/lemon-grass/\">HE de Lemongrass</a> -> Répulsif",
+        "Aloé vera, <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/amande-douce/\">HV d'Amande douce</a>, <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/camomille-matricaire/\">HE de Camomille</a> (anti-histaminique), <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/lavande-aspic/\">HE de Lavande aspic</a> -> Apaisant"
+      ],
+      "utilisation": [
+        "Appliquer sur les zones exposées ou directement sur les zones à traiter"
+      ]
+    },
+    "featuredImage": "/images/products/883374_3518648833746.png",
+    "laboratoire": "Le Comptoir Aroma"
+  },
+  {
+    "id": "2078bf2b-1f65-472e-b66e-abcf26c66069",
+    "title": "Immunochoc",
+    "attributes": [],
+    "featuredImage": "/images/products/image-6.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "2143e181-f1ff-410f-bc8d-6186714fe28a",
+    "title": "Azéol AB",
+    "attributes": {
+      "indication": ["Prévenir les surinfections bactériennes"],
+      "composition": [
+        "<a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/cannelier-de-chine/\">HE de Cannelle</a> (antibactérien), <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/romarin-1-8-cineole/\">HE de Romarin</a> (antibactérien local, mucolytique, décongestionnant), <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/eucalyptus-globuleux/\">HE d'Eucalyptus globuleux</a> (antibactérien local, mucolytique), <a href=\"https://pharmacie.marionetmarin.fr/aromatherapie/citronnier/\">HE de Citron</a> (hépatoprotecteur)"
+      ],
+      "utilisation": ["2 capsules 3 fois par jour pendant 5 jours"]
+    },
+    "featuredImage": "/images/products/image-5.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "778dd61e-023c-4518-8a53-c44e8966a40b",
+    "title": "EPS Cyprès/Echinacée",
+    "attributes": {
+      "indication": [
+        "Stimuler les défenses du sujet fragilisé (troubles du transit chroniques, ALD) et prévenir les pathologies hivernales : rhume, pathologies ORL, herpès",
+        "Stimuler les défenses et lutter contre les virus"
+      ],
+      "composition": [
+        "EPS de Cyprès : Virucide, virostatique",
+        "EPS d'<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/echinacee/\">Echinacée</a> : Immunostimulant, antibactérien"
+      ],
+      "utilisation": [
+        "En prévention : 2 par jour, 4 jours par semaine (pour laisser l'immunité au repos)",
+        "Infection virale (rhume, grippe, herpès) : 2 cp 4 fois par jour pendant 2 jours, puis baisse progressive"
+      ],
+      "conseils": [
+        "Pour accélérer le rétablissement et réduire la fatigue : <a href=\"https://pharmacie.marionetmarin.fr/produit/immunochoc/\">Immunochoc</a> (accélère la guérison, effet coup de fouet)"
+      ]
+    },
+    "featuredImage": "/images/products/image-4.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "92d28fac-bd51-480f-9e36-bdb6b3a6ce42",
+    "title": "Lactibiane Immuno",
+    "attributes": {
+      "indication": [
+        "Stimuler les défenses immunitaires",
+        "Bloquer les agents infectieux"
+      ],
+      "composition": [
+        "Lactobacillus acidophilus LA201",
+        "Lactobacillus paracasei LA802",
+        "Vitamine C et D"
+      ],
+      "action": [
+        "Effet barrière (local) : Inhibe l'adhésion et la prolifération bactérienne + Sécrétion de peptides anti-microbiens (H2O2, defensines)",
+        "Effet immunostimulant (systémique) : Augmente le taux d'IgA (défense des muqueuses), augmente le taux de cytokines (attire les cellules immunitaires)"
+      ],
+      "utilisation": [
+        "Comprimés <strong>à sucer</strong>",
+        "1 comprimé par jour pendant toute la période hivernale"
+      ],
+      "conseils": [""],
+      "avantages": [
+        "Lactobacillus paracasei LA802 : Grande adhésion ORL → Effet barrière"
+      ]
+    },
+    "featuredImage": "/images/products/image-3.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "c663a1f4-d559-4205-9c22-6da44d86213e",
+    "title": "Lactibiane Référence",
+    "attributes": {
+      "indication": ["Immunostimulant, renforce les défenses immunitaires"],
+      "conseils": [
+        "Pour stimuler les défenses du sujet fragilisé (troubles du transit chroniques, ALD) et prévenir les pathologies hivernales : Lactibiane Référence (1 par jour pendant 1 mois puis 3 à 4 par semaine) + <a href=\"https://pharmacie.marionetmarin.fr/produit/eps-cypres-echinacee/\">EPS Cyprès/Echinacée</a> (2 par jour, 4 jours par semaine)"
+      ]
+    },
+    "featuredImage": "/images/products/image-2.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "a5e0a322-a2cb-4c7f-a4f0-a02cbb4719ce",
+    "title": "Lactibiane Tolérance",
+    "attributes": [],
+    "featuredImage": "/images/products/image-1.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "a085a010-4c3f-4c54-87c6-5a599f8c91f4",
+    "title": "Lactiplus",
+    "attributes": {
+      "indication": [
+        "Hypersensibilité viscérale (amplification des messages douloureux par le stress, anticipation la douleur et perception douloureuse anormale)",
+        "Douleurs abdominales liées au syndrome du colon irritable"
+      ],
+      "composition": [
+        "Lactobacillus gasseri LA806 : action sur l'hypersensibilité viscérale"
+      ],
+      "action": [
+        "Effet pansement sur la muqueuse intestinale",
+        "Diminution de la perméabilité intestinale",
+        "Soulagement de la douleur"
+      ],
+      "utilisation": [
+        "2 gélules le matin à jeun pendant 28 jours",
+        "30 minutes avant le repas du matin ou au coucher si 2 heures après le repas du soir",
+        "À utiliser en cas de douleurs EVA > 6, si constipation ou diarrhée associée"
+      ],
+      "conseils": [
+        "Conseil associé : Trimébutine, Spasfon",
+        "Enchainer sur <a href=\"https://pharmacie.marionetmarin.fr/produit/lactibiane-tolerance/\" data-type=\"produit\" data-id=\"2531\">Lactibiane Tolérance</a> si inflammation ou <a href=\"https://pharmacie.marionetmarin.fr/produit/lactibiane-reference/\" data-type=\"produit\" data-id=\"2533\">Lactibiane Référence</a> si constipation"
+      ]
+    },
+    "featuredImage": "/images/products/image.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "ee2890db-8e46-469e-8af3-bf2e3096c86b",
+    "title": "EPS Rhodiole/Safran",
+    "attributes": {
+      "indication": [
+        "Brun-in (avant le burn-out)",
+        "Baisse de moral, perte de plaisir, anxiété"
+      ],
+      "composition": [
+        "EPS de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/rhodiole/\">Rhodiole</a> : plante adaptogène",
+        "EPS de Safran : anti-dépresseur à partir de la seconde semaine de prise"
+      ],
+      "utilisation": ["2 cp le matin"],
+      "conseils": [
+        "Associer une cure de <a href=\"https://pharmacie.marionetmarin.fr/produit/formag/\">Formag</a>"
+      ],
+      "avantages": ["Pas d'accoutumance"]
+    },
+    "featuredImage": "/images/products/image-6.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "fe1a42c7-a197-465a-bf89-0f612781b5f9",
+    "title": "EPS Guarana/Rhodiole",
+    "attributes": {
+      "indication": [
+        "Stress chronique",
+        "Fatigue toute la journée, surmenage, difficultés de concentration"
+      ],
+      "composition": [
+        "EPS de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/guarana/\">Guarana</a> : Antifatigue",
+        "EPS de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/rhodiole/\">Rhodiole</a> : Augmente la concentration et diminue le stress, normalise le cortisol, plante adaptogène"
+      ],
+      "utilisation": [
+        "2 cp le matin pendant 10 jours, puis 1 le matin dès que ça va mieux"
+      ]
+    },
+    "featuredImage": "/images/products/image-5.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "1e831097-26b9-499e-b61c-20cb921548f4",
+    "title": "EPS Aubépine/Passiflore",
+    "attributes": {
+      "indication": [
+        "Stress ponctuel (examen, intervention médicale, ...)",
+        "Appréhensions et somatisation : Palpitations, spasmes intestinaux, ..."
+      ],
+      "composition": [
+        "EPS d'<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/aubepine/\">Aubépine</a> : Calme les palpitations",
+        "EPS de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/passiflore/\">Passiflore</a> : Anxiolytique et anti-spasmodique"
+      ],
+      "utilisation": [
+        "Symptômes diurnes : jusqu'à 6-8 cp/jour à répartir dans la journée",
+        "Symptômes noctures : 2 le soir et 2 au coucher"
+      ],
+      "conseils": [
+        "Associer à une cure de <a href=\"https://pharmacie.marionetmarin.fr/produit/formag/\">Magnésium</a>"
+      ],
+      "avantages": [""]
+    },
+    "featuredImage": "/images/products/image-4.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "49ea1cb9-af3a-4dba-9603-b008dc321fd0",
+    "title": "Chronobiane Immédiat",
+    "attributes": {
+      "indication": ["Jet lag", "Difficultés d'endormissement"],
+      "utilisation": ["1 à 2 pulvérisations avant le coucher"],
+      "avantages": ["Pas de premier passage hépatique", "Effet immédiat"]
+    },
+    "featuredImage": "/images/products/image-3.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "28006c97-37cb-4f1a-af06-dd187af5f02a",
+    "title": "Chronobiane 1 mg",
+    "attributes": [],
+    "featuredImage": "/images/products/image-2.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "cfc66c94-cb08-4cfb-a98a-05bd6308f4bf",
+    "title": "Chronobiane LP 1 mg",
+    "attributes": {
+      "indication": ["Réveil nocturne (une seule fois)"],
+      "composition": [
+        "Mélatonine : 0,5 mg libération immédiate + 0,5 mg LP",
+        "Magnésium"
+      ]
+    },
+    "featuredImage": "/images/products/image-1.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "b6f6e7d9-a5f0-43b3-9427-85d4743cc6a4",
+    "title": "Chronobiane LP 1,9 mg",
+    "attributes": {
+      "indication": ["Réveils nocturnes (plusieurs fois)"],
+      "composition": ["Mélatonine : 0,4 mg libération immédiate + 1,5 mg LP"]
+    },
+    "featuredImage": "/images/products/image.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "a24dcc5a-5a03-4644-9f86-8fd2b612a427",
+    "title": "Formag",
+    "attributes": {
+      "indication": [
+        "Permet de rompre le cercle vicieux du stress : <br>Stress → Cortisol + Adrénaline → Contraction musculaire → Mg chassé des cellules → Fuite urinaire de Mg →  ↑ Vulnérabilité au stress → Stress"
+      ],
+      "composition": ["Magnesium Hyprorimag", "Vitamine B6", "Taurine"],
+      "action": ["Taurine fixe le Magnesium dans la cellule"],
+      "utilisation": ["300 mg à 600 mg/j, soit 2 à 4 comprimés par jour"],
+      "conseils": ["\"À quand remonte votre dernière cure de magnésium ?\""],
+      "avantages": [
+        "Mg2+ associé à l'<strong>Hyprorimag</strong> (protéine de riz), permet une <em>meilleur assimilation</em> ",
+        "Associé à la <strong>Vitamine B6</strong> et à la <strong>Vitamine D</strong> pour <em>favoriser l'entrée</em> du Mg<br>Associé à la <strong>Taurine</strong> pour <em>maintenir le Mg dans la cellule</em> (fort pouvoir magnéso-fixateur)"
+      ]
+    },
+    "featuredImage": "/images/products/image-3.png",
+    "laboratoire": "Pileje"
+  },
+  {
+    "id": "a8daec61-1046-4a62-8433-e07f7312e807",
+    "title": "EPS Eschscholtzia/Valériane",
+    "attributes": {
+      "indication": ["Sédatif et anxiolytique", "Insomnie liée à l'anxiété"],
+      "composition": [
+        "EPS d'<a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/eschscholtzia/\">Eschscholtzia</a> : Hypnotique, sédatif, anxiolytique",
+        "EPS de <a href=\"https://pharmacie.marionetmarin.fr/phytotherapie/valeriane/\">Valériane</a> : Anxiolytique, sédatif, hypnotique, myorelaxant (spécifiquement lié à l'extraction phytostandard)"
+      ],
+      "action": [
+        "Plantes GABAergiques avec rémanence dans la journée pour une action sur le stress",
+        "Permet d'agir sur l'architecture du sommeil"
+      ],
+      "utilisation": [
+        "2 comprimés au coucher + 1 comprimé si réveil lié au stress"
+      ],
+      "conseils": [
+        "Associer avec <a href=\"https://pharmacie.marionetmarin.fr/2018/11/17/formag/\">Magnesium</a> avant le coucher (complémentaire de la Valériane)",
+        "Il faut faire une cure de 10 jours avant les premiers effets"
+      ],
+      "avantages": [
+        "Effet myorelaxant lié à l'extraction phytostandard",
+        "Action dès la première semaine"
+      ]
+    },
+    "featuredImage": "/images/products/image-1.png",
+    "laboratoire": "Pileje"
+  }
+]

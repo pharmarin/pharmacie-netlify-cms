@@ -24,6 +24,7 @@ const ArchiveGrid: React.FC<{
               featuredImage={post.featuredImage as File}
               link={post.link}
               tags={post.tags}
+              subtitle={post.subtitle}
               title={post.title}
             />
           </article>
