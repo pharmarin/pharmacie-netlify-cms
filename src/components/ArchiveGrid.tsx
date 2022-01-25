@@ -1,8 +1,9 @@
 import Card from "components/Card";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
-import { File } from "../../graphql-types";
 
 const ArchiveGrid: React.FC<{
+  horizontal?: boolean;
   posts: {
     id: string;
     categories?: string[];
@@ -10,10 +11,10 @@ const ArchiveGrid: React.FC<{
     link: string;
     subtitle?: string;
     tags?: string[];
-    featuredImage?: File;
+    featuredImage?: IGatsbyImageData;
     title: string;
   }[];
-}> = ({ posts }) => {
+}> = ({ horizontal, posts }) => {
   return (
     <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
       {posts &&
@@ -21,7 +22,8 @@ const ArchiveGrid: React.FC<{
           <article key={post.id} id={"tease-" + post.id}>
             <Card
               categories={post.categories}
-              featuredImage={post.featuredImage as File}
+              featuredImage={post.featuredImage}
+              horizontal={horizontal}
               link={post.link}
               tags={post.tags}
               subtitle={post.subtitle}

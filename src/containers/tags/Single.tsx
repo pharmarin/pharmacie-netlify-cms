@@ -3,8 +3,9 @@ import Layout from "components/Layout";
 import { graphql } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { File, TagSingleQuery } from "../../../graphql-types";
-const TagSingle: React.FC<{ data: TagSingleQuery; pageContext: any }> = ({
+import { File, TagsSingleQuery } from "../../../graphql-types";
+
+const TagsSingle: React.FC<{ data: TagsSingleQuery; pageContext: any }> = ({
   data,
   pageContext,
 }) => {
@@ -14,7 +15,7 @@ const TagSingle: React.FC<{ data: TagSingleQuery; pageContext: any }> = ({
 
   return (
     <Layout>
-      <Helmet title={`${tag} | ${title}`} />
+      <Helmet title={`Tag ${tag} | ${title}`} />
       <h3>Tag {tag}</h3>
       <ArchiveGrid
         posts={posts.map((post) => ({
@@ -30,10 +31,10 @@ const TagSingle: React.FC<{ data: TagSingleQuery; pageContext: any }> = ({
   );
 };
 
-export default TagSingle;
+export default TagsSingle;
 
 export const query = graphql`
-  query TagSingle($tag: String) {
+  query TagsSingle($tag: String) {
     site {
       siteMetadata {
         title

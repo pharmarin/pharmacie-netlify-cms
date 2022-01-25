@@ -15,7 +15,7 @@ const CategorySingle: React.FC<{
 
   return (
     <Layout>
-      <Helmet title={`${category} | ${title}`} />
+      <Helmet title={`Catégorie ${category} | ${title}`} />
       <h3>Catégorie {category}</h3>
       <ArchiveGrid
         posts={posts.map((post) => ({

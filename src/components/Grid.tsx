@@ -1,5 +1,6 @@
 import Card from "components/Card";
 import React from "react";
+import { File } from "../../graphql-types";
 
 const Grid: React.FC<{
   posts: {
@@ -7,7 +8,7 @@ const Grid: React.FC<{
     subtitle?: string;
     link: string;
     content: string;
-    thumbnail: string;
+    featuredImage: File;
   }[];
   type: string;
 }> = ({ posts, type }) => {
@@ -20,7 +21,7 @@ const Grid: React.FC<{
             subtitle={post.subtitle}
             link={post.link}
             content={post.content}
-            thumbnail={post.thumbnail}
+            featuredImage={post.featuredImage}
           />
         </article>
       ))}

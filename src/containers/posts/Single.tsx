@@ -34,7 +34,6 @@ export const PostsSingle: React.FC<{
 
   return (
     <div className="content-wrapper mb-4">
-      {helmet || ""}
       <article className="mx-auto max-w-3xl" id={"article-" + id}>
         <div className="flex flex-row sm:space-x-8">
           <div className="flex-none hidden sm:flex max-w-[30%]">
@@ -68,7 +67,7 @@ export const PostsSingle: React.FC<{
 const PostsSingleContainer: React.FC<PageProps<PostsSingleQuery>> = ({
   data,
 }) => {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: post, site } = data;
 
   return (
     <Layout>
@@ -79,9 +78,9 @@ const PostsSingleContainer: React.FC<PageProps<PostsSingleQuery>> = ({
         date={post.frontmatter.date}
         featuredImage={post.frontmatter.featuredImage as File}
         helmet={
-          <Helmet titleTemplate="Articles | %s">
-            <title>{`${post.frontmatter.title}`}</title>
-          </Helmet>
+          <Helmet
+            title={`${post.frontmatter.title} | ${site.siteMetadata.title}`}
+          />
         }
         id={post.id}
         tags={post.frontmatter.tags}
@@ -95,6 +94,11 @@ export default PostsSingleContainer;
 
 export const pageQuery = graphql`
   query PostsSingle($id: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html

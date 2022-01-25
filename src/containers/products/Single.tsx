@@ -2,6 +2,7 @@ import Layout from "components/Layout";
 import SingleProductContent from "components/SingleProductContent";
 import SingleTitle from "components/SingleTitle";
 import { graphql, Link, PageProps } from "gatsby";
+import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 import { kebabCase } from "lodash";
 import React from "react";
 import { Helmet } from "react-helmet";
@@ -9,26 +10,26 @@ import { ProductsSingleQuery } from "../../../graphql-types";
 
 export const ProductsSingle: React.FC<{
   attributes: ProductsSingleQuery["productsJson"]["attributes"];
+  featuredImage: ImageDataLike;
   helmet?: React.ReactNode;
   id: string;
   laboratoire?: string;
   title?: string;
-}> = ({ attributes, helmet, id, laboratoire, title }) => {
+}> = ({ attributes, featuredImage, helmet, id, laboratoire, title }) => {
   return (
     <div className="content-wrapper mb-4">
       {helmet || ""}
       <article className="mx-auto max-w-3xl" id={"article-" + id}>
         <div className="flex flex-row sm:space-x-8">
           <div className="flex-none hidden sm:flex max-w-[30%]">
-            {/* featuredImage &&
-              featuredImage?.childImageSharp?.gatsbyImageData && (
-                <GatsbyImage
-                  alt={title}
-                  className="max-h-40"
-                  imgClassName="w-full object-cover rounded-t"
-                  image={featuredImage.childImageSharp.gatsbyImageData}
-                />
-              ) */}
+            {
+              <GatsbyImage
+                alt={title}
+                className="max-h-40"
+                imgClassName="w-full object-cover rounded-t"
+                image={getImage(featuredImage)}
+              />
+            }
           </div>
           <div className="w-full">
             <section className="article-content w-full space-y-8">
@@ -58,6 +59,7 @@ const ProductsSingleContainer: React.FC<PageProps<ProductsSingleQuery>> = ({
     <Layout>
       <ProductsSingle
         attributes={product.attributes}
+        featuredImage={product.featuredImage as ImageDataLike}
         helmet={
           <Helmet title={`${product.title} | ${site.siteMetadata.title}`} />
         }
@@ -86,6 +88,11 @@ export const pageQuery = graphql`
         conseils
         indication
         utilisation
+      }
+      featuredImage {
+        childImageSharp {
+          gatsbyImageData
+        }
       }
       id
       laboratoire

@@ -1,6 +1,7 @@
 import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
 import { graphql, useStaticQuery } from "gatsby";
+import { getImage, ImageDataLike } from "gatsby-plugin-image";
 import React from "react";
 import { Helmet } from "react-helmet";
 import { ProductsIndexQuery } from "../../../graphql-types";
@@ -12,7 +13,9 @@ export const ProductsIndex: React.FC<{ data: ProductsIndexQuery }> = ({
 
   return (
     <ArchiveGrid
+      horizontal
       posts={products.map((product) => ({
+        featuredImage: getImage(product.featuredImage as ImageDataLike),
         id: product.id,
         link: product.fields.link,
         subtitle: product.laboratoire,
@@ -33,6 +36,16 @@ const ProductsIndexContainer = () => {
       allProductsJson(sort: { order: DESC, fields: [laboratoire] }) {
         nodes {
           id
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(
+                backgroundColor: "white"
+                height: 200
+                width: 200
+                transformOptions: { fit: CONTAIN }
+              )
+            }
+          }
           fields {
             link
           }

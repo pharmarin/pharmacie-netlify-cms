@@ -1,9 +1,10 @@
 import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
 import { graphql, useStaticQuery } from "gatsby";
+import { getImage, ImageDataLike } from "gatsby-plugin-image";
 import React from "react";
 import { Helmet } from "react-helmet";
-import { File, PostsIndexQuery } from "../../../graphql-types";
+import { PostsIndexQuery } from "../../../graphql-types";
 
 export const PostsIndex: React.FC<{ data: PostsIndexQuery }> = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
@@ -13,7 +14,9 @@ export const PostsIndex: React.FC<{ data: PostsIndexQuery }> = ({ data }) => {
       posts={posts.map((post) => ({
         id: post.node.id,
         categories: post.node.frontmatter.categories,
-        featuredImage: post.node.frontmatter.featuredImage as File,
+        featuredImage: getImage(
+          post.node.frontmatter.featuredImage as ImageDataLike
+        ),
         link: post.node.fields.link,
         tags: post.node.frontmatter.tags,
         title: post.node.frontmatter.title,

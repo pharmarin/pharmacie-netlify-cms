@@ -14,10 +14,12 @@ const LaboratoiresSingle: React.FC<{
 
   return (
     <Layout>
-      <Helmet title={`${laboratoire} | ${site.siteMetadata.title}`} />
-      <h3>Catégorie {laboratoire}</h3>
+      <Helmet
+        title={`Laboratoire ${laboratoire} | ${site.siteMetadata.title}`}
+      />
+      <h3>Laboratoire {laboratoire}</h3>
       <ArchiveGrid
-        posts={products.map((product) => ({
+        posts={products.nodes.map((product) => ({
           id: product.id,
           link: product.fields.link,
           subtitle: product.laboratoire,
