@@ -5,7 +5,7 @@ date: "2018-11-13"
 categories:
   - "Fiches patient"
   - "Formations alimentation"
-featuredImage: "/images/posts/image-4.png"
+featuredImage: "./images/image-4.png"
 ---
 
 ## Qu'est-ce que les acides gras ?

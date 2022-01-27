@@ -1,16 +1,17 @@
 import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
 import { graphql } from "gatsby";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { File, TagsSingleQuery } from "../../../graphql-types";
+import { TagsSingleQuery } from "../../../graphql-types";
 
 const TagsSingle: React.FC<{ data: TagsSingleQuery; pageContext: any }> = ({
   data,
   pageContext,
 }) => {
   const posts = data.allMarkdownRemark.edges;
-  const tag = pageContext.taxonomy;
+  const tag = pageContext.tagsName;
   const title = data.site.siteMetadata.title;
 
   return (
@@ -21,7 +22,8 @@ const TagsSingle: React.FC<{ data: TagsSingleQuery; pageContext: any }> = ({
         posts={posts.map((post) => ({
           id: post.node.id,
           categories: post.node.frontmatter.categories,
-          featuredImage: post.node.frontmatter.featuredImage as File,
+          featuredImage: post.node.frontmatter
+            .featuredImage as IGatsbyImageData,
           link: post.node.fields.link,
           tags: post.node.frontmatter.tags,
           title: post.node.frontmatter.title,
@@ -34,7 +36,7 @@ const TagsSingle: React.FC<{ data: TagsSingleQuery; pageContext: any }> = ({
 export default TagsSingle;
 
 export const query = graphql`
-  query TagsSingle($tag: String) {
+  query TagsSingle($tagsName: String) {
     site {
       siteMetadata {
         title
@@ -43,7 +45,7 @@ export const query = graphql`
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { tags: { in: [$tagsName] } } }
     ) {
       totalCount
       edges {

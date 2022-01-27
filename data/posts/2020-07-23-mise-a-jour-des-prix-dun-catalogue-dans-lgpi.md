@@ -6,7 +6,7 @@ categories:
   - "Formations logiciel"
 tags:
   - "LGPI"
-featuredImage: "/images/posts/850x523_formation_reunion.png"
+featuredImage: "./images/850x523_formation_reunion.png"
 ---
 
 C. Données > O. Fournisseurs

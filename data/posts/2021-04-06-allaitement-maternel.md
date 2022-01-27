@@ -2,7 +2,7 @@
 type: "posts"
 title: "Allaitement maternel"
 date: "2021-04-06"
-featuredImage: "/images/posts/image-1.jpeg"
+featuredImage: "./images/image-1.jpeg"
 ---
 
 Pour les mamans « débutantes », les conseils de mise au sein sont essentiels pour un allaitement confortable et efficace. Ils permettent aussi d’éviter l’apparition ou de prendre en charge les complications comme les crevasses ou l’engorgement.
@@ -14,7 +14,7 @@ Pour les mamans « débutantes », les conseils de mise au sein sont essentiels 
 - Toutes sont possibles à condition que le visage du nourrisson soit en face du sein, sa tête dans l’axe de son corps et soutenue légèrement en arrière, son ventre contre celui de sa mère.
 - Parmi les plus courantes : la madone, le ballon de rugby, la position allongée. La position « décontractée », mère semi-inclinée en arrière, bébé face à elle, est recommandée dans l’approche de l’allaitement instinctif ou *biological nurturing* ; elle facilite les réflexes innés pour une prise de sein optimale.
 
-![](/images/posts/Capture-decran-2021-04-06-a-09.24.32-393x300.png)
+![](./images/Capture-decran-2021-04-06-a-09.24.32-393x300.png)
 
 ### La prise du sein
 

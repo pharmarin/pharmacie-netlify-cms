@@ -1,16 +1,17 @@
 import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
 import { graphql } from "gatsby";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import { CategorySingleQuery, File } from "../../../graphql-types";
+import { CategoriesSingleQuery } from "../../../graphql-types";
 
-const CategorySingle: React.FC<{
-  data: CategorySingleQuery;
+const CategoriesSingle: React.FC<{
+  data: CategoriesSingleQuery;
   pageContext: any;
 }> = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
-  const category = pageContext.taxonomy;
+  const category = pageContext.categoriesName;
   const title = data.site.siteMetadata.title;
 
   return (
@@ -21,7 +22,8 @@ const CategorySingle: React.FC<{
         posts={posts.map((post) => ({
           id: post.node.id,
           categories: post.node.frontmatter.categories,
-          featuredImage: post.node.frontmatter.featuredImage as File,
+          featuredImage: post.node.frontmatter
+            .featuredImage as IGatsbyImageData,
           link: post.node.fields.link,
           tags: post.node.frontmatter.tags,
           title: post.node.frontmatter.title,
@@ -31,10 +33,10 @@ const CategorySingle: React.FC<{
   );
 };
 
-export default CategorySingle;
+export default CategoriesSingle;
 
 export const query = graphql`
-  query CategorySingle($category: String) {
+  query CategoriesSingle($categoriesName: String) {
     site {
       siteMetadata {
         title
@@ -43,7 +45,7 @@ export const query = graphql`
     allMarkdownRemark(
       limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { categories: { in: [$category] } } }
+      filter: { frontmatter: { categories: { in: [$categoriesName] } } }
     ) {
       totalCount
       edges {

@@ -4490,12 +4490,12 @@ export type CategoryIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type CategoryIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
 
-export type CategorySingleQueryVariables = Exact<{
-  category?: InputMaybe<Scalars['String']>;
+export type CategoriesSingleQueryVariables = Exact<{
+  categoriesName?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type CategorySingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { link?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+export type CategoriesSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { link?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
 
 export type LaboratoiresIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -4503,11 +4503,11 @@ export type LaboratoiresIndexQueryVariables = Exact<{ [key: string]: never; }>;
 export type LaboratoiresIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
 
 export type LaboratoiresSingleQueryVariables = Exact<{
-  laboratoire?: InputMaybe<Scalars['String']>;
+  laboratoiresName?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type LaboratoiresSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { totalCount: number, nodes: Array<{ id: string, laboratoire?: string | null | undefined, title?: string | null | undefined, fields?: { link?: string | null | undefined } | null | undefined }> } };
+export type LaboratoiresSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { totalCount: number, nodes: Array<{ id: string, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, fields?: { link?: string | null | undefined } | null | undefined }> } };
 
 export type PostsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -4539,7 +4539,7 @@ export type TagsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 export type TagsIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
 
 export type TagsSingleQueryVariables = Exact<{
-  tag?: InputMaybe<Scalars['String']>;
+  tagsName?: InputMaybe<Scalars['String']>;
 }>;
 
 

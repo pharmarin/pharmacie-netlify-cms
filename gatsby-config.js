@@ -17,14 +17,6 @@ module.exports = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/data/images`,
-        name: "uploads",
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/pages`,

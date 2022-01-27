@@ -15,7 +15,7 @@ exports.createPages = async ({ actions, graphql }) => {
         path: taxonomyPath,
         component: path.resolve(`src/containers/${slug}/Single.tsx`),
         context: {
-          taxonomy,
+          [`${slug}Name`]: taxonomy,
         },
       });
     });

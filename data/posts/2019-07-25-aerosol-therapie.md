@@ -5,7 +5,7 @@ date: "2019-07-25"
 categories:
   - "Formations matériel"
   - "formations-medicaments"
-featuredImage: "/images/posts/image-7.png"
+featuredImage: "./images/image-7.png"
 ---
 
 ## Définition
@@ -90,7 +90,7 @@ Les bronchodilatateurs peuvent être mélangés entre eux (pour le pneumatique)
 
 Le Mucomystendo ne se mélange pas
 
-![](/images/posts/1503932699Liste-des-medicaments-possedant-une-AMMspecifique-pour-la-nebulisation-1-1.jpg)
+![](./images/1503932699Liste-des-medicaments-possedant-une-AMMspecifique-pour-la-nebulisation-1-1.jpg)
 
 ## Déroulement de la séance
 

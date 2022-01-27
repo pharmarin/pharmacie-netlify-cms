@@ -7,7 +7,7 @@ categories:
 tags:
   - "Formation comptoir"
   - "PiLèJe"
-featuredImage: "/images/posts/image-7.png"
+featuredImage: "./images/image-7.png"
 ---
 
 ## Les 5 points du conseil associé à l'ordonnance

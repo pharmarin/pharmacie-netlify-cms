@@ -7,7 +7,7 @@ categories:
   - "non-classe"
 tags:
   - "Dispositifs"
-featuredImage: "/images/posts/image-8.png"
+featuredImage: "./images/image-8.png"
 ---
 
 [Aérolizer](https://pharmacie.marionetmarin.fr/wp-content/uploads/2019/01/fiche-AM_aerolizer.pdf)[Télécharger](https://pharmacie.marionetmarin.fr/wp-content/uploads/2019/01/fiche-AM_aerolizer.pdf)

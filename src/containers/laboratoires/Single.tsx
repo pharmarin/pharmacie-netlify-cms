@@ -1,6 +1,7 @@
 import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
 import { graphql } from "gatsby";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { LaboratoiresSingleQuery } from "../../../graphql-types";
@@ -10,19 +11,21 @@ const LaboratoiresSingle: React.FC<{
   pageContext: any;
 }> = ({ data, pageContext }) => {
   const { allProductsJson: products, site } = data;
-  const laboratoire = pageContext.taxonomy;
+  const laboratoire = pageContext.laboratoiresName;
 
   return (
     <Layout>
       <Helmet
         title={`Laboratoire ${laboratoire} | ${site.siteMetadata.title}`}
       />
-      <h3>Laboratoire {laboratoire}</h3>
+      <h3 className="prose">Laboratoire {laboratoire}</h3>
       <ArchiveGrid
+        horizontal
         posts={products.nodes.map((product) => ({
+          featuredImage: product.featuredImage as IGatsbyImageData,
           id: product.id,
           link: product.fields.link,
-          subtitle: product.laboratoire,
+          subtitle: laboratoire,
           title: product.title,
         }))}
       />
@@ -33,7 +36,7 @@ const LaboratoiresSingle: React.FC<{
 export default LaboratoiresSingle;
 
 export const query = graphql`
-  query LaboratoiresSingle($laboratoire: String) {
+  query LaboratoiresSingle($laboratoiresName: String) {
     site {
       siteMetadata {
         title
@@ -41,16 +44,25 @@ export const query = graphql`
     }
     allProductsJson(
       limit: 1000
-      sort: { fields: [laboratoire], order: DESC }
-      filter: { laboratoire: { in: [$laboratoire] } }
+      sort: { fields: title }
+      filter: { laboratoire: { eq: $laboratoiresName } }
     ) {
       totalCount
       nodes {
         id
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(
+              backgroundColor: "white"
+              height: 200
+              width: 200
+              transformOptions: { fit: CONTAIN }
+            )
+          }
+        }
         fields {
           link
         }
-        laboratoire
         title
       }
     }

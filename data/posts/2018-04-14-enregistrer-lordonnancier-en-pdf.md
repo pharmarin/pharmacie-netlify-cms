@@ -8,7 +8,7 @@ tags:
   - "LGPI"
   - "Pharmacie du port"
   - "stupefiants"
-featuredImage: "/images/posts/enregistrement.jpg"
+featuredImage: "./images/enregistrement.jpg"
 ---
 
 - Aller dans D (Suivi administratif) > O (Ordonnanciers/Stupéfiants) > T (Édition des ordonnanciers)

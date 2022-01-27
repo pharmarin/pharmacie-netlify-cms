@@ -7,7 +7,7 @@ categories:
 tags:
   - "Micronutrition"
   - "Vitamines"
-featuredImage: "/images/posts/image.png"
+featuredImage: "./images/image.png"
 ---
 
 ## Groupe B

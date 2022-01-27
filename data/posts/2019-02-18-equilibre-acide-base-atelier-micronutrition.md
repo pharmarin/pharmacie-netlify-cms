@@ -9,7 +9,7 @@ tags:
   - "Équilibre acido-basique"
   - "Formation soirée"
   - "Micronutrition"
-featuredImage: "/images/posts/3_pc_05i01.png"
+featuredImage: "./images/3_pc_05i01.png"
 ---
 
 L’organisme tend vers l’acidification (riche en H+)

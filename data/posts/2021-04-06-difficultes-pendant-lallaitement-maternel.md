@@ -2,7 +2,7 @@
 type: "posts"
 title: "Difficultés pendant l'allaitement maternel"
 date: "2021-04-06"
-featuredImage: "/images/posts/image.jpeg"
+featuredImage: "./images/image.jpeg"
 ---
 
 Vérifier que le nourrisson prend correctement l’aréole en bouche est la première mesure pour éviter les difficultés ou les résoudre. Dans certains cas, l’utilisation à bon escient d’accessoires est une aide.
@@ -57,7 +57,7 @@ L’engorgement est une accumulation et une stase de lait dans les seins notamme
 
 - Augmenter la fréquence de mise au sein et, juste avant la tétée, appliquer de la chaleur à l’aide d’un gant de toilette. Pour faciliter la mise au sein, réaliser un massage aréolaire libérant le mamelon.
 
-![](/images/posts/Capture-decran-2021-04-06-a-09.12.01-243x300.png)
+![](./images/Capture-decran-2021-04-06-a-09.12.01-243x300.png)
 
 ### Soulager
 
@@ -65,7 +65,7 @@ L’engorgement est une accumulation et une stase de lait dans les seins notamme
 - L’application de froid à l’aide d’un gel-pack ou d’une vessie à glace calme la douleur. Un traitement antalgique par du paracétamol (1 g toutes les 6 heures) est possible.
 - Les conseils empiriques de restriction hydrique ou de bandage des seins sont inutiles voire néfastes. Consulter le médecin en cas de fièvre, d’apparition d’une crevasse sur le mamelon étiré, d’une absence d’amélioration rapide.
 
-![](/images/posts/Capture-decran-2021-04-06-a-09.10.31-379x300.png)
+![](./images/Capture-decran-2021-04-06-a-09.10.31-379x300.png)
 
 ## MANQUE DE LAIT
 
