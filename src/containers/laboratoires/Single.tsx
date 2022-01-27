@@ -18,7 +18,7 @@ const LaboratoiresSingle: React.FC<{
       <Helmet
         title={`Laboratoire ${laboratoire} | ${site.siteMetadata.title}`}
       />
-      <h3 className="prose">Laboratoire {laboratoire}</h3>
+      <h3>Laboratoire {laboratoire}</h3>
       <ArchiveGrid
         horizontal
         posts={products.nodes.map((product) => ({
