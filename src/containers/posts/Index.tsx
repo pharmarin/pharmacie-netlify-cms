@@ -25,7 +25,8 @@ export const PostsIndex: React.FC<{ data: PostsIndexQuery }> = ({ data }) => {
   );
 };
 
-const PostsIndexContainer = () => {
+const PostsIndexContainer: React.FC<{ as?: React.ElementType }> = ({ as }) => {
+  const Component = as ?? Layout;
   const { site, ...data } = useStaticQuery<PostsIndexQuery>(graphql`
     query PostsIndex {
       site {
@@ -62,10 +63,10 @@ const PostsIndexContainer = () => {
   `);
 
   return (
-    <Layout>
+    <Component>
       <Helmet title={`Articles | ${site.siteMetadata.title}`} />
       <PostsIndex data={data} />
-    </Layout>
+    </Component>
   );
 };
 

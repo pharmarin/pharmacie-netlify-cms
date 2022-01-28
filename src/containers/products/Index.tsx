@@ -25,7 +25,10 @@ export const ProductsIndex: React.FC<{ data: ProductsIndexQuery }> = ({
   );
 };
 
-const ProductsIndexContainer = () => {
+const ProductsIndexContainer: React.FC<{ as?: React.ElementType }> = ({
+  as,
+}) => {
+  const Component = as ?? Layout;
   const { site, ...data } = useStaticQuery<ProductsIndexQuery>(graphql`
     query ProductsIndex {
       site {
@@ -57,10 +60,10 @@ const ProductsIndexContainer = () => {
   `);
 
   return (
-    <Layout>
+    <Component>
       <Helmet title={`Produits | ${site.siteMetadata.title}`} />
       <ProductsIndex data={data} />
-    </Layout>
+    </Component>
   );
 };
 

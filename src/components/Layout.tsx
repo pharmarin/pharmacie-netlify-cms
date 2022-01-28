@@ -2,6 +2,7 @@ import { withPrefix } from "gatsby";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import "styles/global.css";
+import { twMerge } from "tailwind-merge";
 import Navbar from "./Navbar";
 import useSiteMetadata from "./SiteMetadata";
 
@@ -51,7 +52,7 @@ const TemplateWrapper: React.FC<{ className?: string }> = ({
         />
       </Helmet>
       <Navbar />
-      <div className={"container mx-auto px-4 mb-4 " + className}>
+      <div className={twMerge("container mx-auto px-4 mb-4 " + className)}>
         {children}
       </div>
     </div>
