@@ -26,7 +26,10 @@ const Card: React.FC<{
 }) => {
   return (
     <div className="rounded overflow-hidden shadow-lg">
-      <Link to={link} className={twMerge("flex", horizontal && "flex-row")}>
+      <Link
+        to={link}
+        className={twMerge("flex", horizontal ? "flex-row" : "flex-col")}
+      >
         {featuredImage && (
           <GatsbyImage
             alt={title}
@@ -37,7 +40,7 @@ const Card: React.FC<{
                 : "w-full object-cover rounded-t"
             )}
             image={featuredImage}
-            objectFit="contain"
+            objectFit={horizontal ? "contain" : "cover"}
           />
         )}
 
