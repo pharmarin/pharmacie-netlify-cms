@@ -2,7 +2,7 @@ import Layout from "components/Layout";
 import SingleProductContent from "components/SingleProductContent";
 import SingleTitle from "components/SingleTitle";
 import { graphql, Link, PageProps } from "gatsby";
-import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import { kebabCase } from "lodash";
 import React from "react";
 import { Helmet } from "react-helmet";
@@ -10,27 +10,25 @@ import { ProductsSingleQuery } from "../../../graphql-types";
 
 export const ProductsSingle: React.FC<{
   attributes: ProductsSingleQuery["productsJson"]["attributes"];
-  featuredImage: ImageDataLike;
-  helmet?: React.ReactNode;
+  featuredImage: IGatsbyImageData;
   id: string;
   laboratoire?: string;
   title?: string;
-}> = ({ attributes, featuredImage, helmet, id, laboratoire, title }) => {
+}> = ({ attributes, featuredImage, id, laboratoire, title }) => {
   return (
     <div className="content-wrapper mb-4">
-      {helmet || ""}
       <article className="mx-auto max-w-3xl" id={"article-" + id}>
         <div className="flex flex-row sm:space-x-8">
-          <div className="flex-none hidden sm:flex max-w-[30%]">
-            {
+          {featuredImage && (
+            <div className="flex-none hidden sm:flex max-w-[30%]">
               <GatsbyImage
                 alt={title}
                 className="max-h-40"
                 imgClassName="w-full object-cover rounded-t"
-                image={getImage(featuredImage)}
+                image={featuredImage}
               />
-            }
-          </div>
+            </div>
+          )}
           <div className="w-full">
             <section className="article-content w-full space-y-8">
               <SingleTitle
@@ -57,12 +55,11 @@ const ProductsSingleContainer: React.FC<PageProps<ProductsSingleQuery>> = ({
 
   return (
     <Layout>
+      <Helmet title={`${product.title} | ${site.siteMetadata.title}`} />
+
       <ProductsSingle
         attributes={product.attributes}
-        featuredImage={product.featuredImage as ImageDataLike}
-        helmet={
-          <Helmet title={`${product.title} | ${site.siteMetadata.title}`} />
-        }
+        featuredImage={getImage(product.featuredImage as IGatsbyImageData)}
         id={product.id}
         laboratoire={product.laboratoire}
         title={product.title}

@@ -1,7 +1,7 @@
 import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
 import { graphql } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
+import { getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { TagsSingleQuery } from "../../../graphql-types";
@@ -17,13 +17,15 @@ const TagsSingle: React.FC<{ data: TagsSingleQuery; pageContext: any }> = ({
   return (
     <Layout>
       <Helmet title={`Tag ${tag} | ${title}`} />
+
       <h3>Tag {tag}</h3>
       <ArchiveGrid
         posts={posts.map((post) => ({
           id: post.node.id,
           categories: post.node.frontmatter.categories,
-          featuredImage: post.node.frontmatter
-            .featuredImage as IGatsbyImageData,
+          featuredImage: getImage(
+            post.node.frontmatter.featuredImage as IGatsbyImageData
+          ),
           link: post.node.fields.link,
           tags: post.node.frontmatter.tags,
           title: post.node.frontmatter.title,

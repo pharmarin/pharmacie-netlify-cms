@@ -77,14 +77,14 @@ exports.createPages = async ({ actions, graphql }) => {
       });
   });
 
-  generateTaxonomies({
+  /* generateTaxonomies({
     list: flatten(posts.map((post) => post.node.frontmatter.tags)),
     slug: "tags",
-  });
-  generateTaxonomies({
+  }); */
+  /* generateTaxonomies({
     list: flatten(posts.map((post) => post.node.frontmatter.categories)),
     slug: "categories",
-  });
+  }); */
 
   /**
    * PRODUCTS
@@ -123,10 +123,10 @@ exports.createPages = async ({ actions, graphql }) => {
     });
   });
 
-  generateTaxonomies({
+  /* generateTaxonomies({
     list: products.map((product) => product.laboratoire),
     slug: "laboratoires",
-  });
+  }); */
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

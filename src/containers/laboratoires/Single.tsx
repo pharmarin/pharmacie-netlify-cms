@@ -1,7 +1,7 @@
 import ArchiveGrid from "components/ArchiveGrid";
 import Layout from "components/Layout";
 import { graphql } from "gatsby";
-import { IGatsbyImageData } from "gatsby-plugin-image";
+import { getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import { LaboratoiresSingleQuery } from "../../../graphql-types";
@@ -18,11 +18,12 @@ const LaboratoiresSingle: React.FC<{
       <Helmet
         title={`Laboratoire ${laboratoire} | ${site.siteMetadata.title}`}
       />
+
       <h3>Laboratoire {laboratoire}</h3>
       <ArchiveGrid
         horizontal
         posts={products.nodes.map((product) => ({
-          featuredImage: product.featuredImage as IGatsbyImageData,
+          featuredImage: getImage(product.featuredImage as IGatsbyImageData),
           id: product.id,
           link: product.fields.link,
           subtitle: laboratoire,

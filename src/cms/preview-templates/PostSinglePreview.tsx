@@ -1,6 +1,6 @@
 import { PostsSingle } from "containers/posts/Single";
+import { getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import React from "react";
-import { File } from "../../../graphql-types";
 
 const PostSinglePreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(["data", "tags"]);
@@ -9,7 +9,9 @@ const PostSinglePreview = ({ entry, widgetFor }) => {
       id={entry.getIn(["data", "id"])}
       content={widgetFor("body")}
       date={entry.getIn(["data", "date"])}
-      featuredImage={entry.getIn(["data", "featuredImage"]) as File}
+      featuredImage={
+        getImage(entry.getIn(["data", "featuredImage"])) as IGatsbyImageData
+      }
       tags={tags && tags.toJS()}
       title={entry.getIn(["data", "title"])}
     />
