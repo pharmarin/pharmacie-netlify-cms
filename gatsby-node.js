@@ -123,6 +123,11 @@ exports.createPages = async ({ actions, graphql }) => {
     });
   });
 
+  createPage({
+    path: "products",
+    component: path.resolve(`src/containers/products/Index.tsx`),
+  });
+
   generateTaxonomies({
     list: products.map((product) => product.laboratoire),
     slug: "laboratoires",
