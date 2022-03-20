@@ -251,6 +251,8 @@ export type DirectoryCtimeArgs = {
 export type Site = Node & {
   buildTime?: Maybe<Scalars['Date']>;
   siteMetadata?: Maybe<SiteSiteMetadata>;
+  port?: Maybe<Scalars['Int']>;
+  host?: Maybe<Scalars['String']>;
   polyfill?: Maybe<Scalars['Boolean']>;
   pathPrefix?: Maybe<Scalars['String']>;
   jsxRuntime?: Maybe<Scalars['String']>;
@@ -848,6 +850,8 @@ export type QueryAllDirectoryArgs = {
 export type QuerySiteArgs = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
+  port?: InputMaybe<IntQueryOperatorInput>;
+  host?: InputMaybe<StringQueryOperatorInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
   jsxRuntime?: InputMaybe<StringQueryOperatorInput>;
@@ -2434,6 +2438,8 @@ export type SiteFieldsEnum =
   | 'buildTime'
   | 'siteMetadata___title'
   | 'siteMetadata___description'
+  | 'port'
+  | 'host'
   | 'polyfill'
   | 'pathPrefix'
   | 'jsxRuntime'
@@ -2568,6 +2574,8 @@ export type SiteGroupConnectionGroupArgs = {
 export type SiteFilterInput = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   siteMetadata?: InputMaybe<SiteSiteMetadataFilterInput>;
+  port?: InputMaybe<IntQueryOperatorInput>;
+  host?: InputMaybe<StringQueryOperatorInput>;
   polyfill?: InputMaybe<BooleanQueryOperatorInput>;
   pathPrefix?: InputMaybe<StringQueryOperatorInput>;
   jsxRuntime?: InputMaybe<StringQueryOperatorInput>;
@@ -4475,90 +4483,90 @@ export type ProductsJsonSortInput = {
 export type SiteMetadataQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type SiteMetadataQuery = { site?: { siteMetadata?: { title?: string | null | undefined, description?: string | null | undefined } | null | undefined } | null | undefined };
+export type SiteMetadataQuery = { site?: { siteMetadata?: { title?: string | null, description?: string | null } | null } | null };
 
 export type CategoryIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type CategoryIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
+export type CategoryIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { group: Array<{ fieldValue?: string | null, totalCount: number }> } };
 
 export type CategoriesSingleQueryVariables = Exact<{
   categoriesName?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type CategoriesSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { link?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+export type CategoriesSingleQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { link?: string | null } | null, frontmatter?: { categories?: Array<string | null> | null, tags?: Array<string | null> | null, title?: string | null, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
 
 export type LaboratoiresIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type LaboratoiresIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
+export type LaboratoiresIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allProductsJson: { group: Array<{ fieldValue?: string | null, totalCount: number }> } };
 
 export type LaboratoiresSingleQueryVariables = Exact<{
   laboratoiresName?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type LaboratoiresSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { totalCount: number, nodes: Array<{ id: string, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, fields?: { link?: string | null | undefined } | null | undefined }> } };
+export type LaboratoiresSingleQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allProductsJson: { totalCount: number, nodes: Array<{ id: string, title?: string | null, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null } | null, fields?: { link?: string | null } | null }> } };
 
 export type PostsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type PostsIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { edges: Array<{ node: { id: string, fields?: { link?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+export type PostsIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { edges: Array<{ node: { id: string, fields?: { link?: string | null } | null, frontmatter?: { categories?: Array<string | null> | null, date?: any | null, tags?: Array<string | null> | null, title?: string | null, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
 
 export type PostsSingleQueryVariables = Exact<{
   id: Scalars['String'];
 }>;
 
 
-export type PostsSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, markdownRemark?: { id: string, html?: string | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, date?: any | null | undefined, title?: string | null | undefined, tags?: Array<string | null | undefined> | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } | null | undefined };
+export type PostsSingleQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, markdownRemark?: { id: string, html?: string | null, frontmatter?: { categories?: Array<string | null> | null, date?: any | null, title?: string | null, tags?: Array<string | null> | null, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } | null };
 
 export type ProductsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ProductsIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allProductsJson: { nodes: Array<{ id: string, laboratoire?: string | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined, fields?: { link?: string | null | undefined } | null | undefined }> } };
+export type ProductsIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allProductsJson: { nodes: Array<{ id: string, laboratoire?: string | null, title?: string | null, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null } | null, fields?: { link?: string | null } | null }> } };
 
 export type ProductsSingleQueryVariables = Exact<{
   id: Scalars['String'];
 }>;
 
 
-export type ProductsSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, productsJson?: { id: string, laboratoire?: string | null | undefined, title?: string | null | undefined, attributes?: { action?: Array<string | null | undefined> | null | undefined, avantages?: Array<string | null | undefined> | null | undefined, composition?: Array<string | null | undefined> | null | undefined, conseils?: Array<string | null | undefined> | null | undefined, indication?: Array<string | null | undefined> | null | undefined, utilisation?: Array<string | null | undefined> | null | undefined } | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined };
+export type ProductsSingleQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, productsJson?: { id: string, laboratoire?: string | null, title?: string | null, attributes?: { action?: Array<string | null> | null, avantages?: Array<string | null> | null, composition?: Array<string | null> | null, conseils?: Array<string | null> | null, indication?: Array<string | null> | null, utilisation?: Array<string | null> | null } | null, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null };
 
 export type TagsIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type TagsIndexQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { group: Array<{ fieldValue?: string | null | undefined, totalCount: number }> } };
+export type TagsIndexQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { group: Array<{ fieldValue?: string | null, totalCount: number }> } };
 
 export type TagsSingleQueryVariables = Exact<{
   tagsName?: InputMaybe<Scalars['String']>;
 }>;
 
 
-export type TagsSingleQuery = { site?: { siteMetadata?: { title?: string | null | undefined } | null | undefined } | null | undefined, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { link?: string | null | undefined } | null | undefined, frontmatter?: { categories?: Array<string | null | undefined> | null | undefined, tags?: Array<string | null | undefined> | null | undefined, title?: string | null | undefined, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null | undefined } | null | undefined } | null | undefined } }> } };
+export type TagsSingleQuery = { site?: { siteMetadata?: { title?: string | null } | null } | null, allMarkdownRemark: { totalCount: number, edges: Array<{ node: { id: string, fields?: { link?: string | null } | null, frontmatter?: { categories?: Array<string | null> | null, tags?: Array<string | null> | null, title?: string | null, featuredImage?: { childImageSharp?: { gatsbyImageData: any } | null } | null } | null } }> } };
 
-export type GatsbyImageSharpFixedFragment = { base64?: string | null | undefined, width: number, height: number, src: string, srcSet: string };
+export type GatsbyImageSharpFixedFragment = { base64?: string | null, width: number, height: number, src: string, srcSet: string };
 
-export type GatsbyImageSharpFixed_TracedSvgFragment = { tracedSVG?: string | null | undefined, width: number, height: number, src: string, srcSet: string };
+export type GatsbyImageSharpFixed_TracedSvgFragment = { tracedSVG?: string | null, width: number, height: number, src: string, srcSet: string };
 
-export type GatsbyImageSharpFixed_WithWebpFragment = { base64?: string | null | undefined, width: number, height: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined };
+export type GatsbyImageSharpFixed_WithWebpFragment = { base64?: string | null, width: number, height: number, src: string, srcSet: string, srcWebp?: string | null, srcSetWebp?: string | null };
 
-export type GatsbyImageSharpFixed_WithWebp_TracedSvgFragment = { tracedSVG?: string | null | undefined, width: number, height: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined };
+export type GatsbyImageSharpFixed_WithWebp_TracedSvgFragment = { tracedSVG?: string | null, width: number, height: number, src: string, srcSet: string, srcWebp?: string | null, srcSetWebp?: string | null };
 
 export type GatsbyImageSharpFixed_NoBase64Fragment = { width: number, height: number, src: string, srcSet: string };
 
-export type GatsbyImageSharpFixed_WithWebp_NoBase64Fragment = { width: number, height: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined };
+export type GatsbyImageSharpFixed_WithWebp_NoBase64Fragment = { width: number, height: number, src: string, srcSet: string, srcWebp?: string | null, srcSetWebp?: string | null };
 
-export type GatsbyImageSharpFluidFragment = { base64?: string | null | undefined, aspectRatio: number, src: string, srcSet: string, sizes: string };
+export type GatsbyImageSharpFluidFragment = { base64?: string | null, aspectRatio: number, src: string, srcSet: string, sizes: string };
 
 export type GatsbyImageSharpFluidLimitPresentationSizeFragment = { maxHeight: number, maxWidth: number };
 
-export type GatsbyImageSharpFluid_TracedSvgFragment = { tracedSVG?: string | null | undefined, aspectRatio: number, src: string, srcSet: string, sizes: string };
+export type GatsbyImageSharpFluid_TracedSvgFragment = { tracedSVG?: string | null, aspectRatio: number, src: string, srcSet: string, sizes: string };
 
-export type GatsbyImageSharpFluid_WithWebpFragment = { base64?: string | null | undefined, aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined, sizes: string };
+export type GatsbyImageSharpFluid_WithWebpFragment = { base64?: string | null, aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null, srcSetWebp?: string | null, sizes: string };
 
-export type GatsbyImageSharpFluid_WithWebp_TracedSvgFragment = { tracedSVG?: string | null | undefined, aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined, sizes: string };
+export type GatsbyImageSharpFluid_WithWebp_TracedSvgFragment = { tracedSVG?: string | null, aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null, srcSetWebp?: string | null, sizes: string };
 
 export type GatsbyImageSharpFluid_NoBase64Fragment = { aspectRatio: number, src: string, srcSet: string, sizes: string };
 
-export type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = { aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null | undefined, srcSetWebp?: string | null | undefined, sizes: string };
+export type GatsbyImageSharpFluid_WithWebp_NoBase64Fragment = { aspectRatio: number, src: string, srcSet: string, srcWebp?: string | null, srcSetWebp?: string | null, sizes: string };
