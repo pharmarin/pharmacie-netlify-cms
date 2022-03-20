@@ -26,3 +26,13 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Catégories", name: "categories", widget: "list" }
       - { label: "Tags", name: "tags", widget: "list" }
+  - name: "products"
+    label: "Produits"
+    folder: "data/products"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "ID", name: "id", widget: "hidden" }
+      - { label: "Action", name: "attributes.action", widget: "string" }

@@ -710,10 +710,10 @@ export type ProductsJson = Node & {
 export type ProductsJsonAttributes = {
   indication?: Maybe<Array<Maybe<Scalars['String']>>>;
   composition?: Maybe<Array<Maybe<Scalars['String']>>>;
-  action?: Maybe<Array<Maybe<Scalars['String']>>>;
   utilisation?: Maybe<Array<Maybe<Scalars['String']>>>;
-  avantages?: Maybe<Array<Maybe<Scalars['String']>>>;
   conseils?: Maybe<Array<Maybe<Scalars['String']>>>;
+  avantages?: Maybe<Array<Maybe<Scalars['String']>>>;
+  action?: Maybe<Array<Maybe<Scalars['String']>>>;
 };
 
 export type ProductsJsonFields = {
@@ -1266,10 +1266,10 @@ export type ProductsJsonFilterInput = {
 export type ProductsJsonAttributesFilterInput = {
   indication?: InputMaybe<StringQueryOperatorInput>;
   composition?: InputMaybe<StringQueryOperatorInput>;
-  action?: InputMaybe<StringQueryOperatorInput>;
   utilisation?: InputMaybe<StringQueryOperatorInput>;
-  avantages?: InputMaybe<StringQueryOperatorInput>;
   conseils?: InputMaybe<StringQueryOperatorInput>;
+  avantages?: InputMaybe<StringQueryOperatorInput>;
+  action?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type ProductsJsonFieldsFilterInput = {
@@ -1766,10 +1766,10 @@ export type FileFieldsEnum =
   | 'childrenProductsJson___title'
   | 'childrenProductsJson___attributes___indication'
   | 'childrenProductsJson___attributes___composition'
-  | 'childrenProductsJson___attributes___action'
   | 'childrenProductsJson___attributes___utilisation'
-  | 'childrenProductsJson___attributes___avantages'
   | 'childrenProductsJson___attributes___conseils'
+  | 'childrenProductsJson___attributes___avantages'
+  | 'childrenProductsJson___attributes___action'
   | 'childrenProductsJson___featuredImage___sourceInstanceName'
   | 'childrenProductsJson___featuredImage___absolutePath'
   | 'childrenProductsJson___featuredImage___relativePath'
@@ -1903,10 +1903,10 @@ export type FileFieldsEnum =
   | 'childProductsJson___title'
   | 'childProductsJson___attributes___indication'
   | 'childProductsJson___attributes___composition'
-  | 'childProductsJson___attributes___action'
   | 'childProductsJson___attributes___utilisation'
-  | 'childProductsJson___attributes___avantages'
   | 'childProductsJson___attributes___conseils'
+  | 'childProductsJson___attributes___avantages'
+  | 'childProductsJson___attributes___action'
   | 'childProductsJson___featuredImage___sourceInstanceName'
   | 'childProductsJson___featuredImage___absolutePath'
   | 'childProductsJson___featuredImage___relativePath'
@@ -4063,10 +4063,10 @@ export type ProductsJsonFieldsEnum =
   | 'title'
   | 'attributes___indication'
   | 'attributes___composition'
-  | 'attributes___action'
   | 'attributes___utilisation'
-  | 'attributes___avantages'
   | 'attributes___conseils'
+  | 'attributes___avantages'
+  | 'attributes___action'
   | 'featuredImage___sourceInstanceName'
   | 'featuredImage___absolutePath'
   | 'featuredImage___relativePath'
@@ -4283,10 +4283,10 @@ export type ProductsJsonFieldsEnum =
   | 'featuredImage___childrenProductsJson___title'
   | 'featuredImage___childrenProductsJson___attributes___indication'
   | 'featuredImage___childrenProductsJson___attributes___composition'
-  | 'featuredImage___childrenProductsJson___attributes___action'
   | 'featuredImage___childrenProductsJson___attributes___utilisation'
-  | 'featuredImage___childrenProductsJson___attributes___avantages'
   | 'featuredImage___childrenProductsJson___attributes___conseils'
+  | 'featuredImage___childrenProductsJson___attributes___avantages'
+  | 'featuredImage___childrenProductsJson___attributes___action'
   | 'featuredImage___childrenProductsJson___featuredImage___sourceInstanceName'
   | 'featuredImage___childrenProductsJson___featuredImage___absolutePath'
   | 'featuredImage___childrenProductsJson___featuredImage___relativePath'
@@ -4346,10 +4346,10 @@ export type ProductsJsonFieldsEnum =
   | 'featuredImage___childProductsJson___title'
   | 'featuredImage___childProductsJson___attributes___indication'
   | 'featuredImage___childProductsJson___attributes___composition'
-  | 'featuredImage___childProductsJson___attributes___action'
   | 'featuredImage___childProductsJson___attributes___utilisation'
-  | 'featuredImage___childProductsJson___attributes___avantages'
   | 'featuredImage___childProductsJson___attributes___conseils'
+  | 'featuredImage___childProductsJson___attributes___avantages'
+  | 'featuredImage___childProductsJson___attributes___action'
   | 'featuredImage___childProductsJson___featuredImage___sourceInstanceName'
   | 'featuredImage___childProductsJson___featuredImage___absolutePath'
   | 'featuredImage___childProductsJson___featuredImage___relativePath'
