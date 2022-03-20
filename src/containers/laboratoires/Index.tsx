@@ -28,13 +28,13 @@ const LaboratoiresIndex = () => {
       <Helmet title={`Laboratoires | ${site.siteMetadata.title}`} />
 
       <h1>Laboratoires</h1>
-      <div className="flex flex-row flex-wrap space-x-4">
+      <div className="flex flex-col space-y-4">
         {Object.entries(
           groupBy(allProductsJson.group, (laboratoire) =>
             laboratoire.fieldValue?.[0].toUpperCase()
           )
         ).map(([letter, categories]) => (
-          <div className="flex items-end">
+          <div className="flex items-center">
             <h2 className="mr-2 text-3xl">{letter}</h2>
             {categories.map((category) => (
               <Link
