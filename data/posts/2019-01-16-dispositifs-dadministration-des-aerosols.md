@@ -3,7 +3,7 @@ type: "posts"
 title: "Dispositifs d'administration des aérosols"
 date: "2019-01-16"
 categories:
-  - "formations-medicaments"
+  - "Formations médicaments"
   - "non-classe"
 tags:
   - "Dispositifs"

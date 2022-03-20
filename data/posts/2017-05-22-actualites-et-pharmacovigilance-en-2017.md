@@ -3,8 +3,8 @@ type: "posts"
 title: "Actualités et pharmacovigilance en 2017"
 date: "2017-05-22"
 categories:
-  - "formations-medicaments"
-  - "formations-pathologie"
+  - "Formations médicaments"
+  - "Formations pathologie"
 tags:
   - "Pharmacovigilance"
   - "UTIP"

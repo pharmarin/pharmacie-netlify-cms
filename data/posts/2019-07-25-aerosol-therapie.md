@@ -4,7 +4,7 @@ title: "Aérosol thérapie"
 date: "2019-07-25"
 categories:
   - "Formations matériel"
-  - "formations-medicaments"
+  - "Formations médicaments"
 featuredImage: "./images/image-7.png"
 ---
 
