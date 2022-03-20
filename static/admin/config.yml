@@ -34,5 +34,60 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "ID", name: "id", widget: "hidden" }
-      - { label: "Action", name: "attributes.action", widget: "string" }
+      - name: "id"
+        label: "ID"
+        widget: "hidden"
+      - name: "title"
+        label: "Titre"
+        widget: "string"
+      - name: "featuredImage"
+        label: "Photo"
+        widget: "image"
+        media_folder: "images"
+      - name: "laboratoire"
+        label: "Laboratoire"
+        widget: "string"
+      - name: "attributes"
+        label: "Propriétés"
+        widget: "object"
+        fields:
+          - name: "indication"
+            label: "Indications"
+            widget: "list"
+            field: { label: "Indication", name: "indication", widget: "string" }
+            collapsed: false
+            summary: "{{fields.indication}}"
+          - name: "composition"
+            label: "Composition"
+            widget: "list"
+            field: { label: "Composant", name: "composant", widget: "string" }
+            collapsed: false
+            summary: "{{fields.composant}}"
+          - name: "action"
+            label: "Actions"
+            widget: "list"
+            field: { label: "Action", name: "action", widget: "string" }
+            collapsed: false
+            summary: "{{fields.action}}"
+          - name: "utilisation"
+            label: "Utilisation"
+            widget: "list"
+            field:
+              { label: "Utilisation", name: "utilisation", widget: "string" }
+            collapsed: false
+            summary: "{{fields.utilisation}}"
+          - name: "conseils"
+            label: "Conseils"
+            widget: "list"
+            field: { label: "Conseil", name: "conseil", widget: "string" }
+            collapsed: false
+            summary: "{{fields.conseil}}"
+          - name: "avantages"
+            label: "Avantages"
+            widget: "list"
+            field: { label: "Avantages", name: "avantage", widget: "string" }
+            collapsed: false
+            summary: "{{fields.avantage}}"
+          - name: "precautions"
+            label: "Precautions"
+            widget: "list"
